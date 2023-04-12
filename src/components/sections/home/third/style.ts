@@ -34,12 +34,6 @@ export const TextWrapper = styled.div`
     gap: 3em;
 `
 
-export const Overlay = styled.div`
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 6, 49, 0.6);
-    z-index: 3;
-`
 
 export type ITextGroup = {
     gap?: string

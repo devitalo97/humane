@@ -1,6 +1,6 @@
 import { Inter } from 'next/font/google'
 import * as S from './style'
-import img from '@/svgs/background_third_section.svg'
+import img from '@/assets/svgs/background_third_section.svg'
 import Image from 'next/image'
 
 const inter = Inter({subsets: ['latin']})

@@ -2,18 +2,27 @@ import { Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-    height: var(--section-height);
-    background: rgb(1,5,50);
+    height: 100vh;
 `;
+
+export const Hedaer = styled.p``
 
 export const Wrapper = styled.div`
     position: relative;
-    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 5%;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10em;
+    height: 100%;
     ${Section}
+`
+
+export const CardWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 2em;
 
 `
 export const ImageWrapper = styled.div`
@@ -33,6 +42,7 @@ export const TextGroup = styled.div``
 type ILine = {
     width?: string
     padding?: string
+    margin?: string
 }
 export const Line = styled.div<ILine>`
     display: flex;
@@ -43,6 +53,9 @@ export const Line = styled.div<ILine>`
     `}
     ${({padding}) => padding && css`
         padding: ${padding};
+    `}
+    ${({margin}) => margin && css`
+        margin: ${margin};
     `}
 `
 
@@ -88,4 +101,12 @@ export const TextSM = styled(Text)`
     letter-spacing: 0.03em;
     text-align: left;
 
+`
+
+export const Header = styled.p`
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: var(--white-color);
 `

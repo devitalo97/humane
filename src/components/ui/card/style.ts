@@ -1,26 +1,15 @@
 import { Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
-
-export const Container = styled.div`
-    height: var(--section-height);
-    background: rgb(1,5,50);
-`;
+import { RiDoubleQuotesL } from 'react-icons/ri'
 
 export const Wrapper = styled.div`
+    background-color: var(--white-color);
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    height: 380px;
+    padding: 1em;
     position: relative;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 5%;
-    ${Section}
-
-`
-export const ImageWrapper = styled.div`
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
 `
 export const TextWrapper = styled.div`
     display: flex;
@@ -28,11 +17,14 @@ export const TextWrapper = styled.div`
     gap: 4em;
 `
 
-export const TextGroup = styled.div``
+export const TextGroup = styled.div`
+    margin-top: 30%;
+`
 
 type ILine = {
     width?: string
     padding?: string
+    margin?: string
 }
 export const Line = styled.div<ILine>`
     display: flex;
@@ -43,6 +35,9 @@ export const Line = styled.div<ILine>`
     `}
     ${({padding}) => padding && css`
         padding: ${padding};
+    `}
+    ${({margin}) => margin && css`
+        margin: ${margin};
     `}
 `
 
@@ -67,25 +62,47 @@ export const Text = styled.p<IText>`
 `
 
 export const TextLG = styled(Text)`
-    font-size: 32px;
+    font-style: normal;
     font-weight: 600;
-    line-height: 42px;
-    letter-spacing: 0.01em;
-    text-align: left;
+    font-size: 16px;
+    line-height: 19px;
 `
 
 export const TextM = styled(Text)`
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 42px;
-    letter-spacing: 0.01em;
-    text-align: left;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
 `
 export const TextSM = styled(Text)`
     font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.03em;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
     text-align: left;
 
 `
+export const Quote = styled(RiDoubleQuotesL)`
+    position: absolute;
+    color: var(--dark-color);
+
+`
+
+export const ImageWrapper = styled.div`
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, -50%);
+    top: 0;
+`
+
+export const Footer = styled.div`
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+`
+
