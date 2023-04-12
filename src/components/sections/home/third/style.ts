@@ -3,7 +3,11 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     height: var(--section-height);
-    background-color: #E8B53F;
+    background: rgb(172,100,0);
+    background: -moz-linear-gradient(43deg, rgba(172,100,0,1) 0%, rgba(229,177,57,1) 100%);
+    background: -webkit-linear-gradient(43deg, rgba(172,100,0,1) 0%, rgba(229,177,57,1) 100%);
+    background: linear-gradient(43deg, rgba(172,100,0,1) 0%, rgba(229,177,57,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ac6400",endColorstr="#e5b139",GradientType=1);
 `;
 
 export const Wrapper = styled.div`
@@ -12,18 +16,22 @@ export const Wrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 5%;
+    ${Section}
 `
 export const ImageWrapper = styled.div`
-    position: absolute;
-    left: 0;
-    bottom: 0;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     z-index: 2;
 `
 export const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 4em;
+    gap: 3em;
 `
 
 export const Overlay = styled.div`
@@ -33,7 +41,16 @@ export const Overlay = styled.div`
     z-index: 3;
 `
 
-export const TextGroup = styled.div``
+export type ITextGroup = {
+    gap?: string
+}
+export const TextGroup = styled.div<ITextGroup>`
+    display: flex;
+    flex-direction: column;
+    ${({gap}) => gap && css`
+        gap: ${gap};
+    `}
+`
 
 type ILine = {
     width?: string
@@ -44,12 +61,13 @@ export const Line = styled.div<ILine>`
     align-items: baseline;
     gap: .5em;
     ${({width}) => width && css`
-        width: ${width}
+        width: ${width};
     `}
     ${({padding}) => padding && css`
-        padding: ${padding}
+        padding: ${padding};
     `}
 `
+
 
 export type IText = {
     highlight?: boolean
@@ -60,37 +78,64 @@ export type IText = {
 export const Text = styled.p<IText>`
     color: var(--white-color);
     ${({highlight}) => highlight && css`
-        color: var(--highlight-color);
+    color: var(--highlight-color);
     `}
     ${({dark}) => dark && css`
-        color: var(--dark-color);
+    color: var(--dark-color);
     `}
-
+    
     ${({bw}) => bw && css`
-        overflow-wrap: break-word;
+    overflow-wrap: break-word;
     `}
-`
+    `
 
 export const TextLG = styled(Text)`
+    font-style: normal;
+    font-weight: 700;
     font-size: 32px;
-    font-weight: 600;
-    line-height: 42px;
-    letter-spacing: 0.01em;
-    text-align: left;
-`
+    line-height: 39px;
+    `
 
-export const TextM = styled(Text)`
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 42px;
-    letter-spacing: 0.01em;
-    text-align: left;
-`
 export const TextSM = styled(Text)`
-    font-size: 16px;
-    font-weight: 500;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
     line-height: 24px;
-    letter-spacing: 0.03em;
-    text-align: left;
+    `
 
+export const Box = styled.div`
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    width: 60px;
+    height: 60px;
+    display: grid;
+    place-items: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    color: var(--white-color);
+    `
+
+export type IRow = {
+    column?: boolean
+    row?: boolean
+    gap?: string
+}
+export const Row = styled.div<IRow>`
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    ${({column}) => column && css`
+        align-items: flex-start;
+        flex-direction: column;
+    `}
+    ${({gap}) => gap && css`
+        gap: ${gap};
+    `}
+`
+
+export const Glue = styled.div`
+    position: relative;
 `

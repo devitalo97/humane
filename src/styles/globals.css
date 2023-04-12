@@ -6,6 +6,12 @@
   --section-height: calc(100vh - var(--header-height));
 }
 
+html {
+  background: -moz-linear-gradient(43deg, rgba(1,5,50,1) 0%, rgba(14,23,65,1) 100%);
+  background: -webkit-linear-gradient(43deg, rgba(1,5,50,1) 0%, rgba(14,23,65,1) 100%);
+  background: linear-gradient(43deg, rgba(1,5,50,1) 0%, rgba(14,23,65,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010532",endColorstr="#0e1741",GradientType=1);
+}
 * {
   box-sizing: border-box;
   padding: 0;

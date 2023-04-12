@@ -1,7 +1,7 @@
 
 
 
-import { Manjari, Inter } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import * as S from './style'
 import Button from '@/components/ui/button'
 
@@ -11,11 +11,16 @@ export default function SecondSection() {
   return (
     <S.Container>
       <S.Wrapper>
-        <div style={{width: "100%", height: "300px", backgroundColor: "red"}}></div>
-        <S.TextWrapper style={{width: "fit-content"}}>
+        <div style={{width: "70%"}}>
+          <video controls style={{width: "100%", height: '100%'}}>
+            <source src="/humane_video.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <S.TextWrapper style={{width: "30%"}}>
           <S.TextGroup>
             <S.Line>
-              <S.TextLG dark style={inter.style}>
+              <S.TextLG style={inter.style}>
               Relatório de          
               </S.TextLG>
             </S.Line>
@@ -25,8 +30,8 @@ export default function SecondSection() {
               </S.TextM>
             </S.Line>
 
-            <S.Line width="359px">
-              <S.TextSM dark bw style={inter.style}>
+            <S.Line>
+              <S.TextSM bw style={inter.style}>
                 Através do relatório, você vai compreender a sua personalidade, suas competências mais importantes, seus pontos fortes e as oportunidades de melhoria. Assim, é possível promover tanto o desenvolvimento pessoal quanto o profissional. Pesquisas na área do desenvolvimento humano mostram que os indivíduos mais eficazes são aqueles que se conhecem melhor. 
               </S.TextSM>
             </S.Line>

@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     height: 100vh;
-    background-color: var(--dark-color);
+    background: rgb(1,5,50);
 `;
 
 export const Wrapper = styled.div`

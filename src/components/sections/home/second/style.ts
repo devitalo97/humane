@@ -3,6 +3,7 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     height: var(--section-height);
+    background: rgb(1,5,50);
 `;
 
 export const Wrapper = styled.div`
@@ -10,7 +11,7 @@ export const Wrapper = styled.div`
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: 5%;
     ${Section}
 
@@ -45,10 +46,10 @@ export const Line = styled.div<ILine>`
     align-items: baseline;
     gap: .5em;
     ${({width}) => width && css`
-        width: ${width}
+        width: ${width};
     `}
     ${({padding}) => padding && css`
-        padding: ${padding}
+        padding: ${padding};
     `}
 `
 

@@ -2,7 +2,7 @@ import { Section } from '@/styles/mixin'
 import styled from 'styled-components'
 
 export const Container = styled.div`
-    background-color: var(--dark-color);
+    /* background-color: var(--dark-color); */
     height: var(--header-height);
     backdrop-filter: blur(10px);
     display: flex;
