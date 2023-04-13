@@ -27,18 +27,18 @@ export default function FourthSection() {
       name: 'Neres José',
       occupation: 'Radialista'
     },
-    {
-      src: person_italo,
-      comment: 'A devolutiva e o relatório foram precisos e me ajudaram a entender melhor minhas forças e áreas de desenvolvimento.',
-      name: 'Ítalo de Souza',
-      occupation: 'Desenvolvedor'
-    },
-    {
-      src: person_bruna,
-      comment: 'Descobrir meu perfil comportamental foi uma experiência muito valiosa. Me ajudou a entender melhor quem sou, como posso me comunicar de maneira mais eficaz. Eu super recomendo!!!',
-      name: 'Bruna Almeida',
-      occupation: 'Designer de Produto'
-    },
+    // {
+    //   src: person_italo,
+    //   comment: 'A devolutiva e o relatório foram precisos e me ajudaram a entender melhor minhas forças e áreas de desenvolvimento.',
+    //   name: 'Ítalo de Souza',
+    //   occupation: 'Desenvolvedor'
+    // },
+    // {
+    //   src: person_bruna,
+    //   comment: 'Descobrir meu perfil comportamental foi uma experiência muito valiosa. Me ajudou a entender melhor quem sou, como posso me comunicar de maneira mais eficaz. Eu super recomendo!!!',
+    //   name: 'Bruna Almeida',
+    //   occupation: 'Designer de Produto'
+    // },
     {
       src: person_matheus,
       comment: 'A análise comportamental foi crucial para alinhar as lacunas que faltavam pra entender meu comportamento diante do trabalho, família, relacionamento e ambiente social.',
