@@ -1,12 +1,15 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const Wrapper = styled.button`
-    background: var(--highlight-color);
+interface IWrapper {
+    primary?: boolean
+    secondary?: boolean
+    width?: string
+}
+export const Wrapper = styled.button<IWrapper>`
     border-radius: 10px;
     border: none;
     height: 56px;
     width: 295px;
-
 
     p {
         font-family: 'Inter';
@@ -16,4 +19,16 @@ export const Wrapper = styled.button`
         line-height: 26px;
         color: #FFFFFF;
     }
+
+    background: var(--highlight-color);
+
+    ${({secondary}) => secondary && css`
+        background: rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 5px 4px rgba(95, 95, 95, 0.2);
+    `}
+
+    ${({width}) => width && css`
+        width: ${width};
+    `}
+
 `

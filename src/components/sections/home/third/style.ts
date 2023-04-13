@@ -2,7 +2,7 @@ import { Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-    height: var(--section-height);
+    height: 100vh;
     background: rgb(172,100,0);
     background: -moz-linear-gradient(43deg, rgba(172,100,0,1) 0%, rgba(229,177,57,1) 100%);
     background: -webkit-linear-gradient(43deg, rgba(172,100,0,1) 0%, rgba(229,177,57,1) 100%);

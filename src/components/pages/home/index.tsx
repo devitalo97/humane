@@ -1,3 +1,4 @@
+import FifthSection from '@/components/sections/home/fifth'
 import FirstSection from '@/components/sections/home/first'
 import FourthSection from '@/components/sections/home/fourth'
 import SecondSection from '@/components/sections/home/second'
@@ -10,6 +11,7 @@ export default function Home() {
       <SecondSection />
       <ThirdSection />
       <FourthSection />
+      <FifthSection />
     </>
   )
 }
