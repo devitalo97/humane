@@ -3,7 +3,7 @@
 
 import { Inter } from 'next/font/google'
 import * as S from './style'
-import Card from '@/components/ui/card'
+import SocialProofCard from '@/components/ui/social_proof_card'
 import person_bruna from '@/assets/svgs/person_bruna.svg'
 import person_andre from '@/assets/svgs/person_andre.svg'
 import person_matheus from '@/assets/svgs/person_matheus.svg'
@@ -59,7 +59,7 @@ export default function FourthSection() {
           O que os clientes dizem
         </S.Header>
         <S.CardWrapper>
-          {cards.map(card => <Card 
+          {cards.map(card => <SocialProofCard 
             name={card.name}
             occupation={card.occupation}
             comment={card.comment}

@@ -12,7 +12,7 @@ interface Props {
   src: string
 }
 
-export default function Card({
+export default function SocialProofCard({
   name,
   occupation,
   comment,

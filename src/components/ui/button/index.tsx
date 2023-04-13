@@ -6,6 +6,7 @@ interface IButton {
   primary?: boolean
   secondary?: boolean
   width?: string
+  onClick?: () => void
 }
 
 const inter = Inter({ subsets: ['latin'] })
@@ -14,13 +15,15 @@ export default function Button({
   text,
   primary,
   secondary,
-  width
+  width,
+  onClick
 }: IButton) {
   return (
     <S.Wrapper 
       primary={primary} 
       secondary={secondary}
       width={width}
+      onClick={onClick}
     >
       <p style={inter.style}>{text}</p>
     </S.Wrapper>
