@@ -8,7 +8,7 @@ export default function Navbar() {
   return (
     <S.Container>
       <S.Wrapper>
-        <Link href={"/home"}><S.Text><Logo /></S.Text></Link>
+        <Link href={"/"}><S.Text><Logo /></S.Text></Link>
         <S.Nav>
           <Link href={"/gallery"}><S.Text style={inter.style}>Galeria</S.Text></Link>
           <Link href={"/blog"}><S.Text style={inter.style}>Blog</S.Text></Link>

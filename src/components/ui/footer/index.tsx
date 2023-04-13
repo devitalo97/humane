@@ -17,7 +17,7 @@ export default function Footer() {
             display="flex"        
             justifyContent="space-between"        
           >
-          <Link href={"/home"}>
+          <Link href={"/"}>
             <Image src={logotipo} alt="Logo tipo humane"/>
           </Link>
           <S.Nav>
