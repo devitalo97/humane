@@ -140,7 +140,7 @@ export default function FifthSection() {
         </S.Wrapper>
       </S.Container>
 
-      {content.filter(el => el.type === isOpen).map(item => <Modal>
+      {content.filter(el => el.type === isOpen).map((item, index) => <Modal key={index}>
         <BehavioralProfileCards 
           title={item.type}
           points={{

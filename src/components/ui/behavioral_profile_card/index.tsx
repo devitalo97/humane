@@ -42,7 +42,7 @@ export default function BehavioralProfileCard({
               {key === 'weak' ? ' Fracos' : ' Fortes'}
             </S.TextM>
             <S.TextGroup gap=".5em">
-              {points[key as 'weak' | 'strong'].map((point: string) => <S.Line><S.TextSM dark style={inter.style}>{point}</S.TextSM></S.Line>)}
+              {points[key as 'weak' | 'strong'].map((point: string,index) => <S.Line key={index}><S.TextSM dark style={inter.style}>{point}</S.TextSM></S.Line>)}
             </S.TextGroup>
           </S.TextGroup>
         </>)

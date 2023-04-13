@@ -53,13 +53,13 @@ export default function ThirdSection() {
           <S.TextGroup gap='2em'>
             {texts.map((text: string[], index: number) => {
               return (<>
-                <S.Row gap="1em">
+                <S.Row key={index} gap="1em">
                   <S.Box style={inter.style}>
                     {index+1}         
                   </S.Box>
                   <S.Row column>
                     {
-                      text.map(t => <S.Line><S.TextSM style={inter.style}>{t}</S.TextSM></S.Line>)
+                      text.map((t, index) => <S.Line key={index}><S.TextSM style={inter.style}>{t}</S.TextSM></S.Line>)
                     }
                   </S.Row>
                 </S.Row>

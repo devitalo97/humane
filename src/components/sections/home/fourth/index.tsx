@@ -59,7 +59,8 @@ export default function FourthSection() {
           O que os clientes dizem
         </S.Header>
         <S.CardWrapper>
-          {cards.map(card => <SocialProofCard 
+          {cards.map((card, index) => <SocialProofCard 
+            key={index}
             name={card.name}
             occupation={card.occupation}
             comment={card.comment}
