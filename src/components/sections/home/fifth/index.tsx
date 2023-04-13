@@ -25,7 +25,6 @@ export default function FifthSection() {
               borderRadius: '3em',
               boxShadow: '12px 10px 28px -3px rgba(0,0,0,0.1)',
               maxWidth: "100%",
-              maxHeight: "100%",
               height: 'auto'
             }}
           />
