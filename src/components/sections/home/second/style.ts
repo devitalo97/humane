@@ -3,7 +3,9 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     height: 100vh;
-    background: rgb(1,5,50);
+    @media screen and (max-width: 480px){
+        height: fit-content;
+    }
 `;
 
 export const Wrapper = styled.div`
@@ -16,17 +18,20 @@ export const Wrapper = styled.div`
     gap: 5%;
     ${Section}
 
-`
-export const ImageWrapper = styled.div`
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
+    @media screen and (max-width: 480px){
+        grid-template-rows: 1fr .6fr;
+        grid-template-columns: unset;
+        gap: 2em;
+        padding: 5%;
+        height: fit-content;
+    }
+
 `
 export const TextWrapper = styled.div`
     height: 100%;
     display: grid;
     grid-template-rows: 1fr min-content;
+    grid-gap: 2em;
 `
 export const VideoWrapper = styled.div``
 

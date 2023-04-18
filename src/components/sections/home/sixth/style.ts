@@ -3,7 +3,6 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     height: 60vh;
-    background: rgb(1,5,50);
 `;
 
 export const Wrapper = styled.div`

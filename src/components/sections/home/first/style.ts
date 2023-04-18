@@ -3,10 +3,13 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     height: 100vh;
-    background: rgb(1,5,50);
+    background-image: url(/background_first.svg);
+    background-size: cover;
+    background-position: center center;
 `;
 
 export const Wrapper = styled.div`
+
     position: relative;
     height: 100%;
     display: flex;
