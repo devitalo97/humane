@@ -2,6 +2,9 @@ import { Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     background: rgb(172,100,0);
     background: -moz-linear-gradient(43deg, rgba(172,100,0,1) 0%, rgba(229,177,57,1) 100%);
@@ -11,12 +14,17 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
+    background-image: url(/background_fifth_section.svg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 3em;
+    box-shadow: 12px 10px 28px -3px rgba(0,0,0,0.1);
+    width: 90%;
     position: relative;
-    height: 100%;
+    height: 80%;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    ${Section}
 `
 export const ImageWrapper = styled.div`
     position: relative;
@@ -31,18 +39,25 @@ export const ImageWrapper = styled.div`
 export const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 1em;
+    height: 100%;
+    padding: 3% 5%;
 `
 
 
 export type ITextGroup = {
     gap?: string
+    height?: string
 }
 export const TextGroup = styled.div<ITextGroup>`
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     ${({gap}) => gap && css`
         gap: ${gap};
+    `}
+    ${({height}) => height && css`
+        height: ${height};
     `}
 `
 

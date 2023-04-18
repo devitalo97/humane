@@ -2,16 +2,17 @@ import { Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-    height: var(--section-height);
+    height: 100vh;
     background: rgb(1,5,50);
 `;
 
 export const Wrapper = styled.div`
     position: relative;
     height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr .6fr;
+    place-content: center;
+    place-items: center;
     gap: 5%;
     ${Section}
 
@@ -23,12 +24,28 @@ export const ImageWrapper = styled.div`
     z-index: 2;
 `
 export const TextWrapper = styled.div`
+    height: 100%;
+    display: grid;
+    grid-template-rows: 1fr min-content;
+`
+export const VideoWrapper = styled.div``
+
+interface ITextGroup {
+    gap?: string
+}
+
+export const Header = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 4em;
+    gap: 2em;
 `
-
-export const TextGroup = styled.div``
+export const TextGroup = styled.div<ITextGroup>`
+    display: flex;
+    flex-direction: column;
+    ${({gap}) => gap && css`
+        gap: ${gap};
+    `}
+`
 
 type ILine = {
     width?: string

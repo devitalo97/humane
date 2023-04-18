@@ -28,7 +28,7 @@ export const Nav = styled.nav`
 export const Text = styled.p`
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
+    font-size: clamp(1.125rem, 1.1037rem + 0.122vw, 1rem);
     line-height: 24px;
     letter-spacing: 0.02em;
     color: #FFFFFF;

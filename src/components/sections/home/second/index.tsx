@@ -11,24 +11,28 @@ export default function SecondSection() {
   return (
     <S.Container>
       <S.Wrapper>
-        <div style={{width: "70%"}}>
+        <S.VideoWrapper>
           <video controls style={{width: "100%", height: '100%'}}>
             <source src="/humane_video.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
-        </div>
-        <S.TextWrapper style={{width: "30%"}}>
-          <S.TextGroup>
-            <S.Line>
-              <S.TextLG style={inter.style}>
-              Relatório de          
-              </S.TextLG>
-            </S.Line>
-            <S.Line padding='0 0 1em 0'>
-              <S.TextM highlight style={inter.style}>
-                Perfil Comportamental    
-              </S.TextM>
-            </S.Line>
+        </S.VideoWrapper>
+        <S.TextWrapper>
+          <S.TextGroup 
+            gap="2em"
+          >
+            <S.TextGroup>
+              <S.Line>
+                <S.TextLG style={inter.style}>
+                Relatório de          
+                </S.TextLG>
+              </S.Line>
+              <S.Line>
+                <S.TextM highlight style={inter.style}>
+                  Perfil Comportamental    
+                </S.TextM>
+              </S.Line>
+            </S.TextGroup>
 
             <S.Line>
               <S.TextSM bw style={inter.style}>

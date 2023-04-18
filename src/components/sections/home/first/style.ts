@@ -47,27 +47,16 @@ export const Text = styled.p<IText>`
 `
 
 export const TextLG = styled(Text)`
-    font-family: Manjari;
-    font-size: 60px;
+    font-size: clamp(2.125rem, 1.8476rem + 1.5854vw, 3rem);
     font-weight: 400;
-    line-height: 56px;
     letter-spacing: 0em;
     text-align: left;
 `
 
 export const TextM = styled(Text)`
     font-family: Manjari;
-    font-size: 48px;
+    font-size: clamp(1.5rem, 1.2439rem + 1.4634vw, 2.5rem);
     font-weight: 400;
-    line-height: 56px;
-    letter-spacing: 0em;
-    text-align: left;
-`
-export const TextSM = styled(Text)`
-    font-family: Manjari;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 56px;
     letter-spacing: 0em;
     text-align: left;
 `

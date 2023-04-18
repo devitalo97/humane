@@ -16,28 +16,7 @@ export default function ThirdSection() {
   return (
     <S.Container>
       <S.Wrapper>
-        <S.Glue>
-        <S.ImageWrapper>
-          <Image 
-            alt="Imagem de uma menina ruiva" 
-            src={img}
-            style={{
-              borderRadius: '3em',
-              boxShadow: '12px 10px 28px -3px rgba(0,0,0,0.1)',
-              maxWidth: "100%",
-              maxHeight: "100%",
-              height: 'auto'
-            }}
-          />
-        </S.ImageWrapper>
-        <S.TextWrapper style={{
-          width: "fit-content", 
-          zIndex: 3, 
-          position: 'absolute',
-          right: '5%',
-          top: '50%',
-          transform: 'translateY(-50%)',
-          }}>
+        <S.TextWrapper>
           <S.TextGroup>
             <S.Line>
               <S.TextLG style={inter.style}>
@@ -50,7 +29,7 @@ export default function ThirdSection() {
               </S.TextLG>
             </S.Line>
           </S.TextGroup>
-          <S.TextGroup gap='2em'>
+          <S.TextGroup height='100%'>
             {texts.map((text: string[], index: number) => {
               return (<>
                 <S.Row key={index} gap="1em">
@@ -67,7 +46,6 @@ export default function ThirdSection() {
             })}
           </S.TextGroup>
         </S.TextWrapper>
-        </S.Glue>
       </S.Wrapper>
     </S.Container>
   )

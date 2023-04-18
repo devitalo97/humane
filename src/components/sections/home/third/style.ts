@@ -2,6 +2,9 @@ import { Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: center;
     height: 100vh;
     background: rgb(172,100,0);
     background: -moz-linear-gradient(43deg, rgba(172,100,0,1) 0%, rgba(229,177,57,1) 100%);
@@ -11,38 +14,40 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
+    background-image: url(/background_third_section.svg);
+    background-size: cover;
+    background-position: center center;
+    border-radius: 3em;
+    box-shadow: 12px 10px 28px -3px rgba(0,0,0,0.1);
+    width: 90%;
     position: relative;
-    height: 100%;
+    height: 80%;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    justify-content: center;
-    ${Section}
 `
-export const ImageWrapper = styled.div`
-    position: relative;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-`
+
 export const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
-    gap: 3em;
+    gap: 1em;
+    height: 100%;
+    padding: 3% 5%;
 `
-
 
 export type ITextGroup = {
     gap?: string
+    height?: string
 }
 export const TextGroup = styled.div<ITextGroup>`
     display: flex;
     flex-direction: column;
+    justify-content: space-around;
     ${({gap}) => gap && css`
         gap: ${gap};
+    `}
+    ${({height}) => height && css`
+        height: ${height};
     `}
 `
 
@@ -86,22 +91,22 @@ export const Text = styled.p<IText>`
 export const TextLG = styled(Text)`
     font-style: normal;
     font-weight: 700;
-    font-size: 32px;
+    font-size: clamp(1.5rem, 1.4146rem + 0.4878vw, 2rem);
     line-height: 39px;
-    `
+`
 
 export const TextSM = styled(Text)`
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: clamp(0.875rem, 0.811rem + 0.3659vw, 1.25rem);
     line-height: 24px;
-    `
+`
 
 export const Box = styled.div`
     background: rgba(255, 255, 255, 0.4);
     border-radius: 5px;
-    width: 60px;
-    height: 60px;
+    width: 2em;
+    height: 2em;
     display: grid;
     place-items: center;
     font-style: normal;
