@@ -12,6 +12,11 @@ html {
   background: linear-gradient(43deg, rgba(1,5,50,1) 0%, rgba(14,23,65,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#010532",endColorstr="#0e1741",GradientType=1);
 }
+
+html ::-webkit-scrollbar {
+  display: none;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;

@@ -1,15 +1,13 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0,0,0,0.1);
-    backdrop-filter: blur(10px);
-    z-index: 2000;
-    display: grid;
-    place-items: center;
     position: fixed; 
     inset: 0;
+    backdrop-filter: blur(5px); 
+    background: rgba(1, 10, 12, 0.3);
+    display: grid;
+    place-content: center;
+    z-index: 1000;
     overflow: hidden;
 `
 

@@ -8,7 +8,7 @@ export const Wrapper = styled.div`
     border-radius: 8px;
     border: none;
     width: 100%;
-    height: 60vh;
+    height: 75vh;
     position: relative;
     border-radius: 16px;
     display: grid;

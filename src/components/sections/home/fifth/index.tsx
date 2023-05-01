@@ -1,7 +1,5 @@
 import { Inter } from 'next/font/google'
 import * as S from './style'
-import img from '@/assets/svgs/background_fifth_section.svg'
-import Image from 'next/image'
 import Button from '@/components/ui/button'
 import { useState } from 'react'
 import Modal from '@/components/ui/modal'
@@ -86,6 +84,23 @@ export default function FifthSection() {
     }
   ]
 
+  const getContent = (type: IsOpen) => {
+    switch(type){
+      case 'Conforme': 
+        const [conform] = content.filter(el => el.type === type)
+        return conform
+      case 'Influente': 
+        const [influente] = content.filter(el => el.type === type)
+        return influente
+      case 'Dominante': 
+        const [dominante] = content.filter(el => el.type === type)
+        return dominante
+      case 'Estável': 
+        const [estavel] = content.filter(el => el.type === type)
+        return estavel
+    }
+  }
+
   return (
     <>
       <S.Container>
@@ -115,16 +130,50 @@ export default function FifthSection() {
         </S.Wrapper>
       </S.Container>
 
-      {content.filter(el => el.type === isOpen).map((item, index) => <Modal key={index}>
+      {isOpen === 'Conforme' ? <Modal>
         <BehavioralProfileCards 
-          title={item.type}
+          title={getContent('Conforme').type}
           points={{
-            strong: item.strong,
-            weak: item.weak,
+            strong: getContent('Conforme').strong,
+            weak: getContent('Conforme').weak,
           }}
           onClose={() => setIsOpen(null)}
         />
-      </Modal>)}
+      </Modal> : null}
+
+      {isOpen === 'Estável' ? <Modal>
+        <BehavioralProfileCards 
+          title={getContent('Estável').type}
+          points={{
+            strong: getContent('Estável').strong,
+            weak: getContent('Estável').weak,
+          }}
+          onClose={() => setIsOpen(null)}
+        />
+      </Modal> : null}
+
+      {isOpen === 'Dominante' ? <Modal>
+        <BehavioralProfileCards 
+          title={getContent('Dominante').type}
+          points={{
+            strong: getContent('Dominante').strong,
+            weak: getContent('Dominante').weak,
+          }}
+          onClose={() => setIsOpen(null)}
+        />
+      </Modal> : null}
+
+
+      {isOpen === 'Influente' ? <Modal>
+        <BehavioralProfileCards 
+          title={getContent('Influente').type}
+          points={{
+            strong: getContent('Influente').strong,
+            weak: getContent('Influente').weak,
+          }}
+          onClose={() => setIsOpen(null)}
+        />
+      </Modal> : null}
       
     </>
 
