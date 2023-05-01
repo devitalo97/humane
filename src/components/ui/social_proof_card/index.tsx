@@ -19,6 +19,7 @@ export default function SocialProofCard({
   src,
 }: Props) {
   return (
+    <S.Container>
     <S.Wrapper>
       <S.Quote />
       <S.ImageWrapper style={prata.style}>
@@ -48,5 +49,6 @@ export default function SocialProofCard({
         </S.Footer>
       </S.TextGroup>
     </S.Wrapper>
+    </S.Container>
   )
 }

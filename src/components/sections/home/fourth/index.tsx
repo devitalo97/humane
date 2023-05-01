@@ -10,6 +10,7 @@ import person_matheus from '@/assets/svgs/person_matheus.svg'
 import person_peterson from '@/assets/svgs/person_peterson.svg'
 import person_neres from '@/assets/svgs/person_neres.svg'
 import person_italo from '@/assets/svgs/person_italo.svg'
+import { Carousel } from '@/components/ui/carousel'
 
 const inter = Inter({subsets: ['latin']})
 
@@ -33,12 +34,12 @@ export default function FourthSection() {
       name: 'Ítalo de Souza',
       occupation: 'Desenvolvedor'
     },
-    // {
-    //   src: person_bruna,
-    //   comment: 'Descobrir meu perfil comportamental foi uma experiência muito valiosa. Me ajudou a entender melhor quem sou, como posso me comunicar de maneira mais eficaz. Eu super recomendo!!!',
-    //   name: 'Bruna Almeida',
-    //   occupation: 'Designer de Produto'
-    // },
+    {
+      src: person_bruna,
+      comment: 'Descobrir meu perfil comportamental foi uma experiência muito valiosa. Me ajudou a entender melhor quem sou, como posso me comunicar de maneira mais eficaz. Eu super recomendo!!!',
+      name: 'Bruna Almeida',
+      occupation: 'Designer de Produto'
+    },
     {
       src: person_matheus,
       comment: 'A análise comportamental foi crucial para alinhar as lacunas que faltavam pra entender meu comportamento diante do trabalho, família, relacionamento e ambiente social.',
@@ -58,7 +59,17 @@ export default function FourthSection() {
         <S.Header style={inter.style}>
           O que os clientes dizem
         </S.Header>
-        <S.CardWrapper>
+        <Carousel>
+          {[...cards, ...cards].map((card, index) => <SocialProofCard 
+              key={index}
+              name={card.name}
+              occupation={card.occupation}
+              comment={card.comment}
+              src={card.src}
+            />)}
+        </Carousel>
+
+        {/* <S.CardWrapper>
           {cards.map((card, index) => <SocialProofCard 
             key={index}
             name={card.name}
@@ -66,7 +77,7 @@ export default function FourthSection() {
             comment={card.comment}
             src={card.src}
           />)}
-        </S.CardWrapper>
+        </S.CardWrapper> */}
       </S.Wrapper>
     </S.Container>
   )

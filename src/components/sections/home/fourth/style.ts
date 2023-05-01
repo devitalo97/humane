@@ -8,13 +8,11 @@ export const Container = styled.div`
 export const Hedaer = styled.p``
 
 export const Wrapper = styled.div`
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 10em;
     height: 100%;
+    display: grid;
+    place-content: center;
+    place-items: center;
+    gap: 2em;
     ${Section}
 `
 

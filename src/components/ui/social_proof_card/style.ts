@@ -2,15 +2,27 @@ import { Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
 import { RiDoubleQuotesL } from 'react-icons/ri'
 
+export const Container = styled.div`
+    border-radius: 8px;
+    border: none;
+    width: 280px;
+    height: 450px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+`
+
 export const Wrapper = styled.div`
     background-color: var(--white-color);
     border-radius: 8px;
     border: none;
-    width: 100%;
+    width: 280px;
     height: 380px;
     padding: 1em;
     position: relative;
 `
+
+
 export const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
