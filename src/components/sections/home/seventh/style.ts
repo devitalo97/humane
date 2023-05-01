@@ -7,7 +7,7 @@ export const Container = styled.div`
     grid-template-columns: 1fr .75fr;
     grid-gap: 10%;
     background: var(--white-color);
-    padding-left: 10%;
+    padding-left: 5%;
 `;
 
 export const Wrapper = styled.div`

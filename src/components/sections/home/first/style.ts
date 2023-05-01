@@ -6,15 +6,24 @@ export const Container = styled.div`
     background-image: url(/background_first.svg);
     background-size: cover;
     background-position: center center;
+
+    @media screen and (max-width: 480px){
+        background-size: 300% !important;
+        background-position: center center !important;
+    }
 `;
 
 export const Wrapper = styled.div`
-
     position: relative;
     height: 100%;
     display: flex;
     align-items: center;
     ${Section}
+
+    @media screen and (max-width: 480px){
+        padding: 20% 5% !important;
+        align-items: flex-end;    
+    }
 
 `
 export const ImageWrapper = styled.div`
@@ -27,6 +36,9 @@ export const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
     gap: 4em;
+    @media screen and (max-width: 480px){
+        gap: 5em !important;
+    }
 `
 
 
@@ -50,16 +62,23 @@ export const Text = styled.p<IText>`
 `
 
 export const TextLG = styled(Text)`
-    font-size: clamp(2.125rem, 1.8476rem + 1.5854vw, 3rem);
+    font-size: clamp(1.75rem, 1.8476rem + 1.5854vw, 2.5rem);
     font-weight: 400;
     letter-spacing: 0em;
     text-align: left;
+    @media screen and (max-width: 480px){
+        font-size: 32px !important;
+    }
 `
 
 export const TextM = styled(Text)`
     font-family: Manjari;
-    font-size: clamp(1.5rem, 1.2439rem + 1.4634vw, 2.5rem);
+    font-size: clamp(1.5rem, 1.2439rem + 1.4634vw, 2rem);
     font-weight: 400;
     letter-spacing: 0em;
     text-align: left;
+
+    @media screen and (max-width: 480px){
+        font-size: 24px !important;
+    }
 `

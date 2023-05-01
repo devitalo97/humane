@@ -19,10 +19,10 @@ export const Wrapper = styled.div`
     ${Section}
 
     @media screen and (max-width: 480px){
-        grid-template-rows: 1fr .6fr;
+        grid-template-rows: 1fr !important;
         grid-template-columns: unset;
         gap: 2em;
-        padding: 5%;
+        padding: 10% 5%;
         height: fit-content;
     }
 

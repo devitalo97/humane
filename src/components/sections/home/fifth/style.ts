@@ -25,6 +25,13 @@ export const Wrapper = styled.div`
     display: flex;
     justify-content: flex-end;
     align-items: center;
+
+    @media screen and (max-width: 480px){
+        height: 100% !important;
+        width: 100% !important;
+        border-radius: unset !important;
+    }
+    
 `
 export const ImageWrapper = styled.div`
     position: relative;
@@ -41,9 +48,30 @@ export const TextWrapper = styled.div`
     flex-direction: column;
     gap: 1em;
     height: 100%;
-    padding: 3% 5%;
+    width: 50%;
+    padding: 5%;
+    @media screen and (max-width: 480px){
+        padding: 20% 10% !important;
+        width: 100%;
+        ::before {
+            position: absolute;
+            content: '';
+            inset: 5%;
+            background: rgba(255, 255, 255, 0.25);
+            opacity: 0.4;
+            border-radius: 3em;
+            box-shadow: 12px 10px 28px -3px rgba(0,0,0,0.1);
+        }
+    }
 `
+export const HeaderGroup = styled.div`
+    display: flex;
+    flex-direction: column;
 
+    @media screen and (max-width: 480px){
+        align-items: center !important;
+    }
+`
 
 export type ITextGroup = {
     gap?: string
@@ -103,14 +131,25 @@ export const TextLG = styled(Text)`
     font-weight: 700;
     font-size: 32px;
     line-height: 39px;
-    `
+
+    @media screen and (max-width: 480px){
+        font-size: 24px !important;
+        line-height: 29.05px !important;
+        text-align: center;
+    }   
+`
 
 export const TextSM = styled(Text)`
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
-    `
+
+    @media screen and (max-width: 480px){
+        font-size: 14px !important;
+        line-height: 16px !important;
+    }   
+`
 
 export const Box = styled.div`
     background: rgba(255, 255, 255, 0.4);

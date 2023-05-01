@@ -8,12 +8,11 @@ export default function Navbar() {
   return (
     <S.Container>
       <S.Wrapper>
-        <Link href={"/"}><S.Text><Logo /></S.Text></Link>
+        <Logo />
         <S.Nav>
+          <Link href={"/services"}><S.Text style={inter.style}>Serviços</S.Text></Link>
           <Link href={"/gallery"}><S.Text style={inter.style}>Galeria</S.Text></Link>
           <Link href={"/blog"}><S.Text style={inter.style}>Blog</S.Text></Link>
-          <Link href={"/gallery"}><S.Text style={inter.style}>Linkedin</S.Text></Link>
-          <Link href={"/blog"}><S.Text style={inter.style}>Instagram</S.Text></Link>
         </S.Nav>
       </S.Wrapper>
     </S.Container>

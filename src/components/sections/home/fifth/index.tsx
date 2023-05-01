@@ -91,18 +91,14 @@ export default function FifthSection() {
       <S.Container>
         <S.Wrapper>
           <S.TextWrapper>
-            <S.TextGroup>
+            <S.HeaderGroup>
               <S.Line>
                 <S.TextLG style={inter.style}>
                 Pontos Fortes e Pontos Fracos 
+                de cada perfil     
                 </S.TextLG>
               </S.Line>
-              <S.Line>
-                <S.TextLG style={inter.style}>
-                  de cada perfil     
-                </S.TextLG>
-              </S.Line>
-            </S.TextGroup>
+            </S.HeaderGroup>
             <S.TextGroup height='100%'>
               {texts.map((text: IsOpen, index: number) => {
                 return (<>

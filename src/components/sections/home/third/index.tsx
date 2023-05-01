@@ -17,7 +17,7 @@ export default function ThirdSection() {
     <S.Container>
       <S.Wrapper>
         <S.TextWrapper>
-          <S.TextGroup>
+          <S.HeaderGroup>
             <S.Line>
               <S.TextLG style={inter.style}>
                 Como a análise de perfil         
@@ -28,7 +28,7 @@ export default function ThirdSection() {
                 comportamental pode te ajudar?    
               </S.TextLG>
             </S.Line>
-          </S.TextGroup>
+          </S.HeaderGroup>
           <S.TextGroup height='100%'>
             {texts.map((text: string[], index: number) => {
               return (<>

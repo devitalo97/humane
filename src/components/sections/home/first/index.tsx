@@ -12,10 +12,7 @@ export default function FirstSection() {
           <S.TextGroup>
             <S.Line>
               <S.TextM style={manjari.style}>
-                Quanto 
-              </S.TextM>
-              <S.TextM style={manjari.style}>
-                mais você se conhece,
+                Quanto mais você se conhece,
               </S.TextM>
             </S.Line>
 
