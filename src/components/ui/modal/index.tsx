@@ -16,11 +16,12 @@ export default function Modal({
       body && (body.style.overflow = 'auto')
     };
   }, []);
-    return <>
+    return ReactDOM.createPortal(
       <S.Container>
         <S.Wrapper>
           {children}
         </S.Wrapper>
       </S.Container>,
-    </>
+      document.getElementById('__modal') as HTMLElement
+    );
   }

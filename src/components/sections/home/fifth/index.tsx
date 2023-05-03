@@ -118,7 +118,11 @@ export default function FifthSection() {
               {texts.map((text: IsOpen, index: number) => {
                 return (<>
                   <Button 
-                    onClick={() => setIsOpen(text)}
+                    onClick={() => {
+                      alert(1)
+                      console.log(1)
+                      setIsOpen(text)
+                    }}
                     width="100%" 
                     text={text} 
                     secondary
