@@ -40,7 +40,7 @@ export default function SecondSection() {
               </S.TextSM>
             </S.Line>
           </S.TextGroup>
-          <Button text='Faça seu relatório aqui'/>
+          <Button text='Conheça nossos serviços' href='/services'/>
         </S.TextWrapper>
       </S.Wrapper>
     </S.Container>

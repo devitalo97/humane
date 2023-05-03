@@ -18,7 +18,7 @@ export default function Modal({
   }, []);
     return ReactDOM.createPortal(
       <S.Container>
-        <S.Wrapper className="modal">
+        <S.Wrapper>
           {children}
         </S.Wrapper>
       </S.Container>,

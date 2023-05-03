@@ -8,7 +8,7 @@ export const Container = styled.div`
 export const Wrapper = styled.div`
     display: flex;
     width: 100%;
-    height: fit-content;
+    height: 100%;
     overflow-x: scroll;
     scroll-behavior: smooth;
     user-select: none;
@@ -20,7 +20,7 @@ export const Wrapper = styled.div`
 
 export const Item = styled.div`
     flex: none;
-    height: fit-content;
+    height: 100%;
 `
 
 export const Navigation = styled.div`
