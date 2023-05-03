@@ -6,11 +6,6 @@ export const Container = styled.div`
     background-image: url(/background_first.svg);
     background-size: cover;
     background-position: center center;
-
-    @media screen and (max-width: 480px){
-        background-size: 300% !important;
-        background-position: center center !important;
-    }
 `;
 
 export const Wrapper = styled.div`
@@ -21,7 +16,7 @@ export const Wrapper = styled.div`
     ${Section}
 
     @media screen and (max-width: 480px){
-        padding: 20% 5% !important;
+        padding: 20% 5% 40% 5% !important;
         align-items: flex-end;    
     }
 

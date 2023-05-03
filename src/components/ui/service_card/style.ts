@@ -11,11 +11,10 @@ export const Wrapper = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     height: 100%;
     width: 100%;
     gap: 1em;
-    padding: 30% 0;
 `
 
 export type IText = {
