@@ -1,6 +1,7 @@
+import FirstSection from '@/components/sections/blog/first'
 import Head from 'next/head'
 
-export default function Blog() {
+export default function Services() {
   return (
     <>
       <Head>
@@ -10,7 +11,7 @@ export default function Blog() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        Blog
+        <FirstSection />
       </main>
     </>
   )
