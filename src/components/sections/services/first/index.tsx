@@ -44,6 +44,7 @@ export default function FirstSection() {
       src: recrutamentoIcon
     }
   ]
+  
   return (
     <S.Container>
       <S.NavGhost/>

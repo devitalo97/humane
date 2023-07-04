@@ -6,6 +6,7 @@ export const Container = styled.div`
     height: fit-content;
     padding-bottom: 1em;
     box-shadow: inset 0 -1px 0 rgba(230, 230, 230, 1);
+    margin-bottom: 1em;
 `
 
 export const Wrapper = styled.div`
@@ -50,7 +51,7 @@ export const Title = styled.p`
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 34px;
     color: #000000;
 `
@@ -59,7 +60,7 @@ export const Author = styled.p`
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
-    font-size: 22px;
+    font-size: 18px;
     line-height: 27px;
     color: #000000;
 `
@@ -68,7 +69,7 @@ export const Content = styled.p`
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 22px;
     color: #5F5F5F;
 `

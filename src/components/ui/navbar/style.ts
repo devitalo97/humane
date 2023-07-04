@@ -13,6 +13,15 @@ export const Container = styled.div`
     box-shadow: 12px 10px 28px -3px rgba(0,0,0,0.1);
 `
 
+export const Title = styled.p`
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    letter-spacing: 0.02em;
+    color: #E48D00;
+`
+
 export const Wrapper = styled.div`
     display: flex;
     align-items: center;
@@ -23,6 +32,12 @@ export const Wrapper = styled.div`
         > nav {
             display: none;
         }
+    }
+
+    > span {
+        display: flex;
+        align-items: center;
+        gap: 1em;
     }
 `
 

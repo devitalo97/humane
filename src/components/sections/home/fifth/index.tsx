@@ -119,8 +119,6 @@ export default function FifthSection() {
                 return (<>
                   <Button 
                     onClick={() => {
-                      alert(1)
-                      console.log(1)
                       setIsOpen(text)
                     }}
                     width="100%" 

@@ -2,11 +2,12 @@ import { Inter } from 'next/font/google'
 import * as S from './style'
 import blogThumb from "@/assets/svgs/blog_thumb.svg"
 import BlogCard from '@/components/ui/blog_card'
+import { RiSearch2Fill, RiSearchLine } from 'react-icons/ri'
 
 
-const inter = Inter({subsets: ['latin']})
+const inter = Inter({ subsets: ['latin'] })
 
-export default function FirstSection() {
+export default function SearchSection() {
   const cards = [
     {
       author: 'Luiz Ricardo',
@@ -47,10 +48,23 @@ export default function FirstSection() {
   ]
   return (
     <S.Container>
-      <S.NavGhost/>
+      <S.NavGhost />
       <S.Content>
-        <S.Title style={inter.style}>Blog</S.Title>
-        {[...cards, ...cards].map((card, index) => <BlogCard 
+        <S.SearchBox>
+          <S.SeachBoxHeader>
+            <h1 style={inter.style}>Faça sua busca</h1>
+          </S.SeachBoxHeader>
+          <S.SeachBoxContent>
+            <RiSearchLine />
+            <input
+              type='search' 
+              placeholder='Pesquise pelo tema de interesse' 
+              maxLength={2048}
+            />
+          </S.SeachBoxContent>
+        </S.SearchBox>
+        <S.CardGroup>
+          {cards.map((card, index) => <BlogCard
             key={index}
             title={card.title}
             date={card.date}
@@ -60,6 +74,7 @@ export default function FirstSection() {
             category={card.category}
             src={card.src}
           />)}
+        </S.CardGroup>
       </S.Content>
     </S.Container>
   )

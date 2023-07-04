@@ -12,7 +12,7 @@ interface Props {
   category: string
 }
 
-const inter = Inter({subsets: ['latin']})
+const inter = Inter({ subsets: ['latin'] })
 
 export default function BlogCard({
   src,
@@ -38,7 +38,7 @@ export default function BlogCard({
             <S.Category style={inter.style}>{category}</S.Category>
           </div>
         </S.TextWrapper>
-        <S.ImageWrapper><Image src={src} alt="icon"/></S.ImageWrapper>
+        <S.ImageWrapper><Image src={src} alt="icon" /></S.ImageWrapper>
       </S.Wrapper>
     </S.Container>
   )
