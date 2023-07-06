@@ -16,7 +16,7 @@ export const Container = styled.div`
 export const Title = styled.p`
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
+    font-size: 18px;
     line-height: 44px;
     letter-spacing: 0.02em;
     color: #E48D00;

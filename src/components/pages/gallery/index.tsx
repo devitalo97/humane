@@ -1,3 +1,4 @@
+import FirstSection from '@/components/sections/gallery/first'
 import Head from 'next/head'
 
 export default function Gallery() {
@@ -10,7 +11,7 @@ export default function Gallery() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        galleryasdasdasdasdasdasdasdasdasdasdasdasdasd
+        <FirstSection />
       </main>
     </>
   )

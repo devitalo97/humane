@@ -1,11 +1,15 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     display: grid;
     width: 100%;
     overflow: hidden;
 `
-export const Wrapper = styled.div`
+
+interface IWrapper {
+    gap?: string
+}
+export const Wrapper = styled.div<IWrapper>`
     display: flex;
     width: 100%;
     height: 100%;
@@ -13,6 +17,9 @@ export const Wrapper = styled.div`
     scroll-behavior: smooth;
     user-select: none;
     gap: min(2%, .75rem);
+    ${({gap}) => gap && css`
+        gap: ${gap};
+    `}
     ::-webkit-scrollbar {
         display: none;
     }

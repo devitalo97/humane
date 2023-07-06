@@ -3,6 +3,7 @@ import * as S from './styled'
 
 interface Props {
   children: React.ReactNode[]
+  gap?: string
 }
 export const Carousel = (props: Props) => {
   const ref = useRef<any>(null)
@@ -80,6 +81,7 @@ export const Carousel = (props: Props) => {
       onMouseDown={handleMouseDown}
       onMouseMove={handleMouseMove}
       onMouseUp={handleMouseUp}
+      gap={props?.gap}
     >
       {props.children.map((item, index) => <S.Item key={index}>{item}</S.Item>)}
     </S.Wrapper>
