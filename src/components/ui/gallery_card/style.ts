@@ -3,16 +3,22 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     border: none;
-    width: 420px;
+    flex: 30%;
+    width: 100%;
     height: 374px;
     border-radius: 1em;
     ${Background}
     box-shadow: 12px 10px 28px -3px rgba(0,0,0,0.5);
+    :hover{
+        cursor: pointer;
+        scale: 1.05;
+        transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
 `
 
 export const Wrapper = styled.div`
     display: grid;
-    grid-template-rows: min-content 1fr;
+    grid-template-rows: 1fr  min-content;
     height: 100%;
     width: 100%;
     gap: 1em;
@@ -20,10 +26,11 @@ export const Wrapper = styled.div`
 `
 
 export const TextContent = styled.div`
-    padding: 1.5em min(2%, .75rem) 0 min(2%, .75rem);
+    padding: 0 min(5%, 1em) 5% min(5%, 1em);
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    align-items: flex-start;
+    gap: .75em;
 `
 
 export type IText = {

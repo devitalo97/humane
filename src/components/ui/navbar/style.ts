@@ -1,4 +1,4 @@
-import { Section } from '@/styles/mixin'
+import { Background, Section } from '@/styles/mixin'
 import styled from 'styled-components'
 
 export const Container = styled.div`
@@ -10,7 +10,7 @@ export const Container = styled.div`
     position: fixed;
     width: 100%;
     z-index: 1000;
-    box-shadow: 12px 10px 28px -3px rgba(0,0,0,0.1);
+    ${Background}
 `
 
 export const Title = styled.p`

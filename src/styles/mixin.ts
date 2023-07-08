@@ -1,6 +1,6 @@
-export const Section = `
+export const Section = ({ padding }: { padding?: string }) => `
     margin: 0 auto;
-    padding: 0 5%;
+    padding: ${padding ? padding : '0 5%'};
     width: 100%;
 `
 export const Background = `

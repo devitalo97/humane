@@ -2,23 +2,22 @@ import { Background, Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-    height: 100vh;
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
+    height: fit-content;
+    background-color: var(--white-color);
 `;
 
 export const NavGhost = styled.div`
-    background-color: var(--dark-color);
     height: var(--header-height);
     width: 100%;
 `
 
 export const Content = styled.div`
-    display: grid;
-    height: 100%;
-    grid-template-rows: 1fr;
-    place-items: center;
-    background-color: var(--white-color);
+    ${Section({padding: '2em 5%'})}
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: max(2em, 2%);
 `
 
 export const Header = styled.div`
