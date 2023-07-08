@@ -11,7 +11,7 @@ export default function ThirdSection() {
     ["Vai conseguir se relacionar de forma mais", "harmoniosa com todos que o cerca."],
     ["Vai conseguir se relacionar com pessoas de", "personalidade diferente da sua."],
     ["Vai melhorar seu desempenho na área profissional."],
-    ["Vai se comunicar de uma forma que todos te", "entendam e ao mesmo tempo evitar conflitos", "por ruidos na sua comunicação"]
+    ["Vai se comunicar de uma forma que todos te", "entendam e ao mesmo tempo evitar conflitos"]
   ]
   return (
     <S.Container>

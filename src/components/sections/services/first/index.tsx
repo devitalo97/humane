@@ -9,12 +9,14 @@ import remanejamentoColaboradoresIcon from "@/assets/svgs/services/remanejamento
 import identificacaoTalentosIcon from "@/assets/svgs/services/identificacao_talentos.svg"
 import analiseEquipesIcon from "@/assets/svgs/services/analise_equipes.svg"
 import recrutamentoIcon from "@/assets/svgs/services/recrutamento_selecao.svg"
+import { useState } from 'react'
+import ServiceModal from '@/components/ui/service_modal'
 
 
-const inter = Inter({subsets: ['latin']})
+const inter = Inter({ subsets: ['latin'] })
 
 export default function FirstSection() {
-    const cards = [
+  const cards = [
     {
       name: 'Orientação de carreiras',
       src: orientacaoCarreiraIcon
@@ -44,40 +46,43 @@ export default function FirstSection() {
       src: recrutamentoIcon
     }
   ]
-  
+
+  const [isOpen, setIsOpen] = useState<boolean>(false)
   return (
     <S.Container>
-      <S.NavGhost/>
+      <S.NavGhost />
       <S.Content>
         <S.Header>
-            <S.TextLG dark style={inter.style}>
-                Serviços
-            </S.TextLG>
-            <S.TextGroup gap='1em'>
-                <S.Line>
-                  <S.TextInfo 
-                    dark 
-                    style={inter.style}
-                  >
-                    Acreditamos que o autoconhecimento é a chave para o desenvolvimento pessoal e profissional, e é por isso que nossa empresa se dedica a ajudar as pessoas a se conhecerem melhor.
-                  </S.TextInfo>
-                </S.Line>
-                <S.Line>
-                    <S.TextM dark style={inter.style}>
-                        Oferecemos uma variedade de serviços:
-                    </S.TextM>
-                </S.Line>
-            </S.TextGroup>
+          <S.TextLG dark style={inter.style}>
+            Serviços
+          </S.TextLG>
+          <S.TextGroup gap='1em'>
+            <S.Line>
+              <S.TextInfo
+                dark
+                style={inter.style}
+              >
+                Acreditamos que o autoconhecimento é a chave para o desenvolvimento pessoal e profissional, e é por isso que nossa empresa se dedica a ajudar as pessoas a se conhecerem melhor.
+              </S.TextInfo>
+            </S.Line>
+            <S.Line>
+              <S.TextM dark style={inter.style}>
+                Oferecemos uma variedade de serviços:
+              </S.TextM>
+            </S.Line>
+          </S.TextGroup>
         </S.Header>
         <Carousel>
-          {[...cards, ...cards].map((card, index) => <ServiceCard 
-              key={index}
-              name={card.name}
-              src={card.src}
-            />)}
+          {[...cards, ...cards].map((card, index) => <ServiceCard
+            key={index}
+            name={card.name}
+            src={card.src}
+            onClick={() => setIsOpen(true)}
+          />)}
         </Carousel>
       </S.Content>
-      <S.FooterGhost/>
+      <S.FooterGhost />
+      {isOpen && <ServiceModal service={{ title: "", description: "" }} onClose={() => setIsOpen(false)} />}
     </S.Container>
   )
 }

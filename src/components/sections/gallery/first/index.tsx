@@ -1,9 +1,8 @@
 import { Inter } from 'next/font/google'
 import * as S from './style'
-import { Carousel } from '@/components/ui/carousel'
 import galleryThumb from "@/assets/png/thumb_gallery.png"
 import GalleryCard from '@/components/ui/gallery_card'
-import GalleryCarousel from '@/components/ui/gallery_carousel'
+import GalleryModal from '@/components/ui/gallery_modal'
 import { useState } from 'react'
 
 
@@ -72,7 +71,7 @@ export default function FirstSection() {
           onClick={() => setIsOpen(true)}
         />)}
       </S.Content>
-      {isOpen && <GalleryCarousel photos={[]} onClose={() => setIsOpen(false)} />}
+      {isOpen && <GalleryModal photos={[]} onClose={() => setIsOpen(false)} />}
     </S.Container>
   )
 }

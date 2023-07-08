@@ -1,4 +1,4 @@
-import { Section } from "@/styles/mixin";
+import { Background, Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
@@ -15,7 +15,7 @@ export const NavGhost = styled.div`
 `
 
 export const FooterGhost = styled.div`
-    background-color: var(--dark-color);
+    ${Background}
     height: 1.5em;
     width: 100%;
 `

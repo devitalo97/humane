@@ -5,36 +5,33 @@ import { Carousel } from "../carousel";
 import { RiCloseLine } from "react-icons/ri";
 
 interface Props {
-  photos: {
-    src: string
+  service: {
+    title: string
     description: string
-  }[]
+  }
   onClose: Function
 }
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function GalleryCarousel({
-  photos,
+export default function ServiceModal({
+  service,
   onClose
 }: Props) {
   return (
     <S.Container>
       <S.Wrapper>
         <S.Header>
-          <RiCloseLine color="white" onClick={() => onClose()}/>
+          <RiCloseLine color="var(--dark-color)" onClick={() => onClose()}/>
         </S.Header>
-        <Carousel>
-          {photos.map((card, index) => <S.CardContainer key={index}>
+          <S.CardContainer>
             <S.CardContent>
-              <Image src={card.src} alt="a" />
+              <S.Text>{service?.title}</S.Text>
             </S.CardContent>
             <S.CardFooter>
-              <S.Text>{card.description}</S.Text>
+              <S.Text>{service?.description}</S.Text>
             </S.CardFooter>
           </S.CardContainer>
-          )}
-        </Carousel>
       </S.Wrapper>
     </S.Container>
   )

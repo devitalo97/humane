@@ -24,7 +24,7 @@ export default function SecondSection() {
             <S.TextGroup>
               <S.Line>
                 <S.TextLG style={inter.style}>
-                Relatório de          
+                Análise de          
                 </S.TextLG>
               </S.Line>
               <S.Line>
@@ -36,7 +36,7 @@ export default function SecondSection() {
 
             <S.Line>
               <S.TextSM bw style={inter.style}>
-                Através do relatório, você vai compreender a sua personalidade, suas competências mais importantes, seus pontos fortes e as oportunidades de melhoria. Assim, é possível promover tanto o desenvolvimento pessoal quanto o profissional. Pesquisas na área do desenvolvimento humano mostram que os indivíduos mais eficazes são aqueles que se conhecem melhor. 
+              Quantas vezes você já foi chamado de mandão? Talvez rotulado como chato ou distraído, quem sabe até indeciso. Essas palavras podem ter ecoado em sua vida, causando confusão e dor. Mas há uma luz que pode iluminar seu caminho: a importância de se conhecer através da Análise de Perfil Comportamental.
               </S.TextSM>
             </S.Line>
           </S.TextGroup>
