@@ -31,4 +31,9 @@ export const Wrapper = styled.button<IWrapper>`
         width: ${width};
     `}
 
+
+    :hover {
+        cursor: pointer;
+    }
+
 `

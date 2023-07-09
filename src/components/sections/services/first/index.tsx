@@ -2,52 +2,26 @@ import { Inter } from 'next/font/google'
 import * as S from './style'
 import { Carousel } from '@/components/ui/carousel'
 import ServiceCard from '@/components/ui/service_card'
-import orientacaoCarreiraIcon from "@/assets/svgs/services/orientacao_carreira.svg"
-import desenvolvimentoLiderIcon from "@/assets/svgs/services/desenvolvimento_lider.svg"
-import gerenciamentoPessoasIcon from "@/assets/svgs/services/gerenciamento_pessoas.svg"
-import remanejamentoColaboradoresIcon from "@/assets/svgs/services/remanejamento_colaboradores.svg"
-import identificacaoTalentosIcon from "@/assets/svgs/services/identificacao_talentos.svg"
-import analiseEquipesIcon from "@/assets/svgs/services/analise_equipes.svg"
-import recrutamentoIcon from "@/assets/svgs/services/recrutamento_selecao.svg"
 import { useState } from 'react'
 import ServiceModal from '@/components/ui/service_modal'
-
+import { services, Service } from './data'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function FirstSection() {
-  const cards = [
-    {
-      name: 'Orientação de carreiras',
-      src: orientacaoCarreiraIcon
-    },
-    {
-      name: 'Desenvolvimento de líderes',
-      src: desenvolvimentoLiderIcon
-    },
-    {
-      name: 'Gerenciamento de pessoas',
-      src: gerenciamentoPessoasIcon
-    },
-    {
-      name: 'Remanejamento de Colaboradores',
-      src: remanejamentoColaboradoresIcon
-    },
-    {
-      name: 'Identificações de talentos',
-      src: identificacaoTalentosIcon
-    },
-    {
-      name: 'Análise de equipes',
-      src: analiseEquipesIcon
-    },
-    {
-      name: 'Recrutamento e Seleção',
-      src: recrutamentoIcon
-    }
-  ]
-
   const [isOpen, setIsOpen] = useState<boolean>(false)
+  const [service, setService] = useState<Service>({} as Service)
+
+  const handleOnClick = (service: Service) => {
+    setIsOpen(true)
+    setService(service)
+  }
+
+  const handleOnClose = () => {
+    setIsOpen(false)
+    setService({} as Service)
+  }
+
   return (
     <S.Container>
       <S.NavGhost />
@@ -73,16 +47,16 @@ export default function FirstSection() {
           </S.TextGroup>
         </S.Header>
         <Carousel>
-          {[...cards, ...cards].map((card, index) => <ServiceCard
+          {[...services, ...services].map((card, index) => <ServiceCard
             key={index}
-            name={card.name}
+            title={card.title}
             src={card.src}
-            onClick={() => setIsOpen(true)}
+            onClick={() => handleOnClick(card)}
           />)}
         </Carousel>
       </S.Content>
       <S.FooterGhost />
-      {isOpen && <ServiceModal service={{ title: "", description: "" }} onClose={() => setIsOpen(false)} />}
+      {isOpen && <ServiceModal service={service} onClose={handleOnClose} />}
     </S.Container>
   )
 }

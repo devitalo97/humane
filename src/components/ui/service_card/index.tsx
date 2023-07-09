@@ -3,7 +3,7 @@ import * as S from "./style";
 import { Inter } from "next/font/google";
 
 interface Props {
-  name: string
+  title: string
   src: string
   onClick: React.MouseEventHandler<HTMLDivElement>
 }
@@ -11,14 +11,14 @@ const inter = Inter({subsets: ['latin'], weight: "500"})
 
 export default function ServiceCard({
   src,
-  name,
+  title,
   onClick
 }: Props) {
   return (
     <S.Container onClick={onClick}>
       <S.Wrapper>
         <Image src={src} alt="icon"/>
-        <S.TextSM style={inter.style}>{name}</S.TextSM>
+        <S.TextSM style={inter.style}>{title}</S.TextSM>
       </S.Wrapper>
     </S.Container>
   )
