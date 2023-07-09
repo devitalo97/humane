@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     border: none;
-    flex: 30%;
+    flex: 33%;
     width: 100%;
     height: 374px;
     border-radius: 1em;
@@ -13,6 +13,9 @@ export const Container = styled.div`
         cursor: pointer;
         scale: 1.05;
         transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    @media screen and (max-width: 560px){
+        flex: 100%;
     }
 `
 

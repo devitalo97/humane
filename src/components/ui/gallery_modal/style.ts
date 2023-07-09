@@ -16,18 +16,45 @@ export const Wrapper = styled.div`
     width: 100%;
     border-radius: 0.875rem;
     background: rgba(0, 0, 0, 0.50);
+    display: grid;
+    grid-template-rows: min-content 1fr;
 `
 
 export const Header = styled.div`
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     padding: 2%;
 `
 
-export const CardContainer = styled.div``
-export const CardContent = styled.div``
+export const CardContainer = styled.div`
+    display: grid;
+    grid-template-rows: 1fr min-content;
+    gap: 2%;
+    padding: 0 2% 2%;
+`
+export const CardContent = styled.div`
+    position: relative;
+`
 export const CardFooter = styled.div``
-export const Text = styled.p``
+
+export const Text = styled.p`
+    text-transform: capitalize;
+    text-align: justify;
+    color: #FFF;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+`
+
+export const Title = styled.p`
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #FFF;
+    font-size: 1.2rem;
+    font-style: normal;
+    line-height: normal;
+`
 
 
 

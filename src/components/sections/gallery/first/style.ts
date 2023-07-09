@@ -18,6 +18,7 @@ export const Content = styled.div`
     justify-content: space-between;
     align-items: center;
     gap: max(2em, 2%);
+    min-height: var(--section-height);
 `
 
 export const Header = styled.div`

@@ -1,77 +1,41 @@
 import { Inter } from 'next/font/google'
 import * as S from './style'
-import galleryThumb from "@/assets/png/thumb_gallery.png"
 import GalleryCard from '@/components/ui/gallery_card'
 import GalleryModal from '@/components/ui/gallery_modal'
 import { useState } from 'react'
+import { Album, gallery } from './data'
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function FirstSection() {
-  const cards = [
-    {
-      title: 'Palestra Apae Nova Venécia',
-      description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      thumb: galleryThumb
-    },
-    {
-      title: 'Palestra Apae Nova Venécia',
-      description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      thumb: galleryThumb
-    },
-    {
-      title: 'Palestra Apae Nova Venécia',
-      description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      thumb: galleryThumb
-    },
-    {
-      title: 'Palestra Apae Nova Venécia',
-      description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      thumb: galleryThumb
-    },
-    {
-      title: 'Palestra Apae Nova Venécia',
-      description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      thumb: galleryThumb
-    },
-    {
-      title: 'Palestra Apae Nova Venécia',
-      description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      thumb: galleryThumb
-    },
-    {
-      title: 'Palestra Apae Nova Venécia',
-      description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      thumb: galleryThumb
-    },
-    {
-      title: 'Palestra Apae Nova Venécia',
-      description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      thumb: galleryThumb
-    },
-    {
-      title: 'Palestra Apae Nova Venécia',
-      description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
-      thumb: galleryThumb
-    }
-  ]
 
+  const [album, setAlbum] = useState<Album>({} as Album)
   const [isOpen, setIsOpen] = useState(false)
+
+  const handleOnClick = (album: Album) => {
+    setIsOpen(true)
+    setAlbum(album)
+  }
+
+  const handleOnClose = () => {
+    setIsOpen(false)
+    setAlbum({} as Album)
+  }
 
   return (
     <S.Container>
       <S.NavGhost />
       <S.Content>
-        {[...cards, ...cards].map((card, index) => <GalleryCard
+        {[...gallery, ...gallery].map((card, index) => <GalleryCard
           key={index}
           title={card.title}
           thumb={card.thumb}
           description={card.description}
-          onClick={() => setIsOpen(true)}
+          onClick={() => handleOnClick(card)}
         />)}
       </S.Content>
-      {isOpen && <GalleryModal photos={[]} onClose={() => setIsOpen(false)} />}
+      {isOpen && <GalleryModal album={album} onClose={handleOnClose} />}
     </S.Container>
   )
 }
