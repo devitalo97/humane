@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     border: none;
-    flex: 33%;
+    flex: 22%;
     width: 100%;
     height: 374px;
     border-radius: 1em;
@@ -21,7 +21,7 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
     display: grid;
-    grid-template-rows: 1fr  min-content;
+    grid-template-rows: 1fr min-content;
     height: 100%;
     width: 100%;
     gap: 1em;

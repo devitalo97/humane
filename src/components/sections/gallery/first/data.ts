@@ -42,4 +42,139 @@ export const gallery: Album[] = [{
             description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
         }
     ]
+},
+{
+    title: 'Palestra Apae Nova Venécia',
+    description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    thumb: galleryThumb,
+    photos: [
+        {
+            src: galleryPhoto0, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto1, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto2, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto3, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto4, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        }
+    ]
+},
+{
+    title: 'Palestra Apae Nova Venécia',
+    description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    thumb: galleryThumb,
+    photos: [
+        {
+            src: galleryPhoto0, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto1, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto2, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto3, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto4, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        }
+    ]
+},
+{
+    title: 'Palestra Apae Nova Venécia',
+    description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    thumb: galleryThumb,
+    photos: [
+        {
+            src: galleryPhoto0, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto1, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto2, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto3, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto4, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        }
+    ]
+},
+{
+    title: 'Palestra Apae Nova Venécia',
+    description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    thumb: galleryThumb,
+    photos: [
+        {
+            src: galleryPhoto0, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto1, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto2, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto3, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto4, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        }
+    ]
+},
+{
+    title: 'Palestra Apae Nova Venécia',
+    description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s",
+    thumb: galleryThumb,
+    photos: [
+        {
+            src: galleryPhoto0, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto1, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto2, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto3, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        },
+        {
+            src: galleryPhoto4, 
+            description: "Issimply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s"
+        }
+    ]
 }]

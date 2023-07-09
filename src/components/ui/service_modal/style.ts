@@ -128,11 +128,11 @@ export const TextArea = styled.textarea`
 export const Button = styled.button`
     border-radius: 10px;
     border: none;
-    height: 2.5em;
+    height: 3em;
     width: 100%;
 
     p {
-        text-transform: uppercase;
+        text-transform: capitalize;
         font-style: normal;
         font-weight: 700;
         font-size: clamp(1rem, 0.9573rem + 0.2439vw, 1rem);

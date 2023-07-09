@@ -24,9 +24,6 @@ export default function GalleryCard({
         </div>
         <S.TextContent>
           <S.TextLG style={inter.style}>{title}</S.TextLG>
-          <div>
-            <S.TextSM style={inter.style}>{description}</S.TextSM>
-          </div>
         </S.TextContent>
       </S.Wrapper>
     </S.Container>
