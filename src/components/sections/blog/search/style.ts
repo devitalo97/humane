@@ -23,11 +23,12 @@ export const Content = styled.div`
 
 export const SearchBox = styled.div`
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     gap: 1em;
-    height: 300px;
+    position: sticky;
+    top: calc(var(--header-height) + 1em);
 `
 
 export const SeachBoxHeader = styled.div`
@@ -41,11 +42,11 @@ export const SeachBoxContent = styled.div`
     user-select: none;
     width: 100%;
     max-width: 768px;
-    margin: 0 auto;
     width: 100%;
     height: 2.6em;
     border-radius: 24px;
     border: 1px solid var(--dark-color);
+    background-color: #fff;
     display: flex;
     gap: 1em;
     align-items: center;
