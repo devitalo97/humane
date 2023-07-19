@@ -1,7 +1,12 @@
 import { Background, Section } from '@/styles/mixin'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
-export const Container = styled.div`
+interface IContainter {
+    isScrolled: boolean
+    inHome: boolean
+}
+
+export const Container = styled.div<IContainter>`
     background-color: transparent;
     height: var(--header-height);
     backdrop-filter: blur(5px);
@@ -10,7 +15,14 @@ export const Container = styled.div`
     position: fixed;
     width: 100%;
     z-index: 1000;
-    ${Background}
+    transition: all .2 cubic-bezier(0.075, 0.82, 0.165, 1);
+    ${({ isScrolled }) => isScrolled && css`
+        transition: all .2 cubic-bezier(0.075, 0.82, 0.165, 1);
+        ${Background}
+    `}
+    ${({ inHome }) => !inHome && css`
+        ${Background}
+    `}
 `
 
 export const Title = styled.p`

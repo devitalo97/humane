@@ -20,10 +20,11 @@ export default function GalleryCard({
     <S.Container onClick={onClick}>
       <S.Wrapper>
         <div style={{ position: 'relative' }}>
-          <Image src={thumb} alt="icon" fill style={{ borderRadius: '1em 1em 0 0', border: 'none' }} />
+          <Image src={thumb} alt="icon" fill style={{ borderRadius: '1em', border: 'none' }} />
         </div>
         <S.TextContent>
           <S.TextLG style={inter.style}>{title}</S.TextLG>
+          <S.TextSM style={inter.style}>22/07/2023</S.TextSM>
         </S.TextContent>
       </S.Wrapper>
     </S.Container>

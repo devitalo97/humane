@@ -1,7 +1,8 @@
 import { Manjari } from 'next/font/google'
 import * as S from './style'
 import Button from '@/components/ui/button'
-
+import LuizRicardo from '@/assets/png/luiz_ricardo.png'
+import Image from 'next/image'
 const manjari = Manjari({subsets: ['latin'], weight: "400"})
 
 export default function FirstSection() {
@@ -54,6 +55,7 @@ export default function FirstSection() {
           </S.TextGroup>
           <Button text='Conheça nossos serviços' href='/services'/>
         </S.TextWrapper>
+        <Image src={LuizRicardo} alt=""/>
       </S.Wrapper>
     </S.Container>
   )

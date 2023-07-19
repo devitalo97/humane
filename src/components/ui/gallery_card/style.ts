@@ -11,7 +11,7 @@ export const Container = styled.div`
     box-shadow: 12px 10px 28px -3px rgba(0,0,0,0.5);
     :hover{
         cursor: pointer;
-        scale: 1.05;
+        scale: 1.01;
         transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
     }
     @media screen and (max-width: 560px){
@@ -21,19 +21,26 @@ export const Container = styled.div`
 
 export const Wrapper = styled.div`
     display: grid;
-    grid-template-rows: 1fr min-content;
+    grid-template-rows: 1fr;
     height: 100%;
     width: 100%;
     gap: 1em;
     border-radius: inherit;
+    position: relative;
 `
 
 export const TextContent = styled.div`
-    padding: 0 min(5%, 1em) 5% min(5%, 1em);
+    padding: 5% min(5%, 1em) 5% min(5%, 1em);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: .75em;
+    gap: .5em;
+    position: absolute;
+    bottom: 0;
+    border-radius: 1em;
+    background-color: rgba(0,0,0,.3);
+    left: 0;
+    right: 0;
 `
 
 export type IText = {

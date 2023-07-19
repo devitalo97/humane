@@ -1,4 +1,4 @@
-import { Background, Section } from "@/styles/mixin";
+import { Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
@@ -12,7 +12,7 @@ export const NavGhost = styled.div`
 `
 
 export const Content = styled.div`
-    ${Section({padding: '2em 5%'})}
+    ${Section({padding: '5%'})}
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

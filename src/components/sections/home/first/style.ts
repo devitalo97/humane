@@ -3,9 +3,9 @@ import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     height: 100vh;
-    background-image: url(/background_first.svg);
-    background-size: cover;
-    background-position: center center;
+    /* background-image: url(/background_first.svg); */
+    /* background-size: cover;
+    background-position: center center; */
 `;
 
 export const Wrapper = styled.div`
@@ -13,6 +13,7 @@ export const Wrapper = styled.div`
     height: 100%;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     ${Section}
 
     @media screen and (max-width: 480px){
