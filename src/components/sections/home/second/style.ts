@@ -9,6 +9,9 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
+    background: -moz-linear-gradient(176deg, rgba(8,15,45,.5) 50%, rgba(9,7,60,.5) 50%, rgba(10,18,61,.7) 100%);
+    background: -webkit-linear-gradient(176deg, rgba(8,15,45,.5) 50%, rgba(9,7,60,.5) 50%, rgba(10,18,61,.7) 100%);
+    background: linear-gradient(176deg, rgba(8,15,45,.5) 50%, rgba(9,7,60,.5) 50%, rgba(10,18,61,.7) 100%);
     position: relative;
     height: 100%;
     display: grid;
@@ -47,7 +50,7 @@ export const Header = styled.div`
 export const TextGroup = styled.div<ITextGroup>`
     display: flex;
     flex-direction: column;
-    ${({gap}) => gap && css`
+    ${({ gap }) => gap && css`
         gap: ${gap};
     `}
 `
@@ -60,10 +63,10 @@ export const Line = styled.div<ILine>`
     display: flex;
     align-items: baseline;
     gap: .5em;
-    ${({width}) => width && css`
+    ${({ width }) => width && css`
         width: ${width};
     `}
-    ${({padding}) => padding && css`
+    ${({ padding }) => padding && css`
         padding: ${padding};
     `}
 `
@@ -76,14 +79,14 @@ export type IText = {
 
 export const Text = styled.p<IText>`
     color: var(--white-color);
-    ${({highlight}) => highlight && css`
+    ${({ highlight }) => highlight && css`
         color: var(--highlight-color);
     `}
-    ${({dark}) => dark && css`
+    ${({ dark }) => dark && css`
         color: var(--dark-color);
     `}
 
-    ${({bw}) => bw && css`
+    ${({ bw }) => bw && css`
         overflow-wrap: break-word;
     `}
 `

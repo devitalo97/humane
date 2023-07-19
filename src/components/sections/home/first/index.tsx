@@ -3,12 +3,17 @@ import * as S from './style'
 import Button from '@/components/ui/button'
 import LuizRicardo from '@/assets/png/luiz_ricardo.png'
 import Image from 'next/image'
-const manjari = Manjari({subsets: ['latin'], weight: "400"})
+const manjari = Manjari({ subsets: ['latin'], weight: "400" })
 
 export default function FirstSection() {
   return (
     <S.Container>
       <S.Wrapper>
+        <S.EllipseGroup>
+          <S.SmallEllipse />
+          <S.MediumEllipse />
+          <S.BigSCircle />
+        </S.EllipseGroup>
         <S.TextWrapper>
           <S.TextGroup>
             <S.Line>
@@ -19,7 +24,7 @@ export default function FirstSection() {
 
             <S.Line>
               <S.TextM style={manjari.style}>
-                mais voce 
+                mais voce
               </S.TextM>
               <S.TextLG highlight style={manjari.style}>
                 cresce
@@ -53,9 +58,9 @@ export default function FirstSection() {
               </S.TextLG>
             </S.Line>
           </S.TextGroup>
-          <Button text='Conheça nossos serviços' href='/services'/>
+          <Button text='Conheça nossos serviços' href='/services' />
         </S.TextWrapper>
-        <Image src={LuizRicardo} alt=""/>
+        {/* <Image src={LuizRicardo} alt="" style={{zIndex: 2}}/> */}
       </S.Wrapper>
     </S.Container>
   )
