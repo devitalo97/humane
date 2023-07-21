@@ -17,8 +17,8 @@ export default function ServiceCard({
   return (
     <S.Container onClick={onClick}>
       <S.Wrapper>
-        <Image src={src} alt="icon"/>
-        <S.TextSM style={inter.style}>{title}</S.TextSM>
+        <Image src={src} alt="icon" />
+        <S.TextSM dark style={inter.style}>{title}</S.TextSM>
       </S.Wrapper>
     </S.Container>
   )

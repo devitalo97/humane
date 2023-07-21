@@ -31,7 +31,7 @@ export const Title = styled.p`
     font-size: 18px;
     line-height: 44px;
     letter-spacing: 0.02em;
-    color: #E48D00;
+    color: var(--highlight-color);
 `
 
 export const Wrapper = styled.div`

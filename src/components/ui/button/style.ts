@@ -9,7 +9,7 @@ export const Wrapper = styled.button<IWrapper>`
     border-radius: 10px;
     border: none;
     height: 3.5em;
-    width: 18em;
+    width: 22em;
 
     p {
         font-family: 'Inter';
@@ -17,7 +17,7 @@ export const Wrapper = styled.button<IWrapper>`
         font-weight: 700;
         font-size: clamp(1rem, 0.9573rem + 0.2439vw, 1rem);
         line-height: 26px;
-        color: #FFFFFF;
+        color: var(--dark-color);
     }
 
     background: var(--highlight-color);

@@ -60,7 +60,6 @@ export default function FirstSection() {
           </S.TextGroup>
           <Button text='Conheça nossos serviços' href='/services' />
         </S.TextWrapper>
-        {/* <Image src={LuizRicardo} alt="" style={{zIndex: 2}}/> */}
       </S.Wrapper>
     </S.Container>
   )

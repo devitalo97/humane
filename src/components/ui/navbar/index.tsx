@@ -32,6 +32,7 @@ export default function Navbar() {
           <S.Title style={inter.style}>{titleByPathname[pathname]}</S.Title>
         </span>
         <S.Nav>
+          <Link href={"/about"}><S.Text style={inter.style}>Sobre</S.Text></Link>
           <Link href={"/services"}><S.Text style={inter.style}>Serviços</S.Text></Link>
           <Link href={"/gallery"}><S.Text style={inter.style}>Galeria</S.Text></Link>
           <Link href={"/blog"}><S.Text style={inter.style}>Blog</S.Text></Link>

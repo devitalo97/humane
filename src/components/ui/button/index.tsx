@@ -29,7 +29,6 @@ export default function Button({
           secondary={secondary}
           width={width}
           onClick={onClick}
-          onTouchMove={() => console.log(111111)}
         >
           <p style={inter.style}>{text}</p>
         </S.Wrapper>

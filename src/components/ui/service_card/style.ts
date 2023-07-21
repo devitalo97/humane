@@ -4,7 +4,8 @@ export const Container = styled.div`
     border: none;
     width: 280px;
     height: 100%;
-    background-color: #E48D00;
+    /* background-color: #E48D00; */
+    background-color: var(--highlight-color);
 `
 
 export const Wrapper = styled.div`
@@ -15,6 +16,7 @@ export const Wrapper = styled.div`
     height: 100%;
     width: 100%;
     gap: 1em;
+
 `
 
 export type IText = {

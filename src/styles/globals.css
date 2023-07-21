@@ -2,7 +2,7 @@
   --dark-color: #0C132E;
   --highlight-color: #F3BC33;
   --white-color: #FFF;
-  --header-height: 5em;
+  --header-height: 4.5em;
   --section-height: calc(100vh - var(--header-height));
 }
 

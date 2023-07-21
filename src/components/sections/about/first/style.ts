@@ -12,7 +12,7 @@ export const NavGhost = styled.div`
 `
 
 export const Content = styled.div`
-    ${Section({padding: '3% 5%'})}
+    ${Section({padding: '5%'})}
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

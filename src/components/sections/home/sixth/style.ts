@@ -2,7 +2,7 @@ import { Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-    height: 60vh;
+    height: var(--section-height);
 `;
 
 export const Wrapper = styled.div`
@@ -28,7 +28,11 @@ export const TextWrapper = styled.div`
     gap: 4em;
 `
 
-export const TextGroup = styled.div``
+export const TextGroup = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+`
 
 type ILine = {
     width?: string
