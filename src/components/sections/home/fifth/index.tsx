@@ -5,7 +5,7 @@ import { useState } from 'react'
 import Modal from '@/components/ui/modal'
 import BehavioralProfileCards from '@/components/ui/behavioral_profile_card'
 
-const inter = Inter({subsets: ['latin']})
+const inter = Inter({ subsets: ['latin'] })
 
 type IsOpen = "Dominante" | 'Influente' | 'Estável' | 'Conforme'
 
@@ -26,7 +26,7 @@ export default function FifthSection() {
         'Assertividade',
         'Determinação',
         'Autoconfiança',
-        'Habilidades de liderança', 
+        'Habilidades de liderança',
         'Capacidade de tomar decisões rapidamente.'
       ],
       weak: [
@@ -39,7 +39,7 @@ export default function FifthSection() {
     {
       type: 'Influente',
       strong: [
-        'Habilidades de comunicação', 
+        'Habilidades de comunicação',
         'Carisma',
         'Entusiasmo',
         'Capacidade de persuasão  Habilidades social'
@@ -55,7 +55,7 @@ export default function FifthSection() {
       type: 'Estável',
       strong: [
         'Lealdade',
-        'Empatia', 
+        'Empatia',
         'Bom relacionamento Interpessoal',
         'Estabilidade emocional  Habilidades de escuta ativa'
       ],
@@ -63,39 +63,39 @@ export default function FifthSection() {
         'Dificuldade em lidar com mudanças',
         'Falta de iniciativa',
         'Falta de assertividade',
-        'Dificuldade em impor limites' 
+        'Dificuldade em impor limites'
       ]
     },
     {
       type: 'Conforme',
       strong: [
-        'Habilidades de organização', 
+        'Habilidades de organização',
         'Pontualidade',
         'Diligência',
-        'Comprometimento', 
+        'Comprometimento',
         'Precisão'
       ],
       weak: [
         'Dificuldade em lidar com mudanças',
         'Falta de iniciativa',
         'Falta de assertividade',
-        'Dificuldade em impor limites' 
+        'Dificuldade em impor limites'
       ]
     }
   ]
 
   const getContent = (type: IsOpen) => {
-    switch(type){
-      case 'Conforme': 
+    switch (type) {
+      case 'Conforme':
         const [conform] = content.filter(el => el.type === type)
         return conform
-      case 'Influente': 
+      case 'Influente':
         const [influente] = content.filter(el => el.type === type)
         return influente
-      case 'Dominante': 
+      case 'Dominante':
         const [dominante] = content.filter(el => el.type === type)
         return dominante
-      case 'Estável': 
+      case 'Estável':
         const [estavel] = content.filter(el => el.type === type)
         return estavel
     }
@@ -105,35 +105,35 @@ export default function FifthSection() {
     <>
       <S.Container>
         <S.Wrapper>
-          <S.TextWrapper>
-            <S.HeaderGroup>
-              <S.Line>
-                <S.TextLG style={inter.style}>
-                Pontos Fortes e Pontos Fracos 
-                de cada perfil     
-                </S.TextLG>
-              </S.Line>
-            </S.HeaderGroup>
-            <S.TextGroup height='100%'>
-              {texts.map((text: IsOpen, index: number) => {
-                return (<>
-                  <Button 
-                    onClick={() => {
-                      setIsOpen(text)
-                    }}
-                    width="100%" 
-                    text={text} 
-                    secondary
-                  />
-                </>)
-              })}
-            </S.TextGroup>
-          </S.TextWrapper>
+          <S.Header>
+            <S.TextLG style={inter.style}>
+              Pontos Fortes e Pontos Fracos de cada perfil
+            </S.TextLG>
+          </S.Header>
+          <S.CardGroup>
+            {texts.map((text: IsOpen, index: number) => {
+              return (<>
+                <S.CardContainter
+                  onClick={() => {
+                    setIsOpen(text)
+                  }}
+                >
+                  <S.CardWrapper>
+                    <S.CardContent>
+                    </S.CardContent>
+                    <S.CardFooter>
+                      <p>{text}</p>
+                    </S.CardFooter>
+                  </S.CardWrapper>
+                </S.CardContainter>
+              </>)
+            })}
+          </S.CardGroup>
         </S.Wrapper>
       </S.Container>
 
       {isOpen === 'Conforme' ? <Modal>
-        <BehavioralProfileCards 
+        <BehavioralProfileCards
           title={getContent('Conforme').type}
           points={{
             strong: getContent('Conforme').strong,
@@ -144,7 +144,7 @@ export default function FifthSection() {
       </Modal> : null}
 
       {isOpen === 'Estável' ? <Modal>
-        <BehavioralProfileCards 
+        <BehavioralProfileCards
           title={getContent('Estável').type}
           points={{
             strong: getContent('Estável').strong,
@@ -155,7 +155,7 @@ export default function FifthSection() {
       </Modal> : null}
 
       {isOpen === 'Dominante' ? <Modal>
-        <BehavioralProfileCards 
+        <BehavioralProfileCards
           title={getContent('Dominante').type}
           points={{
             strong: getContent('Dominante').strong,
@@ -165,9 +165,8 @@ export default function FifthSection() {
         />
       </Modal> : null}
 
-
       {isOpen === 'Influente' ? <Modal>
-        <BehavioralProfileCards 
+        <BehavioralProfileCards
           title={getContent('Influente').type}
           points={{
             strong: getContent('Influente').strong,
@@ -176,7 +175,7 @@ export default function FifthSection() {
           onClose={() => setIsOpen(null)}
         />
       </Modal> : null}
-      
+
     </>
 
   )

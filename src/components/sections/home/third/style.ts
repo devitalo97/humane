@@ -1,30 +1,29 @@
-import { Section } from "@/styles/mixin";
+import { Background, Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background: rgb(172,100,0);
-    background: -moz-linear-gradient(43deg, rgba(172,100,0,1) 0%, rgba(229,177,57,1) 100%);
-    background: -webkit-linear-gradient(43deg, rgba(172,100,0,1) 0%, rgba(229,177,57,1) 100%);
-    background: linear-gradient(43deg, rgba(172,100,0,1) 0%, rgba(229,177,57,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ac6400",endColorstr="#e5b139",GradientType=1);
+    height: var(--section-height);
+    background-color: #fff;
 `;
 
 export const Wrapper = styled.div`
-    background-image: url(/background_third_section.svg);
+    ${Background}
     background-size: cover;
     background-position: center center;
     border-radius: 3em;
-    box-shadow: 12px 10px 28px -3px rgba(0,0,0,0.1);
-    width: 90%;
+    box-shadow: 12px 10px 28px -3px rgba(0,0,0,0.3), -12px 10px 28px 3px rgba(0,0,0,0.3);
     position: relative;
-    height: 80%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
     align-items: center;
+
+    max-width: 1280px;
+    width: 100%;
+    height: 80%;
+    margin: 0 auto;
 
     @media screen and (max-width: 480px){
         height: 100% !important;
@@ -38,9 +37,10 @@ export const Wrapper = styled.div`
 export const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     gap: 1em;
     height: 100%;
-    padding: 5%;
+    padding: 3%;
     position: relative;
 
     @media screen and (max-width: 480px){
@@ -59,17 +59,13 @@ export const TextWrapper = styled.div`
 
 export type ITextGroup = {
     gap?: string
-    height?: string
 }
 export const TextGroup = styled.div<ITextGroup>`
     display: flex;
-    flex-direction: column;
-    justify-content: space-around;
+    flex-wrap: wrap;
+    height: 70%;
     ${({gap}) => gap && css`
         gap: ${gap};
-    `}
-    ${({height}) => height && css`
-        height: ${height};
     `}
 `
 
@@ -163,6 +159,7 @@ export type IRow = {
     column?: boolean
     row?: boolean
     gap?: string
+    flex?: string
 }
 export const Row = styled.div<IRow>`
     display: flex;
@@ -175,6 +172,10 @@ export const Row = styled.div<IRow>`
     `}
     ${({gap}) => gap && css`
         gap: ${gap};
+    `}
+
+    ${({flex}) => flex && css`
+        flex: ${flex};
     `}
 `
 

@@ -5,106 +5,54 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    background: rgb(172,100,0);
-    background: -moz-linear-gradient(43deg, rgba(172,100,0,1) 0%, rgba(229,177,57,1) 100%);
-    background: -webkit-linear-gradient(43deg, rgba(172,100,0,1) 0%, rgba(229,177,57,1) 100%);
-    background: linear-gradient(43deg, rgba(172,100,0,1) 0%, rgba(229,177,57,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ac6400",endColorstr="#e5b139",GradientType=1);
+    height: var(--section-height);
+    background-color: #fff;
+    ${Section}
 `;
 
 export const Wrapper = styled.div`
-    background-image: url(/background_fifth_section.svg);
-    background-size: cover;
-    background-position: center center;
-    border-radius: 3em;
-    box-shadow: 12px 10px 28px -3px rgba(0,0,0,0.1);
-    width: 90%;
-    position: relative;
-    height: 80%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-
-    @media screen and (max-width: 480px){
-        height: 100% !important;
-        width: 100% !important;
-        border-radius: unset !important;
-    }
-    
-`
-export const ImageWrapper = styled.div`
-    position: relative;
     width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-rows: min-content 1fr;
+    grid-gap: 1em;
     height: 100%;
-    display: flex;
+`
+
+export const Header = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 2;
 `
-export const TextWrapper = styled.div`
+
+export const CardGroup = styled.div`
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    height: 80%;
     gap: 1em;
+`
+
+export const CardContainter = styled.div`
+    flex: calc(50% - 1em);
+`
+
+export const CardWrapper = styled.div`
+    border-radius: 1em;
+    width: 100%;
     height: 100%;
-    width: 50%;
-    padding: 5%;
-    @media screen and (max-width: 480px){
-        padding: 20% 10% !important;
-        width: 100%;
-        ::before {
-            position: absolute;
-            content: '';
-            inset: 5%;
-            background: rgba(255, 255, 255, 0.25);
-            opacity: 0.4;
-            border-radius: 3em;
-            box-shadow: 12px 10px 28px -3px rgba(0,0,0,0.1);
-        }
-    }
-`
-export const HeaderGroup = styled.div`
-    display: flex;
-    flex-direction: column;
-
-    @media screen and (max-width: 480px){
-        align-items: center !important;
-    }
+    display: grid;
+    grid-template-rows: 1fr min-content;
 `
 
-export type ITextGroup = {
-    gap?: string
-    height?: string
-}
-export const TextGroup = styled.div<ITextGroup>`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    ${({gap}) => gap && css`
-        gap: ${gap};
-    `}
-    ${({height}) => height && css`
-        height: ${height};
-    `}
+export const CardContent = styled.div`
+    background: var(--highlight-color);
 `
 
-type ILine = {
-    width?: string
-    padding?: string
-}
-export const Line = styled.div<ILine>`
-    display: flex;
-    align-items: baseline;
-    gap: .5em;
-    ${({width}) => width && css`
-        width: ${width};
-    `}
-    ${({padding}) => padding && css`
-        padding: ${padding};
-    `}
+export const CardFooter = styled.div`
+    background: var(--dark-color);
+    color: #FFF;
+    height: 5em;
 `
-
 
 export type IText = {
     highlight?: boolean
@@ -113,15 +61,15 @@ export type IText = {
 }
 
 export const Text = styled.p<IText>`
-    color: var(--white-color);
-    ${({highlight}) => highlight && css`
+    color: var(--dark-color);
+    ${({ highlight }) => highlight && css`
     color: var(--highlight-color);
     `}
-    ${({dark}) => dark && css`
+    ${({ dark }) => dark && css`
     color: var(--dark-color);
     `}
     
-    ${({bw}) => bw && css`
+    ${({ bw }) => bw && css`
     overflow-wrap: break-word;
     `}
     `
@@ -175,11 +123,11 @@ export const Row = styled.div<IRow>`
     align-items: center;
     justify-content: flex-start;
 
-    ${({column}) => column && css`
+    ${({ column }) => column && css`
         align-items: flex-start;
         flex-direction: column;
     `}
-    ${({gap}) => gap && css`
+    ${({ gap }) => gap && css`
         gap: ${gap};
     `}
 `

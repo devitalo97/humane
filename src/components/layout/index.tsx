@@ -7,7 +7,7 @@ export default function Layout(props: { children: React.ReactNode }) {
     <S.Wrapper>
       <Navbar />
       <S.Main>{props.children}</S.Main>
-      {/* <Footer /> */}
+      <Footer />
     </S.Wrapper>
   )
 }

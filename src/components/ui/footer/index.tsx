@@ -15,11 +15,8 @@ export default function Footer() {
       <S.Wrapper>
         <S.Line
             display="flex"        
-            justifyContent="space-between"        
+            justifyContent="flex-end"        
           >
-          <Link href={"/"}>
-            <Image src={logotipo} alt="Logo tipo humane"/>
-          </Link>
           <S.Nav>
             <Link href={"/blog"}>
               <Image src={linkedin} alt="linkedin" />
@@ -33,9 +30,13 @@ export default function Footer() {
           </S.Nav>
         </S.Line>
         <S.Line
-          display="flex"        
-          justifyContent="flex-end"        
+          display="flex" 
+          alignItems="flex-end"       
+          justifyContent="space-between"        
         >
+          <Link href={"/"}>
+            <Image src={logotipo} alt="Logo tipo humane" style={{height: '3em', width: 'auto'}}/>
+          </Link>
           <S.Line 
             display="flex" 
             flexDirection="column" 

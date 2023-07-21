@@ -26,7 +26,6 @@ export default function SixthSection() {
           </S.Line>
         </S.TextGroup>
         <Button text='Conheça nossos serviços' href='/services'/>
-        <Image src={logotipo} alt="Logo tipo humane"/>
       </S.Wrapper>
     </S.Container>
   )

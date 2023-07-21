@@ -19,6 +19,11 @@ export const Nav = styled.nav`
     display: flex;
     justify-content: flex-start;
     gap: 5em;
+
+    img {
+        width: 3em;
+        height: auto;
+    }
 `
 
 export const Text = styled.p`

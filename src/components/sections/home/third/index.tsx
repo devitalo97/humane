@@ -1,7 +1,5 @@
 import { Inter } from 'next/font/google'
 import * as S from './style'
-import img from '@/assets/svgs/background_third_section.svg'
-import Image from 'next/image'
 
 const inter = Inter({subsets: ['latin']})
 
@@ -9,9 +7,10 @@ export default function ThirdSection() {
   const texts = [
     ["Vai te ajudar a entender seus medos e o que te", "motiva a fazer o que você faz no seu dia a dia."],
     ["Vai conseguir se relacionar de forma mais", "harmoniosa com todos que o cerca."],
-    ["Vai conseguir se relacionar com pessoas de", "personalidade diferente da sua."],
+    ["Vai conseguir se entender pessoas com", "personalidades diferente da sua."],
     ["Vai melhorar seu desempenho na área profissional."],
-    ["Vai se comunicar de uma forma que todos te", "entendam e ao mesmo tempo evitar conflitos"]
+    ["Vai se comunicar de uma forma que todos te entendam."],
+    ["Vai evitar ruídos na sua comunicação."]
   ]
   return (
     <S.Container>
@@ -29,10 +28,10 @@ export default function ThirdSection() {
               </S.TextLG>
             </S.Line>
           </S.HeaderGroup>
-          <S.TextGroup height='100%'>
+          <S.TextGroup>
             {texts.map((text: string[], index: number) => {
               return (<>
-                <S.Row key={index} gap="1em">
+                <S.Row key={index} flex={'50%'} gap="1em">
                   <S.Box style={inter.style}>
                     {index+1}         
                   </S.Box>

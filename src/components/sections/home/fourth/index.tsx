@@ -18,7 +18,7 @@ export default function FourthSection() {
   const cards = [
     {
       src: person_andre,
-      comment: 'Você não sabe o tamanho do auxílio que vocÊ me proporcionou. Consegui me entender e buscar aperfeiçoamento em áreas importantes.',
+      comment: 'Você não sabe o tamanho do auxílio que você me proporcionou. Consegui me entender e buscar aperfeiçoamento em áreas importantes.',
       name: 'André Cavalcante',
       occupation: 'Engenheiro'
     },

@@ -9,9 +9,11 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
-    background: -moz-linear-gradient(176deg, rgba(8,15,45,.5) 50%, rgba(9,7,60,.5) 50%, rgba(10,18,61,.7) 100%);
-    background: -webkit-linear-gradient(176deg, rgba(8,15,45,.5) 50%, rgba(9,7,60,.5) 50%, rgba(10,18,61,.7) 100%);
-    background: linear-gradient(176deg, rgba(8,15,45,.5) 50%, rgba(9,7,60,.5) 50%, rgba(10,18,61,.7) 100%);
+    background: rgb(8,15,47);
+    background: -moz-linear-gradient(176deg, rgba(8,15,47,1) 0%, rgba(9,17,60,1) 82%, rgba(10,18,61,1) 100%);
+    background: -webkit-linear-gradient(176deg, rgba(8,15,47,1) 0%, rgba(9,17,60,1) 82%, rgba(10,18,61,1) 100%);
+    background: linear-gradient(176deg, rgba(8,15,47,1) 0%, rgba(9,17,60,1) 82%, rgba(10,18,61,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#080f2f",endColorstr="#0a123d",GradientType=1);
     position: relative;
     height: 100%;
     display: grid;
