@@ -29,7 +29,7 @@ export default function Footer() {
             </Link>
           </S.Nav>
         </S.Line>
-        <S.Line
+        <S.BottomLine
           display="flex" 
           alignItems="flex-end"       
           justifyContent="space-between"        
@@ -37,7 +37,7 @@ export default function Footer() {
           <Link href={"/"}>
             <Image src={logotipo} alt="Logo tipo humane" style={{height: '3em', width: 'auto'}}/>
           </Link>
-          <S.Line 
+          <S.RightsLine 
             display="flex" 
             flexDirection="column" 
             alignItems="flex-end" 
@@ -51,8 +51,8 @@ export default function Footer() {
             <S.Text style={inter.style}>
               Humane 2023 - Todos os direitos reservados
             </S.Text>
-          </S.Line>
-        </S.Line>
+          </S.RightsLine>
+        </S.BottomLine>
       </S.Wrapper>
     </S.Container>
   )

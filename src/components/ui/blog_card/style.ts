@@ -23,7 +23,7 @@ export const Wrapper = styled.div`
 
 export const ImageWrapper = styled.div`
     > img {
-        width: 90%;
+        width: 100%;
         height: auto;
         border-radius: 10px;
     }

@@ -11,14 +11,14 @@ export const Wrapper = styled.div`
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    gap: 2em;
-    ${Section}
+    gap: 1em;
+    ${Section({padding: "0 5%"})}
 `
 
 export const Nav = styled.nav`
     display: flex;
     justify-content: flex-start;
-    gap: 5em;
+    gap: 5%;
 
     img {
         width: 3em;
@@ -66,4 +66,15 @@ export const Line = styled.div<ILine>`
     ${({flexDirection}) => flexDirection && css`
         flex-direction: ${flexDirection};
     `}
+`
+
+export const BottomLine = styled(Line)`
+     @media screen and (max-width: 480px){
+        flex-direction: column;
+    }   
+`
+export const RightsLine = styled(Line)`
+     @media screen and (max-width: 480px){
+        align-items: flex-start;
+    }   
 `
