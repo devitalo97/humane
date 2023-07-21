@@ -27,7 +27,7 @@ export default function BlogCard({
     <S.Container>
       <S.Wrapper>
         <S.TextWrapper>
-          <S.Author style={inter.style}>{author}</S.Author>
+          {/* <S.Author style={inter.style}>{author}</S.Author> */}
           <S.Title style={inter.style}>{title}</S.Title>
           <S.Content style={inter.style}>{content}</S.Content>
           <div className="footer">

@@ -52,8 +52,8 @@ export const Title = styled.p`
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 22px;
+    line-height: 30px;
     color: #000000;
 `
 
