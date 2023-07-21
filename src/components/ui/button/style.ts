@@ -10,7 +10,8 @@ export const Wrapper = styled.button<IWrapper>`
     border: none;
     height: 3.5em;
     width: 22em;
-
+    box-shadow: 0px 5px 4px rgba(95, 95, 95, 0.2);
+    transition: all .2s cubic-bezier(0.32, 0, 0.67, 0) 0s;
     p {
         font-family: 'Inter';
         font-style: normal;
@@ -24,7 +25,6 @@ export const Wrapper = styled.button<IWrapper>`
 
     ${({secondary}) => secondary && css`
         background: rgba(255, 255, 255, 0.3);
-        box-shadow: 0px 5px 4px rgba(95, 95, 95, 0.2);
     `}
 
     ${({width}) => width && css`
@@ -34,6 +34,8 @@ export const Wrapper = styled.button<IWrapper>`
 
     :hover {
         cursor: pointer;
+        transform: translateY(-2px);
+        filter: saturate(70%);
     }
 
 `
