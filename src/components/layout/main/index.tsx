@@ -1,8 +1,8 @@
 import Navbar from '@/components/ui/navbar'
 import * as S from './style'
-import Footer from '../ui/footer'
+import Footer from '../../ui/footer'
 
-export default function Layout(props: { children: React.ReactNode }) {
+export default function MainLayout(props: { children: React.ReactNode }) {
   return (
     <S.Wrapper>
       <Navbar />

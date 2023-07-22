@@ -10,14 +10,18 @@ export const Container = styled.div`
 `
 
 export const Wrapper = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
+    display: grid;
+    grid-template-columns: 1fr .5fr .4fr;
+    place-items: center;
 
     @media screen and (max-width: 480px) {
-        flex-direction: column-reverse;
+        grid-template-rows: 1fr min-content .3fr;
+        grid-template-columns: unset;
         gap: 1em;
+    }
+    
+    :hover{
+        cursor: pointer;
     }
 `
 

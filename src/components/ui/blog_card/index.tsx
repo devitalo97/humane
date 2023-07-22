@@ -38,6 +38,7 @@ export default function BlogCard({
             <S.Category style={inter.style}>{category}</S.Category>
           </div>
         </S.TextWrapper>
+        <span/>
         <S.ImageWrapper><Image src={src} alt="icon" /></S.ImageWrapper>
       </S.Wrapper>
     </S.Container>
