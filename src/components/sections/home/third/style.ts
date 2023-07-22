@@ -5,7 +5,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: var(--section-height);
+    min-height: var(--section-height);
     background-color: #fff;
     padding-top: 5%;
 `;
@@ -24,7 +24,7 @@ export const Wrapper = styled.div`
 
     max-width: 1280px;
     width: 100%;
-    height: 90%;
+    height: 100%;
     margin: 0 auto;
 
     @media screen and (max-width: 480px){
@@ -40,7 +40,7 @@ export const TextWrapper = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 1em;
+    gap: 3em;
     height: 100%;
     padding: 5%;
     position: relative;
@@ -66,7 +66,7 @@ export const TextGroup = styled.div<ITextGroup>`
     display: flex;
     flex-wrap: wrap;
     height: 80%;
-    gap: 1em;
+    gap: 2em;
     ${({gap}) => gap && css`
         gap: ${gap};
     `}

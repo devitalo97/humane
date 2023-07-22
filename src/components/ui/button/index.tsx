@@ -22,20 +22,20 @@ export default function Button({
   href
 }: IButton) {
   return (<>
-    {href ? 
-      <Link href={href}>
-        <S.Wrapper 
-          primary={primary} 
-          secondary={secondary}
-          width={width}
-          onClick={onClick}
-        >
+    {href ?
+      <S.Wrapper
+        primary={primary}
+        secondary={secondary}
+        width={width}
+        onClick={onClick}
+      >
+        <Link href={href}>
           <p style={inter.style}>{text}</p>
-        </S.Wrapper>
-      </Link>
-    :
-      <S.Wrapper 
-        primary={primary} 
+        </Link>
+      </S.Wrapper>
+      :
+      <S.Wrapper
+        primary={primary}
         secondary={secondary}
         width={width}
         onClick={onClick}

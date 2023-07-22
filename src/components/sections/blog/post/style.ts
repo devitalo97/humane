@@ -18,11 +18,13 @@ export const Content = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1em;
-    ${Section({ padding: '0 1em 5% 5%' })}
     padding-top: 1em;
     min-height: 100vh;
-    width: 680px;
+    max-width: 680px;
+    width: 100%;
     margin: 0 auto;
+    ${Section({ padding: '0 1em 5% 5%' })}
+
 `
 
 export const SearchBox = styled.div`
@@ -108,7 +110,8 @@ export const PostHeader = styled.div`
 
 export const PostThumb = styled.div`
     position: relative;
-    width: 680px;
+    max-width: 680px;
+    width: 100%;
     height: auto;
 `
 

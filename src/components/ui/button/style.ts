@@ -38,4 +38,8 @@ export const Wrapper = styled.button<IWrapper>`
         filter: saturate(70%);
     }
 
+    @media screen and (max-width: 480px) {
+        width: 100%;
+    }
+
 `

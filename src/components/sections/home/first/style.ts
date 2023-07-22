@@ -71,6 +71,10 @@ export const BigSCircle = styled.div`
     right: 5%;
     top: 50%;
     transform: translateY(-50%);
+
+    @media screen and (max-width: 480px) {
+        display: none;
+    }
 `
 
 

@@ -1,6 +1,14 @@
+import { useWindowSize } from '@/hooks/useWindowSize'
 import * as S from './style'
 
 export default function BlogLayout(props: { children: React.ReactNode }) {
+  const size = useWindowSize()
+
+  if ((size?.width as number) < 480) {
+    return <>
+      {props.children}
+    </>
+  }
   return (
     <S.ContentContainer>
       {props.children}
