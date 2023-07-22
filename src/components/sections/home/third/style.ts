@@ -7,6 +7,7 @@ export const Container = styled.div`
     justify-content: center;
     height: var(--section-height);
     background-color: #fff;
+    padding-top: 5%;
 `;
 
 export const Wrapper = styled.div`

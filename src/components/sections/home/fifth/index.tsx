@@ -1,105 +1,15 @@
 import { Inter } from 'next/font/google'
 import * as S from './style'
-import Button from '@/components/ui/button'
 import { useState } from 'react'
 import Modal from '@/components/ui/modal'
 import BehavioralProfileCards from '@/components/ui/behavioral_profile_card'
+import { IsOpen, Text, getContent, texts } from './data'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
-type IsOpen = "Dominante" | 'Influente' | 'Estável' | 'Conforme'
-
 export default function FifthSection() {
   const [isOpen, setIsOpen] = useState<IsOpen | null>()
-
-  const texts: IsOpen[] = [
-    'Dominante',
-    'Influente',
-    'Estável',
-    'Conforme',
-  ]
-
-  const content = [
-    {
-      type: 'Dominante',
-      strong: [
-        'Assertividade',
-        'Determinação',
-        'Autoconfiança',
-        'Habilidades de liderança',
-        'Capacidade de tomar decisões rapidamente.'
-      ],
-      weak: [
-        'Impaciência',
-        'Tendência a ser autoritário',
-        'Falta de flexibilidade',
-        'Dificuldade em ouvir os outros'
-      ]
-    },
-    {
-      type: 'Influente',
-      strong: [
-        'Habilidades de comunicação',
-        'Carisma',
-        'Entusiasmo',
-        'Capacidade de persuasão  Habilidades social'
-      ],
-      weak: [
-        'Falta de organização',
-        'Tendência a ser superficial',
-        'Dificuldade em manter o foco',
-        'Falta de atenção aos detalhes'
-      ]
-    },
-    {
-      type: 'Estável',
-      strong: [
-        'Lealdade',
-        'Empatia',
-        'Bom relacionamento Interpessoal',
-        'Estabilidade emocional  Habilidades de escuta ativa'
-      ],
-      weak: [
-        'Dificuldade em lidar com mudanças',
-        'Falta de iniciativa',
-        'Falta de assertividade',
-        'Dificuldade em impor limites'
-      ]
-    },
-    {
-      type: 'Conforme',
-      strong: [
-        'Habilidades de organização',
-        'Pontualidade',
-        'Diligência',
-        'Comprometimento',
-        'Precisão'
-      ],
-      weak: [
-        'Dificuldade em lidar com mudanças',
-        'Falta de iniciativa',
-        'Falta de assertividade',
-        'Dificuldade em impor limites'
-      ]
-    }
-  ]
-
-  const getContent = (type: IsOpen) => {
-    switch (type) {
-      case 'Conforme':
-        const [conform] = content.filter(el => el.type === type)
-        return conform
-      case 'Influente':
-        const [influente] = content.filter(el => el.type === type)
-        return influente
-      case 'Dominante':
-        const [dominante] = content.filter(el => el.type === type)
-        return dominante
-      case 'Estável':
-        const [estavel] = content.filter(el => el.type === type)
-        return estavel
-    }
-  }
 
   return (
     <>
@@ -107,19 +17,19 @@ export default function FifthSection() {
         <S.Wrapper>
           <S.Header>
             <S.TextLG style={inter.style}>
-              Pontos Fortes e Pontos Fracos de cada perfil
+              Conheça algumas características de cada perfil
             </S.TextLG>
           </S.Header>
           <S.CardGroup>
-            {texts.map((text: IsOpen, index: number) => {
+            {texts.map(({text, thumb}: Text, index: number) => {
               return (<>
                 <S.CardContainter
-                  onClick={() => {
-                    setIsOpen(text)
-                  }}
+                  key={index}
+                  onClick={() => {setIsOpen(text)}}
                 >
                   <S.CardWrapper>
                     <S.CardContent>
+                      <Image src={thumb} alt=""/>
                     </S.CardContent>
                     <S.CardFooter>
                       <p>{text}</p>

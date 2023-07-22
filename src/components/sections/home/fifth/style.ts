@@ -5,7 +5,7 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: var(--section-height);
+    min-height: 140vh;
     background-color: #fff;
     ${Section}
 `;
@@ -15,8 +15,13 @@ export const Wrapper = styled.div`
     position: relative;
     display: grid;
     grid-template-rows: min-content 1fr;
-    grid-gap: 1em;
-    height: 100%;
+    grid-gap: 2em;
+    height: 80%;
+    padding-bottom: 5%;
+    @media screen and (max-width: 480px) {
+        padding: 10% 0;
+        padding-bottom: unset;
+    }
 `
 
 export const Header = styled.div`
@@ -28,12 +33,18 @@ export const Header = styled.div`
 export const CardGroup = styled.div`
     display: flex;
     flex-wrap: wrap;
-    height: 80%;
+    height: 100%;
     gap: 1em;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 `
 
 export const CardContainter = styled.div`
     flex: calc(50% - 1em);
+    @media screen and (max-width: 480px) {
+        flex: 100%;
+    }
 `
 
 export const CardWrapper = styled.div`
@@ -42,16 +53,33 @@ export const CardWrapper = styled.div`
     height: 100%;
     display: grid;
     grid-template-rows: 1fr min-content;
+    :hover {
+        cursor: pointer;
+    }
 `
 
 export const CardContent = styled.div`
     background: var(--highlight-color);
+    border-radius: 1em 1em 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        width: 70%;
+        height: auto;
+    }
 `
 
 export const CardFooter = styled.div`
     background: var(--dark-color);
     color: #FFF;
-    height: 5em;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    border-radius: 0 0 1em 1em;
 `
 
 export type IText = {
