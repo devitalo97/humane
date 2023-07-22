@@ -6,6 +6,9 @@ export const Container = styled.div`
     height: 100%;
     /* background-color: #E48D00; */
     background-color: var(--highlight-color);
+    :hover{
+        cursor: pointer;
+    }
 `
 
 export const Wrapper = styled.div`
@@ -27,14 +30,14 @@ export type IText = {
 
 export const Text = styled.p<IText>`
     color: var(--white-color);
-    ${({highlight}) => highlight && css`
+    ${({ highlight }) => highlight && css`
         color: var(--highlight-color);
     `}
-    ${({dark}) => dark && css`
+    ${({ dark }) => dark && css`
         color: var(--dark-color);
     `}
 
-    ${({bw}) => bw && css`
+    ${({ bw }) => bw && css`
         overflow-wrap: break-word;
     `}
 `

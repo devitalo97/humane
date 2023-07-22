@@ -51,7 +51,7 @@ export default function ServiceModal({
               <S.TextArea id="message" name="message" maxLength={2048} rows={8} autoComplete="off" />
             </S.TextAreaContainer>
 
-            <S.Button type="button"><p>Faça Contato</p></S.Button>
+            <Button text="Faça Contanto" width="100%"/>
           </S.Form>
         </S.CardContainer>
       </S.Wrapper>
