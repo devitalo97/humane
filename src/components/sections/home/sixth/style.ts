@@ -2,7 +2,7 @@ import { Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-    height: var(--section-height);
+    height: 80vh;
 `;
 
 export const Wrapper = styled.div`
@@ -57,6 +57,7 @@ export type IText = {
 }
 
 export const Text = styled.p<IText>`
+    text-align: center;
     color: var(--white-color);
     ${({highlight}) => highlight && css`
         color: var(--highlight-color);
@@ -75,7 +76,6 @@ export const TextLG = styled(Text)`
     font-weight: 600;
     line-height: 42px;
     letter-spacing: 0.01em;
-    text-align: left;
 `
 
 export const TextM = styled(Text)`
@@ -83,13 +83,11 @@ export const TextM = styled(Text)`
     font-weight: 400;
     line-height: 42px;
     letter-spacing: 0.01em;
-    text-align: left;
 `
 export const TextSM = styled(Text)`
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.03em;
-    text-align: left;
 
 `

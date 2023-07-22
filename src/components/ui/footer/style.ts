@@ -69,12 +69,13 @@ export const Line = styled.div<ILine>`
 `
 
 export const BottomLine = styled(Line)`
-     @media screen and (max-width: 480px){
+    gap: 2em;
+    @media screen and (max-width: 480px){
         flex-direction: column;
     }   
 `
 export const RightsLine = styled(Line)`
-     @media screen and (max-width: 480px){
+    @media screen and (max-width: 480px){
         align-items: flex-start;
     }   
 `

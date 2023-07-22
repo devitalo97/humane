@@ -6,6 +6,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: center;
     min-height: 140vh;
+    height: fit-content;
     background-color: #fff;
     ${Section}
 `;
@@ -19,8 +20,8 @@ export const Wrapper = styled.div`
     height: 80%;
     padding-bottom: 5%;
     @media screen and (max-width: 480px) {
-        padding: 10% 0;
         padding-bottom: unset;
+        padding: 10% 0;
     }
 `
 

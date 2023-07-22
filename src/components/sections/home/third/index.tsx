@@ -19,19 +19,14 @@ export default function ThirdSection() {
           <S.HeaderGroup>
             <S.Line>
               <S.TextLG style={inter.style}>
-                Como a análise de perfil         
-              </S.TextLG>
-            </S.Line>
-            <S.Line>
-              <S.TextLG style={inter.style}>
-                comportamental pode te ajudar?    
+                Como a análise de perfil comportamental pode te ajudar?    
               </S.TextLG>
             </S.Line>
           </S.HeaderGroup>
           <S.TextGroup>
             {texts.map((text: string[], index: number) => {
               return (<>
-                <S.Row key={index} flex={'50%'} gap="1em">
+                <S.Row key={index} flex={'calc(40% - 1em)'} gap="1em">
                   <S.Box style={inter.style}>
                     {index+1}         
                   </S.Box>

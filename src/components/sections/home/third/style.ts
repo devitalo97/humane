@@ -11,6 +11,7 @@ export const Container = styled.div`
 `;
 
 export const Wrapper = styled.div`
+
     ${Background}
     background-size: cover;
     background-position: center center;
@@ -23,7 +24,7 @@ export const Wrapper = styled.div`
 
     max-width: 1280px;
     width: 100%;
-    height: 80%;
+    height: 90%;
     margin: 0 auto;
 
     @media screen and (max-width: 480px){
@@ -41,7 +42,7 @@ export const TextWrapper = styled.div`
     justify-content: space-between;
     gap: 1em;
     height: 100%;
-    padding: 3%;
+    padding: 5%;
     position: relative;
 
     @media screen and (max-width: 480px){
@@ -64,7 +65,8 @@ export type ITextGroup = {
 export const TextGroup = styled.div<ITextGroup>`
     display: flex;
     flex-wrap: wrap;
-    height: 70%;
+    height: 80%;
+    gap: 1em;
     ${({gap}) => gap && css`
         gap: ${gap};
     `}
@@ -131,10 +133,11 @@ export const TextLG = styled(Text)`
 `
 
 export const TextSM = styled(Text)`
+    color: #FFF;
+    font-size: 18px;
     font-style: normal;
-    font-weight: 700;
-    font-size: clamp(0.875rem, 0.811rem + 0.3659vw, 1.25rem);
-    line-height: 24px;
+    font-weight: 400;
+    line-height: normal;
 
     @media screen and (max-width: 480px){
         font-size: 14px !important;
@@ -143,7 +146,7 @@ export const TextSM = styled(Text)`
 `
 
 export const Box = styled.div`
-    background: rgba(255, 255, 255, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 5px;
     width: 2em;
     height: 2em;
@@ -154,6 +157,10 @@ export const Box = styled.div`
     font-size: 26px;
     line-height: 31px;
     color: var(--white-color);
+    transition: all .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+    :hover{
+        background-color: rgba(255, 255, 255, 0.4);
+    }
 `
 
 export type IRow = {
