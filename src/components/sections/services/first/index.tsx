@@ -5,6 +5,8 @@ import ServiceCard from '@/components/ui/service_card'
 import { useState } from 'react'
 import ServiceModal from '@/components/ui/service_modal'
 import { services, Service } from './data'
+import Modal from '@/components/ui/modal'
+import { AnimatePresence } from 'framer-motion'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -56,7 +58,13 @@ export default function FirstSection() {
         </Carousel>
       </S.Content>
       <S.FooterGhost />
-      {isOpen && <ServiceModal service={service} onClose={handleOnClose} />}
+
+
+      <AnimatePresence>
+        {isOpen ? <Modal>
+          <ServiceModal service={service} onClose={handleOnClose} />
+        </Modal> : null}
+      </AnimatePresence>
     </S.Container>
   )
 }

@@ -4,7 +4,8 @@ import GalleryCard from '@/components/ui/gallery_card'
 import GalleryModal from '@/components/ui/gallery_modal'
 import { useState } from 'react'
 import { Album, gallery } from './data'
-
+import Modal from '@/components/ui/modal'
+import { AnimatePresence } from 'framer-motion' 
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -35,7 +36,11 @@ export default function FirstSection() {
           onClick={() => handleOnClick(card)}
         />)}
       </S.Content>
-      {isOpen && <GalleryModal album={album} onClose={handleOnClose} />}
+      <AnimatePresence>
+        {isOpen ? <Modal>
+          <GalleryModal album={album} onClose={handleOnClose} />
+        </Modal> : null}
+      </AnimatePresence>
     </S.Container>
   )
 }
