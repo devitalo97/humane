@@ -12,7 +12,18 @@ export default function Modal({
   useEffect(() => {
     const body = document.querySelector('body');
     body && (body.style.overflow = 'hidden')
+    const modalElement = document.getElementById('__modal')
+    if (modalElement) {
+      modalElement.style.position = 'absolute'
+      modalElement.style.inset = '0'
+      modalElement.style.zIndex = '2000'
+    }
     return () => {
+      if (modalElement) {
+        modalElement.style.position = 'unset'
+        modalElement.style.inset = 'unset'
+        modalElement.style.zIndex = 'unset'
+      } 
       body && (body.style.overflow = 'auto')
     };
   }, []);

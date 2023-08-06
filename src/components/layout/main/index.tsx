@@ -4,10 +4,13 @@ import Footer from '../../ui/footer'
 
 export default function MainLayout(props: { children: React.ReactNode }) {
   return (
-    <S.Wrapper>
-      <Navbar />
-      <S.Main>{props.children}</S.Main>
-      <Footer />
-    </S.Wrapper>
+    <>
+      <div id="__modal" />
+      <S.Wrapper>
+        <Navbar />
+        <S.Main>{props.children}</S.Main>
+        <Footer />
+      </S.Wrapper>
+    </>
   )
 }
