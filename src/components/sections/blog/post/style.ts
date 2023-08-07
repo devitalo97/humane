@@ -1,4 +1,5 @@
 import { Section } from "@/styles/mixin";
+import { motion } from "framer-motion";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
@@ -136,4 +137,13 @@ export const PostContent = styled.div`
         font-weight: 400;
     }
 `
-
+export const Progress = styled(motion.div)`
+    position: fixed;
+    top: var(--header-height);
+    left: 0;
+    right: 0;
+    height: 7px;
+    transform-origin: 0%;
+    background: var(--highlight-color);
+    z-index: 2000;
+`

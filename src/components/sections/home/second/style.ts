@@ -94,7 +94,7 @@ export const Text = styled.p<IText>`
 `
 
 export const TextLG = styled(Text)`
-    font-size: 32px;
+    font-size: clamp(0.875rem, 0.6829rem + 1.0976vw, 2rem);
     font-weight: 600;
     line-height: 42px;
     letter-spacing: 0.01em;
@@ -102,14 +102,14 @@ export const TextLG = styled(Text)`
 `
 
 export const TextM = styled(Text)`
-    font-size: 32px;
+    font-size: clamp(0.875rem, 0.6829rem + 1.0976vw, 2rem);
     font-weight: 400;
     line-height: 42px;
     letter-spacing: 0.01em;
     text-align: left;
 `
 export const TextSM = styled(Text)`
-    font-size: 16px;
+    font-size: clamp(0.875rem, 0.8537rem + 0.122vw, 1rem);
     font-weight: 500;
     line-height: 24px;
     letter-spacing: 0.03em;

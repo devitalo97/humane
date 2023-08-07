@@ -2,18 +2,22 @@ import { Section } from "@/styles/mixin";
 import styled, { css } from "styled-components";
 
 export const Container = styled.div`
-    height: 80vh;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    ${Section}
 `;
 
 export const Wrapper = styled.div`
     position: relative;
-    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10%;
-    ${Section}
+    gap: 1em;
+    position: sticky;
+    top: 5em;
 
 `
 export const ImageWrapper = styled.div`

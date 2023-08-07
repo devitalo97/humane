@@ -1,20 +1,21 @@
 import { Manjari } from 'next/font/google'
 import * as S from './style'
 import Button from '@/components/ui/button'
-import LuizRicardo from '@/assets/png/luiz_ricardo.png'
-import Image from 'next/image'
+import { motion, useAnimation } from 'framer-motion'
+import { animations, variants } from './data'
 const manjari = Manjari({ subsets: ['latin'], weight: "400" })
 
 export default function FirstSection() {
+  const animation = useAnimation()
   return (
     <S.Container>
-      <S.Wrapper>
-        <S.EllipseGroup>
+      <S.Wrapper {...animations(animation).container}>
+        <S.EllipseGroup  {...animations(animation).ellipse}>
           <S.SmallEllipse />
           <S.MediumEllipse />
           <S.BigSCircle />
         </S.EllipseGroup>
-        <S.TextWrapper>
+        <S.TextWrapper {...animations(animation).text}>
           <S.TextGroup>
             <S.Line>
               <S.TextM style={manjari.style}>
@@ -58,7 +59,8 @@ export default function FirstSection() {
               </S.TextLG>
             </S.Line>
           </S.TextGroup>
-          <Button text='Conheça nossos serviços' href='/services' />
+          <Button
+            text='Conheça nossos serviços' href='/services' />
         </S.TextWrapper>
       </S.Wrapper>
     </S.Container>

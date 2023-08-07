@@ -5,58 +5,43 @@ export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: var(--section-height);
     background-color: #fff;
     padding-top: 5%;
+    height: 80vh;
+    @media screen and (max-width: 480px) {
+        height: fit-content;
+    }
 `;
 
 export const Wrapper = styled.div`
-
     ${Background}
+    margin: 0 5%;
+    border-radius: 1em;
     background-size: cover;
     background-position: center center;
-    border-radius: 3em;
     box-shadow: 12px 10px 28px -3px rgba(0,0,0,0.3), -12px 10px 28px 3px rgba(0,0,0,0.3);
     position: relative;
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-
+    flex-direction: column;
+    justify-content: space-between;
     max-width: 1280px;
     width: 100%;
     height: 100%;
     margin: 0 auto;
+    padding: 3em;
+    gap: 2em;
 
-    @media screen and (max-width: 480px){
-        height: 100% !important;
-        width: 100% !important;
-        border-radius: unset !important;
-        background-position: 35% 100%;
-
+    @media screen and (max-width: 480px) {
+        padding: 2em 5%;
+        margin: 0 5%;
     }
 `
 
 export const TextWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    gap: 3em;
     height: 100%;
     padding: 5%;
     position: relative;
 
-    @media screen and (max-width: 480px){
-        padding: 20% 10% !important;
-        ::before {
-            position: absolute;
-            content: '';
-            inset: 5%;
-            background: rgba(255, 255, 255, 0.25);
-            opacity: 0.4;
-            border-radius: 3em;
-            box-shadow: 12px 10px 28px -3px rgba(0,0,0,0.1);
-        }
-    }
 `
 
 export type ITextGroup = {
@@ -70,6 +55,11 @@ export const TextGroup = styled.div<ITextGroup>`
     ${({gap}) => gap && css`
         gap: ${gap};
     `}
+
+    @media screen and (max-width: 480px) {
+        flex-wrap: unset;
+        flex-direction: column;
+    }
 `
 
 export const HeaderGroup = styled.div`
@@ -120,14 +110,12 @@ export const Text = styled.p<IText>`
 
 export const TextLG = styled(Text)`
     font-style: normal;
-    font-weight: 700;
-    font-size: clamp(1.5rem, 1.4146rem + 0.4878vw, 2rem);
-    line-height: 39px;
+    font-weight: 500;
+    font-size: clamp(1.2rem, 0.6829rem + 1.0976vw, 2rem);
+    line-height: 32px;
 
     
     @media screen and (max-width: 480px){
-        font-size: 24px !important;
-        line-height: 29.05px !important;
         text-align: center;
     }
 `
@@ -148,7 +136,7 @@ export const TextSM = styled(Text)`
 export const Box = styled.div`
     border: 1px solid rgba(255, 255, 255, 0.4);
     border-radius: 5px;
-    width: 2em;
+    min-width: 2em;
     height: 2em;
     display: grid;
     place-items: center;
@@ -161,6 +149,7 @@ export const Box = styled.div`
     :hover{
         background-color: rgba(255, 255, 255, 0.4);
     }
+    cursor: none;
 `
 
 export type IRow = {
