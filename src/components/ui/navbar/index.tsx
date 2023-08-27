@@ -11,6 +11,7 @@ import {
   motion,
   useAnimation
 } from "framer-motion";
+import path from "path";
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Navbar() {
@@ -34,6 +35,7 @@ export default function Navbar() {
   const delta = useRef(0);
   const lastScrollY = useRef(0);
   scrollY.onChange((val) => {
+    if (pathname.includes("blog") || pathname.includes("services")) return
     const diff = Math.abs(val - lastScrollY.current);
     if (val >= lastScrollY.current) {
       delta.current = delta.current >= 10 ? 10 : delta.current + diff;
@@ -45,7 +47,15 @@ export default function Navbar() {
       controls.start("hidden");
     } else if (delta.current <= -10 || val < 200) {
       controls.start("visible");
+    } else if (val > 800) {
+      controls.start("visible");
+      controls.start("color");
     }
+
+    if (val === 0 && pathname === "/") {
+      controls.start("transparent")
+    }
+
     lastScrollY.current = val;
   });
 
@@ -56,7 +66,9 @@ export default function Navbar() {
       animate={controls}
       variants={{
         visible: { top: "0px" },
-        hidden: { top: "-100px" }
+        hidden: { top: "-100px" },
+        color: { background: "linear-gradient(43deg, rgba(1,5,50,1) 0%, rgba(14,23,65,1) 100%)" },
+        transparent: { background: "transparent" }
       }}
       inHome={pathname === '/'}
       isScrolled={isScrolled}

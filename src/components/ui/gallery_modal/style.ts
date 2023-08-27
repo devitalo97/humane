@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 
 export const Container = styled.div`
@@ -24,9 +25,15 @@ export const Header = styled.div`
     display: flex;
     justify-content: space-between;
     padding: 2%;
+
+    svg {
+        :hover {
+            cursor: pointer;
+        }
+    }
 `
 
-export const CardContainer = styled.div`
+export const CardContainer = styled(motion.div)`
     display: grid;
     grid-template-rows: 1fr min-content;
     gap: 2%;
@@ -58,3 +65,32 @@ export const Title = styled.p`
 
 
 
+export const ModalControl = styled.div`
+    .next,
+    .prev {
+    top: calc(50% - 20px);
+    position: absolute;
+    background: white;
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    z-index: 2;
+    border: 2px solid var(--dark-color);
+    }
+
+    .next {
+    right: 10px;
+    }
+
+    .prev {
+    left: 10px;
+    transform: scale(-1);
+    }
+`

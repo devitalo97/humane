@@ -28,7 +28,7 @@ export default function FirstSection() {
     <S.Container>
       <S.NavGhost />
       <S.Content>
-        {[...gallery, ...gallery].map((card, index) => <GalleryCard
+        {gallery.map((card, index) => <GalleryCard
           key={index}
           title={card.title}
           thumb={card.thumb}

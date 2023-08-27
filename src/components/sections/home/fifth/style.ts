@@ -18,7 +18,7 @@ export const Wrapper = styled.div`
     grid-template-rows: min-content 1fr;
     grid-gap: 2em;
     height: 80%;
-    padding-bottom: 5%;
+    padding: 5% 0;
     @media screen and (max-width: 480px) {
         padding-bottom: unset;
         padding: 10% 0;
@@ -37,7 +37,7 @@ export const CardGroup = styled.div`
     height: 100%;
     gap: 1em;
     width: 100%;
-    max-width: 1024px;
+    max-width: 880px;
     margin: 0 auto;
 `
 
@@ -60,15 +60,17 @@ export const CardWrapper = styled.div`
 `
 
 export const CardContent = styled.div`
-    background: var(--highlight-color);
+    border: 5px solid var(--highlight-color);
     border-radius: 1em 1em 0 0;
     display: flex;
     align-items: center;
     justify-content: center;
+    height: 250px;
+    padding: 1em;
 
     img {
-        width: 70%;
-        height: auto;
+        width: 50%;
+        height: 100%;
     }
 `
 

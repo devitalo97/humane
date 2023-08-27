@@ -1,8 +1,19 @@
 import { StaticImageData } from "next/image"
-import illustration_behavior from "@/assets/svgs/home/illustration_behavior.svg"
-import illustration_behavior1 from "@/assets/svgs/home/illustration_behavior1.svg"
-import illustration_behavior2 from "@/assets/svgs/home/illustration_behavior2.svg"
-import illustration_behavior3 from "@/assets/svgs/home/illustration_behavior3.svg"
+// import illustration_behavior from "@/assets/svgs/home/illustration_behavior.svg"
+// import illustration_behavior1 from "@/assets/svgs/home/illustration_behavior1.svg"
+// import illustration_behavior2 from "@/assets/svgs/home/illustration_behavior2.svg"
+// import illustration_behavior3 from "@/assets/svgs/home/illustration_behavior3.svg"
+
+// import illustration_behavior from "@/assets/svgs/humane-svg/Group 1.svg"
+// import illustration_behavior1 from "@/assets/svgs/humane-svg/Group 2.svg"
+// import illustration_behavior2 from "@/assets/svgs/humane-svg/Group 3.svg"
+// import illustration_behavior3 from "@/assets/svgs/humane-svg/Group 4.svg"
+
+
+import illustration_behavior from "@/assets/svgs/humane-svg/group_0.svg"
+import illustration_behavior1 from "@/assets/svgs/humane-svg/group_3.svg"
+import illustration_behavior2 from "@/assets/svgs/humane-svg/group_2.svg"
+import illustration_behavior3 from "@/assets/svgs/humane-svg/group_1.svg"
 
 export type IsOpen = "Dominante" | 'Influente' | 'Estável' | 'Conforme'
 
