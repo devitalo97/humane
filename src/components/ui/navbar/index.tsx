@@ -56,6 +56,10 @@ export default function Navbar() {
       controls.start("transparent")
     }
 
+    if (val === 0 && pathname.includes("gallery")) {
+      controls.start("color")
+    }
+
     lastScrollY.current = val;
   });
 
