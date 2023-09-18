@@ -9,7 +9,10 @@ import Header from '@/components/ui/head'
 export default function Home() {
   return (
     <>
-      <Header title="Humane" />
+      <Header
+        title="Humane"
+        content="Bem-vindo à Humane. Descubra como podemos ajudar você a alcançar seu potencial."
+      />
       <main>
         <FirstSection />
         <SecondSection />
