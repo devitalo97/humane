@@ -1,17 +1,11 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-    siteUrl: 'https://www.perfilhumane.com',
+    siteUrl: 'https://perfilhumane.com',
     changefreq: 'daily',
     priority: 0.7,
     sitemapSize: 5000,
     generateRobotsTxt: true,
-    alternateRefs: [
-        {
-            siteUrl: 'https://perfilhumane.com',
-            hreflang: 'perfilhumane',
-        }
-    ],
     // Default transformation function
     transform: async (config, path) => {
         return {

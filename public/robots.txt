@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://www.perfilhumane.com
+Host: https://perfilhumane.com
 
 # Sitemaps
-Sitemap: https://www.perfilhumane.com/sitemap.xml
+Sitemap: https://perfilhumane.com/sitemap.xml
