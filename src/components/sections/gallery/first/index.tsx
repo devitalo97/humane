@@ -1,46 +1,51 @@
-import { Inter } from 'next/font/google'
-import * as S from './style'
-import GalleryCard from '@/components/ui/gallery_card'
-import GalleryModal from '@/components/ui/gallery_modal'
-import { useState } from 'react'
-import { Album, gallery } from './data'
-import Modal from '@/components/ui/modal'
-import { AnimatePresence } from 'framer-motion' 
+import { Inter } from "next/font/google";
+import * as S from "./style";
+import GalleryCard from "@/components/ui/gallery_card";
+import GalleryModal from "@/components/ui/gallery_modal";
+import { useState } from "react";
+import { Album, gallery } from "./data";
+import Modal from "@/components/ui/modal";
+import { AnimatePresence } from "framer-motion";
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ subsets: ["latin"] });
 
 export default function FirstSection() {
-
-  const [album, setAlbum] = useState<Album>({} as Album)
-  const [isOpen, setIsOpen] = useState(false)
+  const [album, setAlbum] = useState<Album>({} as Album);
+  const [isOpen, setIsOpen] = useState(false);
 
   const handleOnClick = (album: Album) => {
-    setIsOpen(true)
-    setAlbum(album)
-  }
+    setIsOpen(true);
+    setAlbum(album);
+  };
 
   const handleOnClose = () => {
-    setIsOpen(false)
-    setAlbum({} as Album)
-  }
+    setIsOpen(false);
+    setAlbum({} as Album);
+  };
 
   return (
     <S.Container>
       <S.NavGhost />
       <S.Content>
-        {gallery.map((card, index) => <GalleryCard
-          key={index}
-          title={card.title}
-          thumb={card.thumb}
-          description={card.description}
-          onClick={() => handleOnClick(card)}
-        />)}
+        {gallery.map((card, index) => (
+          <GalleryCard
+            key={index}
+            title={card.title}
+            url={card.url}
+            date={card.date}
+            location={card.location}
+            video={card.video}
+            onClick={() => handleOnClick(card)}
+          />
+        ))}
       </S.Content>
       <AnimatePresence>
-        {isOpen ? <Modal>
-          <GalleryModal album={album} onClose={handleOnClose} />
-        </Modal> : null}
+        {isOpen ? (
+          <Modal>
+            <GalleryModal album={album} onClose={handleOnClose} />
+          </Modal>
+        ) : null}
       </AnimatePresence>
     </S.Container>
-  )
+  );
 }

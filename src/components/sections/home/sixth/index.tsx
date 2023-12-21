@@ -1,11 +1,8 @@
+import { Inter } from "next/font/google";
+import * as S from "./style";
+import Button from "@/components/ui/button";
 
-
-
-import { Inter } from 'next/font/google'
-import * as S from './style'
-import Button from '@/components/ui/button'
-
-const inter = Inter({subsets: ['latin']})
+const inter = Inter({ subsets: ["latin"] });
 
 export default function SixthSection() {
   return (
@@ -14,17 +11,17 @@ export default function SixthSection() {
         <S.TextGroup>
           <S.Line>
             <S.TextLG style={inter.style}>
-            Quando você se conhece profundamente,        
+              Quando você se conhece profundamente,
             </S.TextLG>
           </S.Line>
-          <S.Line padding='0 0 1em 0'>
+          <S.Line padding="0 0 1em 0">
             <S.TextLG style={inter.style}>
-            não há limites para o que pode realizar.     
+              não há limites para o que pode realizar.
             </S.TextLG>
           </S.Line>
         </S.TextGroup>
-        <Button text='Conheça nossos serviços' href='/services'/>
+        <Button text="Conheça nossos serviços" href="/gallery" />
       </S.Wrapper>
     </S.Container>
-  )
+  );
 }

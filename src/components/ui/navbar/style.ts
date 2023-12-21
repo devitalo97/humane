@@ -42,7 +42,7 @@ export const Wrapper = styled.div`
 
     @media screen and (max-width: 480px){
         > nav {
-            display: none;
+            gap: 1em;
         }
     }
 

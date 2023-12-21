@@ -29,18 +29,24 @@ export const Wrapper = styled.div`
     position: relative;
 `
 
-export const TextContent = styled.div`
-    padding: 5% min(5%, 1em) 5% min(5%, 1em);
+export const TextContent = styled.div<{ bottom: boolean }>`
+    padding: 2% min(5%, 1em) 2% min(5%, 1em);
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: .5em;
     position: absolute;
-    bottom: 0;
+    
+    ${({ bottom }) => bottom ? css`
+        bottom: 0;
+    ` : css`
+        top: 0;
+    `};
     border-radius: 1em;
     background-color: rgba(0,0,0,.3);
     left: 0;
     right: 0;
+    z-index: 500;
 `
 
 export type IText = {
