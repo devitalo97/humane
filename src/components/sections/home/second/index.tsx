@@ -14,7 +14,7 @@ export default function SecondSection() {
         <S.VideoWrapper {...animations(animation).video}>
           <video controls style={{ width: "100%", height: "100%" }}>
             <source
-              src="https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2Fhumane_video.mp4?alt=media&token=2f5705d1-e85a-410e-8a04-a8c5a5d5357a"
+              src="https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FHumane_VideoQB_45s_Full%20HD.mp4?alt=media&token=14b7cbc9-9835-4d11-9f98-68ab927c00f1"
               type="video/mp4"
             />
             Your browser does not support the video tag.

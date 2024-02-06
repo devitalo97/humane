@@ -134,6 +134,18 @@ import jornada8 from "@/assets/png/jornada_academica/WhatsApp Image 2023-05-26 a
 
 
 
+import santa1 from '@/assets/gallery/Workshop - Entender para Atender Incompany Luz e Força Santa Maria - Outubro-23/WhatsApp Image 2023-12-20 at 19.07.59.jpeg'
+import santa2 from '@/assets/gallery/Workshop - Entender para Atender Incompany Luz e Força Santa Maria - Outubro-23/WhatsApp Image 2023-12-20 at 19.08.03.jpeg'
+import santa3 from '@/assets/gallery/Workshop - Entender para Atender Incompany Luz e Força Santa Maria - Outubro-23/WhatsApp Image 2023-12-20 at 19.08.04 (1).jpeg'
+import santa4 from '@/assets/gallery/Workshop - Entender para Atender Incompany Luz e Força Santa Maria - Outubro-23/WhatsApp Image 2023-12-20 at 19.08.04 (2).jpeg'
+import santa5 from '@/assets/gallery/Workshop - Entender para Atender Incompany Luz e Força Santa Maria - Outubro-23/WhatsApp Image 2023-12-20 at 19.08.04 (3).jpeg'
+import santa6 from '@/assets/gallery/Workshop - Entender para Atender Incompany Luz e Força Santa Maria - Outubro-23/WhatsApp Image 2023-12-20 at 19.08.04.jpeg'
+import santa7 from '@/assets/gallery/Workshop - Entender para Atender Incompany Luz e Força Santa Maria - Outubro-23/WhatsApp Image 2023-12-20 at 19.08.05 (1).jpeg'
+import santa8 from '@/assets/gallery/Workshop - Entender para Atender Incompany Luz e Força Santa Maria - Outubro-23/WhatsApp Image 2023-12-20 at 19.08.05.jpeg'
+import santa9 from '@/assets/gallery/Workshop - Entender para Atender Incompany Luz e Força Santa Maria - Outubro-23/WhatsApp Image 2023-12-20 at 19.08.06 (1).jpeg'
+import santa10 from '@/assets/gallery/Workshop - Entender para Atender Incompany Luz e Força Santa Maria - Outubro-23/WhatsApp Image 2023-12-20 at 19.08.06.jpeg'
+
+
 // "Abertura da Semana Sipat - Sanear Colatina - Setembro-23"
 // "Palestra Servidores Públicos de Vila Valério"
 // "Treinamento Vendas e Atendimento Ótica Novamatic - Junho-23"
@@ -150,6 +162,34 @@ export type Album = {
 }
 
 export const gallery: Album[] = [
+    {
+        type: "Workshop",
+        title: 'Luz e Força Santa Maria',
+        date: "Outubro, 2023",
+        location: "Colatina",
+        video: true,
+        url: 'https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FModelo%20Workshop.mp4?alt=media&token=866b8d87-e6da-465a-9e00-cadcb98277a6',
+    },
+    {
+        type: "Workshop",
+        title: 'Luz e Força Santa Maria',
+        date: "Outubro, 2023",
+        location: "Colatina",
+        video: false,
+        url: santa1,
+        photos: [
+            santa1,
+            santa2,
+            santa3,
+            santa4,
+            santa5,
+            santa6,
+            santa7,
+            santa8,
+            santa9,
+            santa10,
+        ]
+    },
     {
         type: "Treinamento",
         title: 'Shopping Moda Brasil',
