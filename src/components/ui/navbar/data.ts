@@ -3,5 +3,6 @@ export const titleByPathname: { [x: string]: string | null } = {
     '/gallery': 'Galeria',
     '/services': 'Serviços',
     '/about': 'Sobre',
+    '/course': 'Treinamentos',
     '/': null,
 }

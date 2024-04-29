@@ -103,6 +103,9 @@ export default function Navbar() {
           <Link href={"/gallery"}>
             <S.Text style={inter.style}>Galeria</S.Text>
           </Link>
+          <Link href={"/course"}>
+            <S.Text style={inter.style}>Cursos e Treinamentos</S.Text>
+          </Link>
           {/* <Link href={"/blog"}><S.Text style={inter.style}>Blog</S.Text></Link> */}
         </S.Nav>
       </S.Wrapper>
