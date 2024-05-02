@@ -16,6 +16,7 @@ export default function Radio(props: {
   label: string;
   name: string;
   options: { label: string }[];
+  onChange: (params: { label: string }) => void;
 }) {
   return (
     <div>
@@ -34,6 +35,7 @@ export default function Radio(props: {
                 id={option.label + index.toString()}
                 name={props.name}
                 type="radio"
+                onChange={() => props.onChange(option)}
                 className="h-4 w-4 border-gray-300 text-blue-600 focus:ring-blue-600"
               />
               <label
