@@ -20,6 +20,7 @@ export default async function handler(
     const result = await mailGateway.sendMail({
       from: "dev.italo.souza@gmail.com",
       to: ["dev.italo.souza@gmail.com", "luizcisassessment@gmail.com"],
+
       subject: `${new Date().toLocaleString()} - ${body.project_name}`,
       text: JSON.stringify(body, null, 2)
     })
