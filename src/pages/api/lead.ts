@@ -1,4 +1,6 @@
+import CourseEmail from '@/components/ui/emails/CourseEmail'
 import { mailGateway } from '@/lib/gateway/email/nodemailer'
+import { render } from '@react-email/render'
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Body = {
@@ -17,12 +19,13 @@ export default async function handler(
 ) {
   try {
     const body: Body = req.body
+    const emailHtml = render(CourseEmail(body));
     const result = await mailGateway.sendMail({
       from: "dev.italo.souza@gmail.com",
       to: ["dev.italo.souza@gmail.com", "luizcisassessment@gmail.com"],
 
       subject: `${new Date().toLocaleString()} - ${body.project_name}`,
-      text: JSON.stringify(body, null, 2)
+      html: emailHtml
     })
     res.status(200).json({ result })
   } catch (err) {
