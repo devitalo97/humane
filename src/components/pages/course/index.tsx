@@ -15,17 +15,17 @@ export default function FirstSection() {
         <div className="mx-auto mt-16 max-w-7xl px-6 sm:mt-32 lg:px-8">
           <div className="mx-auto max-w-4xl text-center">
             <h1 className="text-base font-semibold leading-7 text-blue-600">
-              Cursos e Treinamentos
+              Treinamentos
             </h1>
             <p className="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
               Conheça nossos Treinamentos
             </p>
           </div>
           <p className="mx-auto mt-6 max-w-2xl text-center text-lg leading-8 text-gray-600">
-            Abaixo segue uma lista de todos os nossos cursos e treinamentos
-            disponíveis no momento. Leia com atenção e escolha aquele que melhor
-            te atender. Preencha o formulário e entraremos em contato para
-            efetivar sua inscrição.
+            Abaixo segue uma lista de todos os nossos treinamentos disponíveis
+            no momento. Leia com atenção e escolha aquele que melhor te atender.
+            Preencha o formulário e entraremos em contato para efetivar sua
+            inscrição.
           </p>
         </div>
         <Disclosure
