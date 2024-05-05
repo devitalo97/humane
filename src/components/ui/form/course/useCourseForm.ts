@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod"
 import { z } from "zod";
+import { useState } from "react";
 
 const schema = z.object({
   name: z.string(),
@@ -15,31 +16,41 @@ const schema = z.object({
 type Schema = z.infer<typeof schema>;
 
 export const useCourseForm = (props: { project_name: string }) => {
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isSuccess, setIsSuccess] = useState<boolean>(false);
   const {
     handleSubmit,
     register,
     formState,
     control,
-    reset
   } = useForm<Schema>({
     resolver: zodResolver(schema)
   })
 
   const onSubmit = async (data: Schema) => {
-    await fetch("/api/lead", {
+
+    setIsLoading(true)
+    const res = await fetch("/api/lead", {
       method: "post",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({ ...data, project_name: props.project_name })
     })
-    reset()
+    setIsLoading(false)
+    res.status === 200 && setIsSuccess(true)
+    const element = document.getElementById("success");
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    }
   }
 
   return {
     register,
     handleSubmit: handleSubmit(onSubmit),
     errors: formState.errors,
-    control
+    control,
+    isLoading,
+    isSuccess
   }
 }
