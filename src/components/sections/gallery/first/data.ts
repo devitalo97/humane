@@ -146,6 +146,17 @@ import santa9 from '@/assets/gallery/Workshop - Entender para Atender Incompany 
 import santa10 from '@/assets/gallery/Workshop - Entender para Atender Incompany Luz e Força Santa Maria - Outubro-23/WhatsApp Image 2023-12-20 at 19.08.06.jpeg'
 
 
+
+import cdl1 from "@/assets/gallery/CDL Programa de Desenvolvimento/humane--2.jpg"
+import cdl2 from "@/assets/gallery/CDL Programa de Desenvolvimento/humane--13.jpg"
+import cdl3 from "@/assets/gallery/CDL Programa de Desenvolvimento/humane--16.jpg"
+import cdl4 from "@/assets/gallery/CDL Programa de Desenvolvimento/humane--73.jpg"
+import cdl5 from "@/assets/gallery/CDL Programa de Desenvolvimento/humane--89.jpg"
+import cdl6 from "@/assets/gallery/CDL Programa de Desenvolvimento/humane--99.jpg"
+import cdl7 from "@/assets/gallery/CDL Programa de Desenvolvimento/humane--134.jpg"
+import cdl8 from "@/assets/gallery/CDL Programa de Desenvolvimento/humane--140.jpg"
+
+
 // "Abertura da Semana Sipat - Sanear Colatina - Setembro-23"
 // "Palestra Servidores Públicos de Vila Valério"
 // "Treinamento Vendas e Atendimento Ótica Novamatic - Junho-23"
@@ -162,6 +173,40 @@ export type Album = {
 }
 
 export const gallery: Album[] = [
+    {
+        type: "Treinamento",
+        title: 'Programa de Desenvolvimento em Vendas e Atendimento',
+        date: "Maio, 2024",
+        location: "Nova Venécia",
+        video: true,
+        url: 'https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FREEL_HUMANE.mp4?alt=media&token=efccc57a-95ed-4df9-8f07-090efbb23b0b',
+    },
+    {
+        type: "Treinamento",
+        title: 'Programa de Desenvolvimento em Vendas e Atendimento',
+        date: "Maio, 2024",
+        location: "Nova Venécia",
+        video: true,
+        url: 'https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDEP_ISRAEL.mp4?alt=media&token=ff5f96a5-c0f0-4dcb-860d-17fc38cf2f22',
+    },
+    {
+        type: "Treinamento",
+        title: 'Programa de Desenvolvimento em Vendas e Atendimento',
+        date: "Maio, 2024",
+        location: "Nova Venécia",
+        video: false,
+        url: cdl1,
+        photos: [
+            cdl1,
+            cdl2,
+            cdl3,
+            cdl4,
+            cdl5,
+            cdl6,
+            cdl7,
+            cdl8
+        ]
+    },
     {
         type: "Workshop",
         title: 'Luz e Força Santa Maria',
