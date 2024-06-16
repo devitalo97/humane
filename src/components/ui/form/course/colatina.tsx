@@ -1,12 +1,12 @@
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
 import Radio from "../../radio";
-import React, { useState } from "react";
+import React from "react";
 import { useCourseForm } from "./useCourseForm";
 import { Controller } from "react-hook-form";
 import { cn } from "@/util/cn";
 import { Alert } from "../../alert";
 
-export function CourseForm(props: { project_name: string }) {
+export function ColatinaCourseForm(props: { project_name: string }) {
   const { register, handleSubmit, control, isLoading, isSuccess } =
     useCourseForm({
       project_name: props.project_name,
@@ -132,7 +132,7 @@ export function CourseForm(props: { project_name: string }) {
                   options={[
                     {
                       label:
-                        "Integrante de empresa associada à CDL de Nova Venécia. R$ 250,00.",
+                        "Integrante de empresa associada à CDL de Colatina R$ 250,00.",
                     },
                     {
                       label: "Não associados. R$ 450,00.",
@@ -155,11 +155,13 @@ export function CourseForm(props: { project_name: string }) {
                   options={[
                     {
                       label:
-                        "Pessoa Física: Catão de Crédito ( 30 dias) ou à vista pelo Pix ou Link.",
+                        "Pessoa Física: Catão de Crédito (30 dias) ou à vista pelo Pix (027) 9 9958-0841",
                     },
                     {
-                      label:
-                        "Pessoa Jurídica: Cartão de Crédito, Boleto ( 30 dias ) ou à vista pelo Pix ou Link.",
+                      label: "Pessoa Jurídica Associado à CDL R$ 250,00.",
+                    },
+                    {
+                      label: "Pessoa Jurídica não associado à CDL R$ 350,00.",
                     },
                   ]}
                 />
