@@ -157,6 +157,20 @@ import cdl7 from "@/assets/gallery/CDL Programa de Desenvolvimento/humane--134.j
 import cdl8 from "@/assets/gallery/CDL Programa de Desenvolvimento/humane--140.jpg"
 
 
+
+
+
+import trabalhador1 from "@/assets/gallery/Convencao Farmacia Trabalhador Capixaba/IMG_9042.jpg"
+import trabalhador2 from "@/assets/gallery/Convencao Farmacia Trabalhador Capixaba/IMG_9043.jpg"
+import trabalhador3 from "@/assets/gallery/Convencao Farmacia Trabalhador Capixaba/IMG_9044.jpg"
+import trabalhador4 from "@/assets/gallery/Convencao Farmacia Trabalhador Capixaba/IMG_9045.jpg"
+import trabalhador5 from "@/assets/gallery/Convencao Farmacia Trabalhador Capixaba/IMG_9046.jpg"
+import trabalhador6 from "@/assets/gallery/Convencao Farmacia Trabalhador Capixaba/IMG_9047.jpg"
+import trabalhador7 from "@/assets/gallery/Convencao Farmacia Trabalhador Capixaba/IMG_9048.jpg"
+import trabalhador8 from "@/assets/gallery/Convencao Farmacia Trabalhador Capixaba/IMG_9049.jpg"
+import trabalhador9 from "@/assets/gallery/Convencao Farmacia Trabalhador Capixaba/IMG_9050.jpg"
+
+
 // "Abertura da Semana Sipat - Sanear Colatina - Setembro-23"
 // "Palestra Servidores Públicos de Vila Valério"
 // "Treinamento Vendas e Atendimento Ótica Novamatic - Junho-23"
@@ -173,6 +187,33 @@ export type Album = {
 }
 
 export const gallery: Album[] = [
+    {
+        type: "Convenção",
+        title: 'Convenção Farmácia do Trabalhador Capixaba',
+        date: "Junho, 2024",
+        location: "Nova Venécia",
+        video: true,
+        url: 'https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FVideo%20Entender%20para%20Atender.mp4?alt=media&token=b9b1b09d-5eef-4140-bd57-cb39d14373b5',
+    },
+    {
+        type: "Convenção",
+        title: 'Convenção Farmácia do Trabalhador Capixaba',
+        date: "Junho, 2024",
+        location: "Nova Venécia",
+        video: false,
+        url: trabalhador1,
+        photos: [
+            trabalhador1,
+            trabalhador2,
+            trabalhador3,
+            trabalhador4,
+            trabalhador5,
+            trabalhador6,
+            trabalhador7,
+            trabalhador8,
+            trabalhador9
+        ]
+    },
     {
         type: "Treinamento",
         title: 'Programa de Desenvolvimento em Vendas e Atendimento',
