@@ -1,3 +1,5 @@
+import { useEffect, useState } from "react";
+
 /*
   This example requires some changes to your config:
   
@@ -18,7 +20,11 @@ export default function Radio(props: {
   options: { label: string }[];
   onChange: (params: { label: string }) => void;
 }) {
-  const uuid = crypto.randomUUID();
+  const [uuid, setUuid] = useState<string>("");
+
+  useEffect(() => {
+    setUuid(crypto.randomUUID());
+  }, []);
 
   return (
     <div>
