@@ -135,7 +135,7 @@ export function ColatinaCourseForm(props: { project_name: string }) {
                         "Integrante de empresa associada à CDL de Colatina R$ 250,00.",
                     },
                     {
-                      label: "Não associados. R$ 450,00.",
+                      label: "Não associados. R$ 350,00.",
                     },
                   ]}
                 />
@@ -158,10 +158,7 @@ export function ColatinaCourseForm(props: { project_name: string }) {
                         "Pessoa Física: Catão de Crédito (30 dias) ou à vista pelo Pix (027) 9 9958-0841",
                     },
                     {
-                      label: "Pessoa Jurídica Associado à CDL R$ 250,00.",
-                    },
-                    {
-                      label: "Pessoa Jurídica não associado à CDL R$ 350,00.",
+                      label: "Pessoa Jurídica: Boleto (30 dias)",
                     },
                   ]}
                 />
