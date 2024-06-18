@@ -6,10 +6,14 @@ import { Controller } from "react-hook-form";
 import { cn } from "@/util/cn";
 import { Alert } from "../../alert";
 
-export function BoaEsperancaCourseForm(props: { project_name: string }) {
+export function BoaEsperancaCourseForm(props: {
+  project_name: string;
+  htmlIdToScroll: string;
+}) {
   const { register, handleSubmit, control, isLoading, isSuccess } =
     useCourseForm({
       project_name: props.project_name,
+      htmlIdToScroll: props.htmlIdToScroll,
     });
 
   if (isSuccess) {
@@ -155,7 +159,7 @@ export function BoaEsperancaCourseForm(props: { project_name: string }) {
                   options={[
                     {
                       label:
-                        "Pessoa Física: Catão de Crédito (30 dias) ou à vista pelo Pix (027) 9 9958-0841",
+                        "Pessoa Física: Cartão de Crédito (30 dias) ou à vista pelo Pix (027) 9 9958-0841",
                     },
                     {
                       label: "Pessoa Jurídica: Boleto (30 dias).",

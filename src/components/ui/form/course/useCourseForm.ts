@@ -15,7 +15,7 @@ const schema = z.object({
 
 type Schema = z.infer<typeof schema>;
 
-export const useCourseForm = (props: { project_name: string }) => {
+export const useCourseForm = (props: { project_name: string, htmlIdToScroll: string }) => {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [isSuccess, setIsSuccess] = useState<boolean>(false);
   const {
@@ -39,7 +39,7 @@ export const useCourseForm = (props: { project_name: string }) => {
     })
     setIsLoading(false)
     res.status === 200 && setIsSuccess(true)
-    const element = document.getElementById("success");
+    const element = document.getElementById(props.htmlIdToScroll);
     if (element) {
       element.scrollIntoView({ behavior: "smooth" });
     }
