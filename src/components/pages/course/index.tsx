@@ -59,7 +59,7 @@ export default function FirstSection() {
                             </h1>
                             <div className="max-w-xl">
                               <p className="mt-6">
-                                Primeiro Módulo – Dia 22 de Julho, 19:00 às
+                                Primeiro Módulo – Dia 22 de Julho, 18:30 às
                                 22:00.
                               </p>
                               <p className="font-semibold">
@@ -79,7 +79,7 @@ export default function FirstSection() {
                               </p>
 
                               <p className="mt-6">
-                                Segundo Módulo - Dia 24 de Julho, 19:00 às
+                                Segundo Módulo - Dia 24 de Julho, 18:30 às
                                 22:00.
                               </p>
                               <p className="font-semibold">
@@ -100,7 +100,7 @@ export default function FirstSection() {
                               </p>
 
                               <p className="mt-6">
-                                Terceiro Módulo Dia 25 de Julho, 19:00 às 22:00
+                                Terceiro Módulo Dia 25 de Julho, 18:30 às 22:00
                                 22:00.
                               </p>
                               <p className="font-semibold">
