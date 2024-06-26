@@ -159,8 +159,8 @@ export default function FirstSection() {
                             </h1>
                             <div className="max-w-xl">
                               <p className="mt-6">
-                                Primeiro Módulo – Dia 16 de Julho, 19:30 às
-                                22:00.
+                                Primeiro Módulo – Dia 16 de Julho, 18:30 às
+                                21:30.
                               </p>
                               <p className="font-semibold">
                                 Tema: Entender para Atender.
@@ -173,8 +173,8 @@ export default function FirstSection() {
                               </p>
 
                               <p className="mt-6">
-                                Segundo Módulo – Dia 23 de Julho, 19:30 às
-                                22:00.
+                                Segundo Módulo – Dia 23 de Julho, 18:30 às
+                                21:30.
                               </p>
                               <p className="font-semibold">
                                 Tema: Descubra seu Perfil Comportamental.
@@ -189,8 +189,8 @@ export default function FirstSection() {
                               </p>
 
                               <p className="mt-6">
-                                Terceiro Módulo - Dia 30 de Julho, 19:30 às
-                                22:00.
+                                Terceiro Módulo - Dia 30 de Julho, 18:30 às
+                                21:30.
                               </p>
                               <p className="font-semibold">
                                 Tema: Aplicação da Análise SWOT para Vendas e
@@ -210,7 +210,7 @@ export default function FirstSection() {
                               </p>
 
                               <p className="mt-6">
-                                Quarto Módulo: Dia 06 de Agosto, 19:30.
+                                Quarto Módulo: Dia 06 de Agosto, 18:30 às 21:30.
                               </p>
                               <p className="font-semibold">
                                 Tema: O Poder da Autorresponsabilidade.
