@@ -171,6 +171,13 @@ import trabalhador8 from "@/assets/gallery/Convencao Farmacia Trabalhador Capixa
 import trabalhador9 from "@/assets/gallery/Convencao Farmacia Trabalhador Capixaba/IMG_9050.jpg"
 
 
+import entenderParaAtender1 from "@/assets/gallery/Entender para Atender 26-06/1.jpg"
+import entenderParaAtender2 from "@/assets/gallery/Entender para Atender 26-06/b.jpg"
+import entenderParaAtender3 from "@/assets/gallery/Entender para Atender 26-06/d.jpg"
+import entenderParaAtender4 from "@/assets/gallery/Entender para Atender 26-06/g.jpg"
+import entenderParaAtender5 from "@/assets/gallery/Entender para Atender 26-06/n.jpg"
+import entenderParaAtender6 from "@/assets/gallery/Entender para Atender 26-06/p.jpg"
+
 // "Abertura da Semana Sipat - Sanear Colatina - Setembro-23"
 // "Palestra Servidores Públicos de Vila Valério"
 // "Treinamento Vendas e Atendimento Ótica Novamatic - Junho-23"
@@ -187,6 +194,22 @@ export type Album = {
 }
 
 export const gallery: Album[] = [
+    {
+        type: "Palestra",
+        title: 'Palestra Entender para Atender - CDL',
+        date: "Junho, 2024",
+        location: "Boa Esperança",
+        video: false,
+        url: entenderParaAtender1,
+        photos: [
+            entenderParaAtender1,
+            entenderParaAtender2,
+            entenderParaAtender3,
+            entenderParaAtender4,
+            entenderParaAtender5,
+            entenderParaAtender6
+        ]
+    },
     {
         type: "Convenção",
         title: 'Convenção Farmácia do Trabalhador Capixaba',
