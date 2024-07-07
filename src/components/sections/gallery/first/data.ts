@@ -196,7 +196,7 @@ export type Album = {
 export const gallery: Album[] = [
     {
         type: "Palestra",
-        title: 'Palestra Campanha Coca-Cola - CDL',
+        title: 'Palestra Campanha Colá Colá - CDL',
         date: "Junho, 2024",
         location: "Colatina",
         video: true,
