@@ -196,6 +196,22 @@ export type Album = {
 export const gallery: Album[] = [
     {
         type: "Palestra",
+        title: 'Palestra Campanha Coca-Cola - CDL',
+        date: "Junho, 2024",
+        location: "Colatina",
+        video: true,
+        url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FPALESTRA%20-%20COLA-COL%C3%81.mp4?alt=media&token=4fdfddb1-ce88-4d4c-93f4-339ffc05bb14",
+    },
+    {
+        type: "Palestra",
+        title: 'Palestra Entender para Atender - CDL',
+        date: "Junho, 2024",
+        location: "Boa Esperança",
+        video: true,
+        url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FVideo%20CDL%20BE.mp4?alt=media&token=ee8a512f-13e8-4e65-8d61-4eee5f7569a4",
+    },
+    {
+        type: "Palestra",
         title: 'Palestra Entender para Atender - CDL',
         date: "Junho, 2024",
         location: "Boa Esperança",
