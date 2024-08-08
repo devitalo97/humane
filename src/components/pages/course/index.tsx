@@ -32,14 +32,21 @@ export default function FirstSection() {
         <Disclosure
           options={[
             {
-              title:
-                "Colatina - Capacitação em Vendas e Atendimento com base na Análise de Perfil.",
+              title: (
+                <div className="relative w-full rounded">
+                  <div className="absolute top-0 left-0 w-20 h-4 bg-red-500 text-white text-xs flex items-center justify-center transform rotate-[315deg] -translate-y-1/2 -translate-x-1/2 p-3 rounded-md">
+                    Esgotado
+                  </div>
+                  Colatina - Capacitação em Vendas e Atendimento com base na
+                  Análise de Perfil.
+                </div>
+              ),
               content: (
                 <>
                   <div className="bg-white py-8 sm:py-16" id="success-colatina">
                     <div className="mx-auto">
                       <div className="mx-auto grid grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                        <div className="lg:pr-4">
+                        {/* <div className="lg:pr-4">
                           <div className="relative overflow-hidden rounded-3xl bg-white px-6 pb-9 pt-16 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
                             <div className="border-b border-gray-900/10 pb-12">
                               <ColatinaCourseForm
@@ -48,7 +55,7 @@ export default function FirstSection() {
                               />
                             </div>
                           </div>
-                        </div>
+                        </div> */}
                         <div>
                           <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
                             <p className="text-base font-semibold leading-7 text-blue-600">
@@ -129,8 +136,15 @@ export default function FirstSection() {
             },
 
             {
-              title:
-                "Boa Esperança - Capacitação em Vendas e Atendimento com base na Análise de Perfil.",
+              title: (
+                <div className="relative w-full rounded">
+                  <div className="absolute top-0 left-0 w-20 h-4 bg-red-500 text-white text-xs flex items-center justify-center transform rotate-[315deg] -translate-y-1/2 -translate-x-1/2 p-3 rounded-md">
+                    Esgotado
+                  </div>
+                  Boa Esperança - Capacitação em Vendas e Atendimento com base
+                  na Análise de Perfil.,
+                </div>
+              ),
               content: (
                 <>
                   <div
@@ -139,7 +153,7 @@ export default function FirstSection() {
                   >
                     <div className="mx-auto">
                       <div className="mx-auto grid grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-                        <div className="lg:pr-4">
+                        {/* <div className="lg:pr-4">
                           <div className="relative overflow-hidden rounded-3xl bg-white px-6 pb-9 pt-16 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
                             <div className="border-b border-gray-900/10 pb-12">
                               <BoaEsperancaCourseForm
@@ -148,7 +162,7 @@ export default function FirstSection() {
                               />
                             </div>
                           </div>
-                        </div>
+                        </div> */}
                         <div>
                           <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
                             <p className="text-base font-semibold leading-7 text-blue-600">
