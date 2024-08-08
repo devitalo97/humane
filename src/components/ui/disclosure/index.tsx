@@ -2,7 +2,7 @@ import { Disclosure as HDisclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
 export default function Disclosure(props: {
-  options: { title: string; content: React.ReactNode }[];
+  options: { title: React.ReactNode; content: React.ReactNode }[];
   containerClassnae?: string;
 }) {
   return (
@@ -13,7 +13,7 @@ export default function Disclosure(props: {
             {({ open }) => (
               <>
                 <HDisclosure.Button className="flex w-full justify-between rounded-lg bg-blue-100 px-4 py-4 mb-4 text-left text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-blue-500/75">
-                  <span>{option.title}</span>
+                  {option.title}
                   <ChevronUpIcon
                     className={`${
                       open ? "rotate-180 transform" : ""
