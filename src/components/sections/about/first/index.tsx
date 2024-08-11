@@ -60,7 +60,7 @@ export default function FirstSection() {
         </div>
 
         <div className="overflow-hidden">
-          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-6 pb-32 sm:pb-40 lg:px-8">
             <S.Content>
               {about.map((item, index) => (
                 <S.Hero key={index} invert={item.invert}>
