@@ -44,8 +44,8 @@ export default function Navbar() {
   const controls = useAnimation();
   const delta = useRef(0);
   const lastScrollY = useRef(0);
+
   scrollY.onChange((val) => {
-    if (pathname.includes("blog") || pathname.includes("services")) return;
     const diff = Math.abs(val - lastScrollY.current);
     if (val >= lastScrollY.current) {
       delta.current = delta.current >= 10 ? 10 : delta.current + diff;
@@ -66,12 +66,31 @@ export default function Navbar() {
       controls.start("transparent");
     }
 
-    if (val === 0 && pathname.includes("gallery")) {
+    if (
+      val === 0 &&
+      (pathname.includes("/gallery") ||
+        pathname.includes("/about") ||
+        pathname.includes("/course"))
+    ) {
       controls.start("color");
     }
 
     lastScrollY.current = val;
   });
+
+  useEffect(() => {
+    if (pathname === "/") {
+      controls.start("transparent");
+    }
+
+    if (
+      pathname.includes("/gallery") ||
+      pathname.includes("/about") ||
+      pathname.includes("/course")
+    ) {
+      controls.start("color");
+    }
+  }, [pathname]);
 
   return (
     <S.Container
