@@ -12,7 +12,6 @@ export const NavGhost = styled.div`
 `
 
 export const Content = styled.div`
-    ${Section({ padding: '5%' })}
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
