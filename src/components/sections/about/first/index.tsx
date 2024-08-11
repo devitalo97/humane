@@ -23,17 +23,16 @@ export default function FirstSection() {
                   Luiz Ricardo Pereira de Souza é um profissional com 25 anos de
                   experiência no mercado de vendas e atendimento. Ao longo de
                   sua trajetória, atuou em empresas renomadas como a Rádio Nova
-                  Onda FM, Rede Gazeta e Findes, onde atual ao lado de grandes
+                  Onda FM, Rede Gazeta e Findes, onde atuou ao lado de grandes
                   profissionais em todo o Espírito Santo.
                 </p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Graduado em Administração de Empresas inscrito no CRA/ES
                   30449, Luiz Ricardo possui MBAs em Gestão Comercial e
-                  Marketing, além de Gestão Empresarial pela FGV. Ele também se
-                  aprofundou em liderança através de programa FDV em parceria
-                  com a Fundação Dom Cabral e se especializou na área
-                  comportamental, com formações em Gestão do Perfil
-                  Comportamental, Hipnoterapia e Coaching Integral Sistêmico.
+                  Marketing, além de Gestão Empresarial pela FGV.
+                  Especializou-se na área comportamental, com formações em
+                  Gestão do Perfil Comportamental, Hipnoterapia e Coaching
+                  Integral Sistêmico.
                 </p>
                 <p className="mt-6 text-lg leading-8 text-gray-600">
                   Atualmente, Luiz Ricardo capacita profissionais a explorarem
