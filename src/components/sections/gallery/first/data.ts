@@ -193,6 +193,14 @@ export type Album = {
     photos?: StaticImageData[]
 }
 
+export type Testimonials = {
+    type: string
+    title: string
+    date: string
+    location: string
+    url: string
+}
+
 export const gallery: Album[] = [
     {
         type: "Palestra",
@@ -516,3 +524,30 @@ export const gallery: Album[] = [
         ]
     }
 ]
+
+export const testimonials: { [key: string]: Testimonials[] } =
+{
+    "Projeto Entender para Antender": [
+        {
+            type: "Palestra",
+            title: 'Depoimento Beatriz',
+            date: "Junho, 2024",
+            location: "Colatina",
+            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDepoimento%20Beatriz.mp4?alt=media&token=48fa1802-98d9-40e5-b89b-f96287272589",
+        },
+        {
+            type: "Palestra",
+            title: 'Depoimento Dimas',
+            date: "Junho, 2024",
+            location: "Colatina",
+            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDepoimento%20Dimas.mp4?alt=media&token=cb195a1e-1514-4d27-b310-14ddd598da52",
+        },
+        {
+            type: "Palestra",
+            title: 'Depoimento Lucinete',
+            date: "Junho, 2024",
+            location: "Colatina",
+            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDepoimento%20Lucinete.mp4?alt=media&token=cf2016c8-404a-4c15-9f91-580c386a65ee",
+        }
+    ]
+}
