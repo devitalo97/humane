@@ -536,18 +536,26 @@ export const testimonials: { [key: string]: Testimonials[] } =
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDepoimento%20Beatriz.mp4?alt=media&token=48fa1802-98d9-40e5-b89b-f96287272589",
         },
         {
-            type: "Palestra",
+            type: "Treinamento",
             title: 'Depoimento Dimas',
-            date: "Junho, 2024",
+            date: "Julho, 2024",
             location: "Colatina",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDepoimento%20Dimas.mp4?alt=media&token=cb195a1e-1514-4d27-b310-14ddd598da52",
         },
         {
-            type: "Palestra",
+            type: "Treinamento",
             title: 'Depoimento Lucinete',
-            date: "Junho, 2024",
+            date: "Julho, 2024",
             location: "Colatina",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDepoimento%20Lucinete.mp4?alt=media&token=cf2016c8-404a-4c15-9f91-580c386a65ee",
+        },
+        {
+            type: "Treinamento",
+            title: 'Depoimento Claudia',
+            date: "Julho, 2024",
+            location: "Colatina",
+            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDepoimento%20Claudia.mp4?alt=media&token=fe2dd773-2442-4d14-b584-3f25900ebacd",
+
         }
     ]
 }
