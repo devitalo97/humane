@@ -6,7 +6,7 @@ import { Controller } from "react-hook-form";
 import { cn } from "@/util/cn";
 import { Alert } from "../../alert";
 
-export function VilaValerioCourseForm(props: {
+export function NovaVeneciaCourseForm(props: {
   project_name: string;
   htmlIdToScroll: string;
 }) {
@@ -136,7 +136,7 @@ export function VilaValerioCourseForm(props: {
                   options={[
                     {
                       label:
-                        "Integrante de empresa associada à CDL de Vila Valério R$ 250,00.",
+                        "Integrante de empresa associada à CDL de Nova Venécia R$ 250,00.",
                     },
                     {
                       label: "Não associados. R$ 350,00.",

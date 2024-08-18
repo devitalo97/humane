@@ -3,6 +3,7 @@ import * as S from "./style";
 import { ColatinaCourseForm } from "@/components/ui/form/course/colatina";
 import { BoaEsperancaCourseForm } from "@/components/ui/form/course/boa-esperanca";
 import { VilaValerioCourseForm } from "@/components/ui/form/course/vila-valerio";
+import { NovaVeneciaCourseForm } from "@/components/ui/form/course/nova-venecia";
 const stats = [
   { label: "Founded", value: "2021" },
   { label: "Employees", value: "37" },
@@ -188,7 +189,7 @@ export default function FirstSection() {
                         <div className="lg:pr-4">
                           <div className="relative overflow-hidden rounded-3xl bg-white px-6 pb-9 pt-16 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
                             <div className="border-b border-gray-900/10 pb-12">
-                              <VilaValerioCourseForm
+                              <NovaVeneciaCourseForm
                                 project_name="Nova Venécia - Projeto Entender para Atender."
                                 htmlIdToScroll="success-nova-venecia"
                               />
