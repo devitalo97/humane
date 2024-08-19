@@ -42,7 +42,7 @@ export function ColatinaCourseForm(props: {
               <input
                 type="text"
                 id="name"
-                {...register("name")}
+                {...register("users.0.name")}
                 autoComplete="given-name"
                 placeholder="João"
                 className="block w-full rounded-md border-0 py-1.5 pl-4 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
@@ -74,7 +74,7 @@ export function ColatinaCourseForm(props: {
               <input
                 type="text"
                 id="phone"
-                {...register("phone")}
+                {...register("users.0.phone")}
                 className="block w-full rounded-md border-0 py-1.5 pl-16 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                 placeholder="(27) 99458 9874"
               />
@@ -98,7 +98,7 @@ export function ColatinaCourseForm(props: {
               <input
                 type="email"
                 id="email"
-                {...register("email")}
+                {...register("users.0.email")}
                 className="block w-full rounded-md border-0 py-1.5 pl-10 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                 placeholder="you@example.com"
               />
