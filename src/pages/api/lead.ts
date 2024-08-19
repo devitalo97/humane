@@ -4,10 +4,13 @@ import { render } from '@react-email/render'
 import type { NextApiRequest, NextApiResponse } from 'next'
 
 type Body = {
-  name: string
-  phone: string
-  email: string
-  enterprise_name: string
+  users: {
+    name: string
+    phone: string
+    email: string
+  }[]
+  enterprise_name?: string
+  enterprise_document?: string
   payment_method: string
   payment_type: string
   project_name: string

@@ -48,7 +48,7 @@ export default function FirstSection() {
                     <div className="mx-auto">
                       <div className="mx-auto grid grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                         <div className="lg:pr-4">
-                          <div className="relative overflow-hidden rounded-3xl bg-white px-6 pb-9 pt-16 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                          <div className="relative overflow-hidden rounded-3xl bg-white px-6 pb-9 pt-16 shadow-2xl sm:px-12 lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
                             <div className="border-b border-gray-900/10 pb-12">
                               <VilaValerioCourseForm
                                 project_name="Vila Valério - Projeto Entender para Atender."
@@ -182,12 +182,12 @@ export default function FirstSection() {
                 <>
                   <div
                     className="bg-white py-8 sm:py-16"
-                    id="success-boa-esperanca"
+                    id="success-nova-venecia"
                   >
                     <div className="mx-auto">
                       <div className="mx-auto grid grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
                         <div className="lg:pr-4">
-                          <div className="relative overflow-hidden rounded-3xl bg-white px-6 pb-9 pt-16 shadow-2xl sm:px-12 lg:max-w-lg lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                          <div className="relative overflow-hidden rounded-3xl bg-white px-6 pb-9 pt-16 shadow-2xl sm:px-12 lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
                             <div className="border-b border-gray-900/10 pb-12">
                               <NovaVeneciaCourseForm
                                 project_name="Nova Venécia - Projeto Entender para Atender."

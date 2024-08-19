@@ -14,10 +14,9 @@ import {
 import * as React from "react";
 
 export const CourseEmail = (props: {
-  name: string;
-  phone: string;
-  email: string;
-  enterprise_name: string;
+  users: { name: string; phone: string; email: string }[];
+  enterprise_name?: string;
+  enterprise_document?: string;
   payment_method: string;
   payment_type: string;
   project_name: string;
@@ -46,10 +45,22 @@ export const CourseEmail = (props: {
           <Text style={paragraph}>Segue abaixo as informações do lead.</Text>
 
           <Text style={item}>Projeto: {props.project_name}</Text>
-          <Text style={item}>Nome: {props.name}</Text>
-          <Text style={item}>Email: {props.email}</Text>
-          <Text style={item}>Celular: {props.phone}</Text>
-          <Text style={item}>Nome da Empresa: {props.enterprise_name}</Text>
+          {props.users.map((u, uindex) => (
+            <Section key={uindex}>
+              <Text style={item}>Participante: {uindex + 1}</Text>
+              <Text style={item}>Nome: {u.name}</Text>
+              <Text style={item}>Email: {u.email}</Text>
+              <Text style={item}>Celular: {u.phone}</Text>
+            </Section>
+          ))}
+          {props.enterprise_name && (
+            <Text style={item}>Nome da Empresa: {props.enterprise_name}</Text>
+          )}
+          {props.enterprise_document && (
+            <Text style={item}>
+              Nome da Empresa: {props.enterprise_document}
+            </Text>
+          )}
           <Text style={item}>Método de Pagamento: {props.payment_method}</Text>
           <Text style={item}>Tipo do pagamento: {props.payment_type}</Text>
         </Section>
