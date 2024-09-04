@@ -323,7 +323,7 @@ export function VilaValerioCourseForm(props: {
                         "Pessoa Física: Cartão de Crédito (30 dias) ou à vista pelo Pix (027) 9 9958-0841",
                     },
                     {
-                      label: "Pessoa Jurídica: Boleto (30 dias).",
+                      label: "Pessoa Jurídica: Para o inicio de treinamento.",
                     },
                   ]}
                 />
