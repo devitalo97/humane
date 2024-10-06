@@ -1,17 +1,17 @@
-import FifthSection from '@/components/sections/home/fifth'
-import FirstSection from '@/components/sections/home/first'
-import FourthSection from '@/components/sections/home/fourth'
-import SecondSection from '@/components/sections/home/second'
-import SixthSection from '@/components/sections/home/sixth'
-import ThirdSection from '@/components/sections/home/third'
-import Header from '@/components/ui/head'
+import FifthSection from "@/components/sections/home/fifth";
+import FirstSection from "@/components/sections/home/first";
+import FourthSection from "@/components/sections/home/fourth";
+import SecondSection from "@/components/sections/home/second";
+import SixthSection from "@/components/sections/home/sixth";
+import ThirdSection from "@/components/sections/home/third";
+import Header from "@/components/ui/head";
 
 export default function Home() {
   return (
     <>
       <Header
-        title="Humane"
-        content="Bem-vindo à Humane. Descubra como podemos ajudar você a alcançar seu potencial."
+        title="Humaning"
+        content="Bem-vindo à Humaning. Descubra como podemos ajudar você a alcançar seu potencial."
       />
       <main>
         <FirstSection />
@@ -22,6 +22,5 @@ export default function Home() {
         <SixthSection />
       </main>
     </>
-
-  )
+  );
 }

@@ -23,7 +23,7 @@ export const CourseEmail = (props: {
 }) => (
   <Html>
     <Head />
-    <Preview>Humane</Preview>
+    <Preview>Humaning</Preview>
     <Body style={main}>
       <Container style={container}>
         <Section>
@@ -32,7 +32,7 @@ export const CourseEmail = (props: {
               <Img
                 style={sectionLogo}
                 src={`https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2Fcapa-humane-2.png?alt=media&token=0c823475-5d39-4e2f-8c1a-c17aa9056af3`}
-                alt="Humane"
+                alt="Humaning"
               />
             </Column>
           </Row>
