@@ -316,7 +316,7 @@ export function ColatinaHumaningBButtonCourseForm(props: {
                   options={[
                     {
                       label:
-                        "Pessoa Física: Cartão de Crédito (30 dias) ou à vista pelo Pix (027) 9 9958-0841",
+                        "Pessoa Física: Cartão de Crédito (30 dias) ou à vista pelo Pix 077.234.847-20",
                     },
                     {
                       label: "Pessoa Jurídica: Para o inicio de treinamento.",
