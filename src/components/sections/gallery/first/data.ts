@@ -178,6 +178,26 @@ import entenderParaAtender4 from "@/assets/gallery/Entender para Atender 26-06/g
 import entenderParaAtender5 from "@/assets/gallery/Entender para Atender 26-06/n.jpg"
 import entenderParaAtender6 from "@/assets/gallery/Entender para Atender 26-06/p.jpg"
 
+import capacitacaoVendaVilaValerio1 from "@/assets/gallery/Capacitacao em Vendas e Atendimento Vila Valério/IMG_1743.jpg"
+import capacitacaoVendaVilaValerio2 from "@/assets/gallery/Capacitacao em Vendas e Atendimento Vila Valério/IMG_1744.jpg"
+import capacitacaoVendaVilaValerio3 from "@/assets/gallery/Capacitacao em Vendas e Atendimento Vila Valério/IMG_1745.jpg"
+import capacitacaoVendaVilaValerio4 from "@/assets/gallery/Capacitacao em Vendas e Atendimento Vila Valério/IMG_1746.jpg"
+import capacitacaoVendaVilaValerio5 from "@/assets/gallery/Capacitacao em Vendas e Atendimento Vila Valério/IMG_1747.jpg"
+import capacitacaoVendaVilaValerio6 from "@/assets/gallery/Capacitacao em Vendas e Atendimento Vila Valério/IMG_1748.jpg"
+import capacitacaoVendaVilaValerio7 from "@/assets/gallery/Capacitacao em Vendas e Atendimento Vila Valério/IMG_1749.jpg"
+
+import prjEntenderParaAtenderNv1 from "@/assets/gallery/projeto entender para atender nova venecia/WhatsApp Image 2024-10-12 at 18.53.57 (1).jpeg"
+import prjEntenderParaAtenderNv2 from "@/assets/gallery/projeto entender para atender nova venecia/WhatsApp Image 2024-10-12 at 18.53.57 (2).jpeg"
+import prjEntenderParaAtenderNv3 from "@/assets/gallery/projeto entender para atender nova venecia/WhatsApp Image 2024-10-12 at 18.53.57.jpeg"
+import prjEntenderParaAtenderNv4 from "@/assets/gallery/projeto entender para atender nova venecia/WhatsApp Image 2024-10-12 at 18.53.58 (1).jpeg"
+import prjEntenderParaAtenderNv5 from "@/assets/gallery/projeto entender para atender nova venecia/WhatsApp Image 2024-10-12 at 18.53.58 (2).jpeg"
+import prjEntenderParaAtenderNv6 from "@/assets/gallery/projeto entender para atender nova venecia/WhatsApp Image 2024-10-12 at 18.53.58.jpeg"
+import prjEntenderParaAtenderNv7 from "@/assets/gallery/projeto entender para atender nova venecia/WhatsApp Image 2024-10-12 at 18.53.59 (1).jpeg"
+import prjEntenderParaAtenderNv8 from "@/assets/gallery/projeto entender para atender nova venecia/WhatsApp Image 2024-10-12 at 18.53.59 (2).jpeg"
+import prjEntenderParaAtenderNv9 from "@/assets/gallery/projeto entender para atender nova venecia/WhatsApp Image 2024-10-12 at 18.53.59 (3).jpeg"
+import prjEntenderParaAtenderNv10 from "@/assets/gallery/projeto entender para atender nova venecia/WhatsApp Image 2024-10-12 at 18.53.59.jpeg"
+import prjEntenderParaAtenderNv11 from "@/assets/gallery/projeto entender para atender nova venecia/WhatsApp Image 2024-10-12 at 18.54.00.jpeg"
+
 // "Abertura da Semana Sipat - Sanear Colatina - Setembro-23"
 // "Palestra Servidores Públicos de Vila Valério"
 // "Treinamento Vendas e Atendimento Ótica Novamatic - Junho-23"
@@ -202,6 +222,44 @@ export type Testimonials = {
 }
 
 export const gallery: Album[] = [
+    {
+        type: "Capacitação",
+        title: 'Capacitação em vendas',
+        date: "Setembro, 2024",
+        location: "Vila Valério",
+        video: false,
+        url: capacitacaoVendaVilaValerio1,
+        photos: [
+            capacitacaoVendaVilaValerio1,
+            capacitacaoVendaVilaValerio2,
+            capacitacaoVendaVilaValerio3,
+            capacitacaoVendaVilaValerio4,
+            capacitacaoVendaVilaValerio5,
+            capacitacaoVendaVilaValerio6,
+            capacitacaoVendaVilaValerio7
+        ]
+    },
+    {
+        type: "Treinamento",
+        title: 'Projeto Entender para Atender',
+        date: "Outubro, 2024",
+        location: "Nova Venécia",
+        video: false,
+        url: prjEntenderParaAtenderNv1,
+        photos: [
+            prjEntenderParaAtenderNv1,
+            prjEntenderParaAtenderNv2,
+            prjEntenderParaAtenderNv3,
+            prjEntenderParaAtenderNv4,
+            prjEntenderParaAtenderNv5,
+            prjEntenderParaAtenderNv6,
+            prjEntenderParaAtenderNv7,
+            prjEntenderParaAtenderNv8,
+            prjEntenderParaAtenderNv9,
+            prjEntenderParaAtenderNv10,
+            prjEntenderParaAtenderNv11,
+        ]
+    },
     {
         type: "Palestra",
         title: 'Palestra Campanha Colá Colá - CDL',
@@ -556,6 +614,27 @@ export const testimonials: { [key: string]: Testimonials[] } =
             location: "Colatina",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDepoimento%20Claudia.mp4?alt=media&token=fe2dd773-2442-4d14-b584-3f25900ebacd",
 
-        }
+        },
+        {
+            type: "Treinamento",
+            title: 'Depoimento Evellyn',
+            date: "Setembro, 2024",
+            location: "Vila Valério",
+            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWhatsApp%20Video%202024-10-11%20at%2017.10.55.mp4?alt=media&token=4b753a9a-632a-4a54-9253-377147c25453",
+        },
+        {
+            type: "Treinamento",
+            title: 'Depoimento Regiane',
+            date: "Setembro, 2024",
+            location: "Vila Valério",
+            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWhatsApp%20Video%202024-10-11%20at%2017.14.05.mp4?alt=media&token=40369cf9-b68e-410f-b5e8-0278b9f67120",
+        },
+        {
+            type: "Treinamento",
+            title: 'Capacitação em vendas - CDL',
+            date: "Setembro, 2024",
+            location: "Vila Valério",
+            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWhatsApp%20Video%202024-10-11%20at%2017.10.46.mp4?alt=media&token=302da5d1-ad94-4102-9f4e-013b9e96096b",
+        },
     ]
 }
