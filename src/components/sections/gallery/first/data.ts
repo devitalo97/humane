@@ -587,6 +587,27 @@ export const testimonials: { [key: string]: Testimonials[] } =
 {
     "Projeto Entender para Antender": [
         {
+            type: "Treinamento",
+            title: 'Depoimento Evellyn',
+            date: "Setembro, 2024",
+            location: "Vila Valério",
+            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWhatsApp%20Video%202024-10-11%20at%2017.10.55.mp4?alt=media&token=4b753a9a-632a-4a54-9253-377147c25453",
+        },
+        {
+            type: "Treinamento",
+            title: 'Depoimento Regiane',
+            date: "Setembro, 2024",
+            location: "Vila Valério",
+            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWhatsApp%20Video%202024-10-11%20at%2017.14.05.mp4?alt=media&token=40369cf9-b68e-410f-b5e8-0278b9f67120",
+        },
+        {
+            type: "Treinamento",
+            title: 'Capacitação em vendas - CDL',
+            date: "Setembro, 2024",
+            location: "Vila Valério",
+            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWhatsApp%20Video%202024-10-11%20at%2017.10.46.mp4?alt=media&token=302da5d1-ad94-4102-9f4e-013b9e96096b",
+        },
+        {
             type: "Palestra",
             title: 'Depoimento Beatriz',
             date: "Junho, 2024",
@@ -614,27 +635,6 @@ export const testimonials: { [key: string]: Testimonials[] } =
             location: "Colatina",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDepoimento%20Claudia.mp4?alt=media&token=fe2dd773-2442-4d14-b584-3f25900ebacd",
 
-        },
-        {
-            type: "Treinamento",
-            title: 'Depoimento Evellyn',
-            date: "Setembro, 2024",
-            location: "Vila Valério",
-            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWhatsApp%20Video%202024-10-11%20at%2017.10.55.mp4?alt=media&token=4b753a9a-632a-4a54-9253-377147c25453",
-        },
-        {
-            type: "Treinamento",
-            title: 'Depoimento Regiane',
-            date: "Setembro, 2024",
-            location: "Vila Valério",
-            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWhatsApp%20Video%202024-10-11%20at%2017.14.05.mp4?alt=media&token=40369cf9-b68e-410f-b5e8-0278b9f67120",
-        },
-        {
-            type: "Treinamento",
-            title: 'Capacitação em vendas - CDL',
-            date: "Setembro, 2024",
-            location: "Vila Valério",
-            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWhatsApp%20Video%202024-10-11%20at%2017.10.46.mp4?alt=media&token=302da5d1-ad94-4102-9f4e-013b9e96096b",
         },
     ]
 }
