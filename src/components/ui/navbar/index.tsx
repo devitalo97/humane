@@ -8,7 +8,7 @@ import { useEffect, useState, useRef } from "react";
 import { useScroll, useTransform, motion, useAnimation } from "framer-motion";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog, DialogPanel } from "@headlessui/react";
-const inter = Inter({ subsets: ["latin"] });
+import { cn } from "@/util/cn";
 
 const navigation = [
   { name: "Treinamentos", href: "/course" },
@@ -20,86 +20,15 @@ const navigation = [
 export default function Navbar() {
   const { pathname } = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
 
-  const { scrollY } = useScroll();
-  const scrollYRange = [0, 100, 100];
-
-  const containerHeight = useTransform(scrollY, scrollYRange, [
-    "100px",
-    "60px",
-    "60px",
-  ]);
-  const imageSize = useTransform(scrollY, scrollYRange, [
-    "60px",
-    "30px",
-    "30px",
-  ]);
-  const fontSize = useTransform(scrollY, scrollYRange, [
-    "3rem",
-    "1.5rem",
-    "1.5rem",
-  ]);
-  const opacity = useTransform(scrollY, scrollYRange, [0, 1, 1]);
-  const paddingHeaderX = useTransform(scrollY, scrollYRange, [
-    "30px",
-    "20px",
-    "20px",
-  ]);
-
-  // uncomment to check values
-  // scrollY.onChange((val) => console.log(`useViewportScroll.y: ${val}`));
-
-  const controls = useAnimation();
-  const delta = useRef(0);
-  const lastScrollY = useRef(0);
-
-  scrollY.onChange((val) => {
-    const diff = Math.abs(val - lastScrollY.current);
-    if (val >= lastScrollY.current) {
-      delta.current = delta.current >= 10 ? 10 : delta.current + diff;
-    } else {
-      delta.current = delta.current <= -10 ? -10 : delta.current - diff;
-    }
-
-    if (delta.current >= 10 && val > 200) {
-      controls.start("hidden");
-    } else if (delta.current <= -10 || val < 200) {
-      controls.start("visible");
-    } else if (val > 800) {
-      controls.start("visible");
-      controls.start("color");
-    }
-
-    if (val === 0 && pathname === "/") {
-      controls.start("transparent");
-    }
-
-    if (
-      val === 0 &&
-      (pathname.includes("/gallery") ||
-        pathname.includes("/about") ||
-        pathname.includes("/course"))
-    ) {
-      controls.start("color");
-    }
-
-    lastScrollY.current = val;
-  });
-
-  useEffect(() => {
-    if (pathname === "/") {
-      controls.start("transparent");
-    }
-
-    if (
-      pathname.includes("/gallery") ||
-      pathname.includes("/about") ||
-      pathname.includes("/course")
-    ) {
-      controls.start("color");
-    }
-  }, [pathname]);
+  const { logo, fontColor } = [
+    "/gallery",
+    "/about",
+    "/course",
+    "/project",
+  ].some((endpoint) => pathname.startsWith(endpoint))
+    ? { logo: "/logo/logo_humaning_color.svg", fontColor: "text-gray-900" }
+    : { logo: "/logo/logo_humaning.svg", fontColor: "text-white" };
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">
@@ -108,14 +37,10 @@ export default function Navbar() {
         className="flex items-center justify-between p-6 lg:px-8"
       >
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link href="/" className="-m-1.5 p-1.5">
             <span className="sr-only">Your Company</span>
-            <img
-              alt=""
-              src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-              className="h-8 w-auto"
-            />
-          </a>
+            <img alt="" src={logo} className="h-8 w-auto" />
+          </Link>
         </div>
         <div className="flex lg:hidden">
           <button
@@ -132,7 +57,7 @@ export default function Navbar() {
             <a
               key={item.name}
               href={item.href}
-              className="text-sm/6 font-semibold text-gray-900"
+              className={cn("text-sm/6 font-semibold", fontColor)}
             >
               {item.name}
             </a>
@@ -156,7 +81,7 @@ export default function Navbar() {
               <span className="sr-only">Your Company</span>
               <img
                 alt=""
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
+                src="/logo/logo_humaning_color.svg"
                 className="h-8 w-auto"
               />
             </a>
