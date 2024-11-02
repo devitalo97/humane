@@ -36,7 +36,7 @@ export default function Navbar() {
       };
     } else if (["/project"].some((endpoint) => pathname.startsWith(endpoint))) {
       return {
-        logo: "/logo/logo_entender_para_atender.svg",
+        logo: "/logo/logo_entender_para_atender_2.svg",
         fontColor: "text-gray-900",
       };
     } else {
