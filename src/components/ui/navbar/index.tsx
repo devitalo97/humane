@@ -11,10 +11,13 @@ import { Dialog, DialogPanel } from "@headlessui/react";
 import { cn } from "@/util/cn";
 
 const navigation = [
-  { name: "Treinamentos", href: "/course" },
-  { name: "Galeria", href: "/gallery" },
   { name: "Sobre", href: "/about" },
-  { name: "Entender para Atender", href: "/project/entender-para-atender" },
+  { name: "Galeria", href: "/gallery" },
+  { name: "Treinamentos", href: "/course" },
+  {
+    name: "Palestra Entender para Atender",
+    href: "/project/entender-para-atender",
+  },
 ];
 
 export default function Navbar() {
