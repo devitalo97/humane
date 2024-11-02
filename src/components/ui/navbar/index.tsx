@@ -21,14 +21,27 @@ export default function Navbar() {
   const { pathname } = useRouter();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const { logo, fontColor } = [
-    "/gallery",
-    "/about",
-    "/course",
-    "/project",
-  ].some((endpoint) => pathname.startsWith(endpoint))
-    ? { logo: "/logo/logo_humaning_color.svg", fontColor: "text-gray-900" }
-    : { logo: "/logo/logo_humaning.svg", fontColor: "text-white" };
+  const assets = () => {
+    if (
+      ["/gallery", "/about", "/course"].some((endpoint) =>
+        pathname.startsWith(endpoint)
+      )
+    ) {
+      return {
+        logo: "/logo/logo_humaning_color.svg",
+        fontColor: "text-gray-900",
+      };
+    } else if (["/project"].some((endpoint) => pathname.startsWith(endpoint))) {
+      return {
+        logo: "/logo/logo_entender_para_atender.svg",
+        fontColor: "text-gray-900",
+      };
+    } else {
+      return { logo: "/logo/logo_humaning.svg", fontColor: "text-white" };
+    }
+  };
+
+  const { logo, fontColor } = assets();
 
   return (
     <header className="absolute inset-x-0 top-0 z-50">

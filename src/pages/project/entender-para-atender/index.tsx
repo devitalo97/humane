@@ -15,30 +15,31 @@ import Header from "@/components/ui/head";
 
 const features = [
   {
-    name: "Push to deploy",
+    name: "Melhora na Comunicação Interna",
     description:
-      "Morbi viverra dui mi arcu sed. Tellus semper adipiscing suspendisse semper morbi. Odio urna massa nunc massa.",
-    icon: CloudArrowUpIcon,
+      "Compreender o perfil comportamental de cada colaborador cria um ambiente onde a comunicação é mais clara, objetiva e empática.",
+    icon: CloudArrowUpIcon, // Escolha o ícone apropriado ou substitua conforme necessidade.
   },
   {
-    name: "SSL certificates",
+    name: "Aumento da Produtividade",
     description:
-      "Sit quis amet rutrum tellus ullamcorper ultricies libero dolor eget. Sem sodales gravida quam turpis enim lacus amet.",
+      "Times que se conhecem melhor são mais colaborativos e ágeis na resolução de problemas, otimizando processos e entregas.",
     icon: LockClosedIcon,
   },
   {
-    name: "Simple queues",
+    name: "Liderança Personalizada",
     description:
-      "Quisque est vel vulputate cursus. Risus proin diam nunc commodo. Lobortis auctor congue commodo diam neque.",
+      "Líderes aprendem a adaptar seu estilo de gestão, extraindo o melhor de cada membro da equipe, respeitando as individualidades.",
     icon: ArrowPathIcon,
   },
   {
-    name: "Advanced security",
+    name: "Ambiente Mais Saudável",
     description:
-      "Arcu egestas dolor vel iaculis in ipsum mauris. Tincidunt mattis aliquet hac quis. Id hac maecenas ac donec pharetra eget.",
+      "Reduzir conflitos e aumentar o respeito mútuo são resultados naturais dessa experiência, que preza pela integridade e ética no ambiente de trabalho.",
     icon: FingerPrintIcon,
   },
 ];
+
 const tiers = [
   {
     name: "Freelancer",
@@ -88,12 +89,39 @@ const tiers = [
 const faqs = [
   {
     id: 1,
-    question: "What's the best thing about Switzerland?",
+    question: "Como essa palestra pode beneficiar a minha empresa ou equipe?",
     answer:
-      "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+      "Ela melhora a comunicação e o trabalho em equipe, promovendo um ambiente mais produtivo e ético, com colaboradores mais engajados.",
   },
-  // More questions...
+  {
+    id: 2,
+    question:
+      "A palestra pode ser personalizada para as necessidades específicas da minha organização?",
+    answer:
+      "Sim! Podemos ajustar o conteúdo para se alinhar à cultura e aos desafios da sua equipe.",
+  },
+  {
+    id: 3,
+    question: "Qual é a duração da palestra e como ela é organizada?",
+    answer:
+      "A palestra é dinâmica e pode durar entre 01:30 e 02:00, sendo dividida em três partes: perfis comportamentais, ferramentas de gestão práticas e reflexões sobre ética e autorresponsabilidade no ambiente de trabalho.",
+  },
+  {
+    id: 4,
+    question:
+      "Qual o diferencial dessa palestra em comparação com outras abordagens de desenvolvimento?",
+    answer:
+      "A união de perfis comportamentais com ferramentas práticas e temas motivadores, gerando mudanças reais e duradouras.",
+  },
+  {
+    id: 5,
+    question:
+      "Quais resultados práticos posso esperar para a minha equipe após a palestra?",
+    answer:
+      "Melhoria na comunicação, redução de conflitos, aumento da produtividade e um ambiente mais ético e colaborativo.",
+  },
 ];
+
 const footerNavigation = {
   solutions: [
     { name: "Hosting", href: "#" },
@@ -146,13 +174,11 @@ export default function Example() {
             <div className="py-24 sm:py-32 lg:pb-40">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
                 <div className="mx-auto max-w-2xl text-center">
-                  <h1 className="text-balance text-5xl font-semibold tracking-tight text-gray-900 sm:text-7xl">
-                    Entender para Atender
+                  <h1 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                    Transforme sua equipe com Entender para Atender
                   </h1>
-                  <p className="mt-8 text-pretty text-lg font-medium text-gray-500 sm:text-xl/8">
-                    Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure
-                    qui lorem cupidatat commodo. Elit sunt amet fugiat veniam
-                    occaecat.
+                  <p className="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-gray-600">
+                    Proporcione um ambiente mais alinhado, eficiente e humano.
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6">
                     <a
@@ -173,7 +199,7 @@ export default function Example() {
                   <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
                     <img
                       alt="App screenshot"
-                      src="https://tailwindui.com/plus/img/component-images/project-app-screenshot.png"
+                      src="/entender_para_atender.jpg"
                       width={2432}
                       height={1442}
                       className="rounded-md shadow-2xl ring-1 ring-gray-900/10"
@@ -253,15 +279,15 @@ export default function Example() {
           <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
               <h2 className="text-base/7 font-semibold text-indigo-600">
-                Deploy faster
+                Experiência Transformadora
               </h2>
               <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
-                Everything you need to deploy your app
+                Conectando Equipes de Forma Autêntica
               </p>
               <p className="mt-6 text-pretty text-lg/8 text-gray-600">
-                Quis tellus eget adipiscing convallis sit sit eget aliquet quis.
-                Suspendisse eget egestas a elementum pulvinar et feugiat blandit
-                at. In mi viverra elit nunc.
+                Descubra como a compreensão dos perfis comportamentais pode
+                transformar a comunicação e o engajamento no ambiente de
+                trabalho, promovendo uma cultura colaborativa e produtiva.
               </p>
             </div>
             <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-4xl">
@@ -291,7 +317,7 @@ export default function Example() {
             <div className="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20">
               <img
                 alt=""
-                src="https://images.unsplash.com/photo-1601381718415-a05fb0a261f3?ixid=MXwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8ODl8fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1216&q=80"
+                src="/entender_para_atender.jpg"
                 className="absolute inset-0 h-full w-full object-cover brightness-150 saturate-0"
               />
               <div className="absolute inset-0 bg-gray-900/90 mix-blend-multiply" />
@@ -320,24 +346,26 @@ export default function Example() {
                 />
               </div>
               <div className="relative mx-auto max-w-2xl lg:mx-0">
-                <img
+                {/* <img
                   alt=""
-                  src="https://tailwindui.com/plus/img/logos/workcation-logo-white.svg"
+                  src="/logo/logo_entender_para_atender.svg"
                   className="h-12 w-auto"
-                />
+                /> */}
                 <figure>
                   <blockquote className="mt-6 text-lg font-semibold text-white sm:text-xl/8">
                     <p>
-                      “Amet amet eget scelerisque tellus sit neque faucibus non
-                      eleifend. Integer eu praesent at a. Ornare arcu gravida
-                      natoque erat et cursus tortor consequat at. Vulputate
-                      gravida sociis enim nullam ultricies habitant malesuada
-                      lorem ac.”
+                      “Maravilhoso!!!quantos paradigmas que pode ser quebrado em
+                      um treinamento, curso deste nível. (Ex: tanto que estou
+                      dando meu depoimento) assim vai abrindo um leque de
+                      possibilidades para melhorar em todas as áreas da vida
+                      principalmente no quesito que sou capaz de avançar mais e
+                      mais pois dito isto vamos montado o quebra cabeça da
+                      vida.”
                     </p>
                   </blockquote>
                   <figcaption className="mt-6 text-base text-white">
-                    <div className="font-semibold">Judith Black</div>
-                    <div className="mt-1">CEO of Tuple</div>
+                    <div className="font-semibold">Valdeir Galvão da Silva</div>
+                    {/* <div className="mt-1">CEO of Tuple</div> */}
                   </figcaption>
                 </figure>
               </div>
@@ -345,7 +373,7 @@ export default function Example() {
           </div>
 
           {/* Pricing section */}
-          <div className="py-24 sm:pt-48">
+          {/* <div className="py-24 sm:pt-48">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:text-center">
                 <h2 className="text-base/7 font-semibold text-indigo-600">
@@ -434,12 +462,12 @@ export default function Example() {
                 ))}
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* FAQs */}
-          <div className="mx-auto max-w-2xl divide-y divide-gray-900/10 px-6 pb-8 sm:pb-24 sm:pt-12 lg:max-w-7xl lg:px-8 lg:pb-32">
+          <div className="py-24 sm:pt-48 mx-auto max-w-2xl divide-y divide-gray-900/10 px-6 pb-8 sm:pb-24 lg:max-w-7xl lg:px-8 lg:pb-32">
             <h2 className="text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-              Frequently asked questions
+              Perguntas Frequentes
             </h2>
             <dl className="mt-10 space-y-8 divide-y divide-gray-900/10">
               {faqs.map((faq) => (
@@ -472,23 +500,23 @@ export default function Example() {
                 className="aspect-[1108/632] w-[69.25rem] flex-none bg-gradient-to-r from-[#ff80b5] to-[#9089fc] opacity-25"
               />
             </div>
-            <div className="mx-auto max-w-2xl text-center">
+            <div className="mx-auto max-w-2xl text-center pb-32">
               <h2 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                Boost your productivity. Start using our app today.
+                Transforme sua equipe com Entender para Atender
               </h2>
               <p className="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-gray-600">
-                Incididunt sint fugiat pariatur cupidatat consectetur sit cillum
-                anim id veniam aliqua proident excepteur commodo do ea.
+                Proporcione um ambiente mais alinhado, eficiente e humano,
+                fortalecendo a comunicação e o engajamento no trabalho.
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="#"
                   className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >
-                  Get started
+                  Quero participar
                 </a>
                 <a href="#" className="text-sm/6 font-semibold text-gray-900">
-                  Learn more <span aria-hidden="true">→</span>
+                  Saiba mais <span aria-hidden="true">→</span>
                 </a>
               </div>
             </div>
@@ -508,7 +536,7 @@ export default function Example() {
         </main>
 
         {/* Footer */}
-        <footer className="mx-auto mt-32 max-w-7xl px-6 lg:px-8">
+        {/* <footer className="mx-auto mt-32 max-w-7xl px-6 lg:px-8">
           <div className="border-t border-gray-900/10 py-16 sm:py-24 lg:py-32">
             <div className="xl:grid xl:grid-cols-3 xl:gap-8">
               <img
@@ -592,7 +620,7 @@ export default function Example() {
               </div>
             </div>
           </div>
-        </footer>
+        </footer> */}
       </div>
     </>
   );
