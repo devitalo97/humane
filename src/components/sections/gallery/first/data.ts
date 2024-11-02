@@ -198,6 +198,30 @@ import prjEntenderParaAtenderNv9 from "@/assets/gallery/projeto entender para at
 import prjEntenderParaAtenderNv10 from "@/assets/gallery/projeto entender para atender nova venecia/WhatsApp Image 2024-10-12 at 18.53.59.jpeg"
 import prjEntenderParaAtenderNv11 from "@/assets/gallery/projeto entender para atender nova venecia/WhatsApp Image 2024-10-12 at 18.54.00.jpeg"
 
+import cdlAracruz0 from "@/assets/gallery/cdl-aracruz-entender-para-atender/Essa primeiro.jpeg"
+import cdlAracruz1 from "@/assets/gallery/cdl-aracruz-entender-para-atender/Aracruz.jpeg"
+import cdlAracruz2 from "@/assets/gallery/cdl-aracruz-entender-para-atender/J.jpeg"
+import cdlAracruz3 from "@/assets/gallery/cdl-aracruz-entender-para-atender/WhatsApp Image 2024-10-31 at 17.34.31.jpeg"
+import cdlAracruz4 from "@/assets/gallery/cdl-aracruz-entender-para-atender/WhatsApp Image 2024-10-31 at 17.34.32 (1).jpeg"
+import cdlAracruz5 from "@/assets/gallery/cdl-aracruz-entender-para-atender/WhatsApp Image 2024-10-31 at 17.34.32.jpeg"
+import cdlAracruz6 from "@/assets/gallery/cdl-aracruz-entender-para-atender/WhatsApp Image 2024-10-31 at 17.34.35 (1).jpeg"
+import cdlAracruz7 from "@/assets/gallery/cdl-aracruz-entender-para-atender/WhatsApp Image 2024-10-31 at 17.34.35.jpeg"
+import cdlAracruz8 from "@/assets/gallery/cdl-aracruz-entender-para-atender/WhatsApp Image 2024-10-31 at 17.34.36 (1).jpeg"
+import cdlAracruz9 from "@/assets/gallery/cdl-aracruz-entender-para-atender/WhatsApp Image 2024-10-31 at 17.34.36 (2).jpeg"
+import cdlAracruz10 from "@/assets/gallery/cdl-aracruz-entender-para-atender/WhatsApp Image 2024-10-31 at 17.34.36 (3).jpeg"
+import cdlAracruz11 from "@/assets/gallery/cdl-aracruz-entender-para-atender/WhatsApp Image 2024-10-31 at 17.34.36.jpeg"
+import cdlAracruz12 from "@/assets/gallery/cdl-aracruz-entender-para-atender/WhatsApp Image 2024-10-31 at 17.34.37.jpeg"
+
+
+import rfday0 from "@/assets/gallery/rfday/ESSA PRIMEIRO.jpeg"
+import rfday1 from "@/assets/gallery/rfday/b RF DAY.jpeg"
+import rfday2 from "@/assets/gallery/rfday/c.jpeg"
+import rfday3 from "@/assets/gallery/rfday/d.jpeg"
+import rfday4 from "@/assets/gallery/rfday/e.jpeg"
+import rfday5 from "@/assets/gallery/rfday/f.jpeg"
+import rfday6 from "@/assets/gallery/rfday/g.jpeg"
+import rfday7 from "@/assets/gallery/rfday/h.jpeg"
+
 // "Abertura da Semana Sipat - Sanear Colatina - Setembro-23"
 // "Palestra Servidores Públicos de Vila Valério"
 // "Treinamento Vendas e Atendimento Ótica Novamatic - Junho-23"
@@ -222,6 +246,67 @@ export type Testimonials = {
 }
 
 export const gallery: Album[] = [
+    {
+        type: "Workshop",
+        title: 'Palestra Entender para Atender - CDL',
+        date: "Junho, 2024",
+        location: "Nova Venécia",
+        video: true,
+        url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FVideo%20RF%20DAY.mp4?alt=media&token=dd801055-a9b1-4390-ab71-7e923af8f0d5",
+    },
+    {
+        type: "Workshop",
+        title: 'RF Day',
+        date: "Junho, 2024",
+        location: "Nova Venécia",
+        video: false,
+        url: rfday0,
+        photos: [
+            rfday0,
+            rfday1,
+            rfday2,
+            rfday3,
+            rfday4,
+            rfday5,
+            rfday6,
+            rfday7,
+        ]
+    },
+
+
+    {
+        type: "Projeto",
+        title: 'Palestra Entender para Atender - CDL',
+        date: "Junho, 2024",
+        location: "Aracruz",
+        video: true,
+        url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FVideo%20CDL%20ARACRUZ.mp4?alt=media&token=1af06d89-3259-4684-b315-0e0bca49ed60",
+    },
+    {
+        type: "Projeto",
+        title: 'Palestra Entender para Atender - CDL',
+        date: "Junho, 2024",
+        location: "Aracruz",
+        video: false,
+        url: cdlAracruz0,
+        photos: [
+            cdlAracruz0,
+            cdlAracruz1,
+            cdlAracruz2,
+            cdlAracruz3,
+            cdlAracruz4,
+            cdlAracruz5,
+            cdlAracruz6,
+            cdlAracruz7,
+            cdlAracruz8,
+            cdlAracruz9,
+            cdlAracruz10,
+            cdlAracruz11,
+            cdlAracruz12
+        ]
+    },
+
+
     {
         type: "Capacitação",
         title: 'Capacitação em vendas',
