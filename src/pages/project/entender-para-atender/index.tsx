@@ -154,7 +154,7 @@ export default function Example() {
                       href="#"
                       className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                     >
-                      Quero participar
+                      Quero Contratar
                     </a>
                     {/* <a
                       href="#"
@@ -166,7 +166,7 @@ export default function Example() {
                 </div>
                 <div className="mt-16 flow-root sm:mt-24">
                   <div className="-m-2 rounded-xl bg-gray-900/5 p-2 ring-1 ring-inset ring-gray-900/10 lg:-m-4 lg:rounded-2xl lg:p-4">
-                    <img
+                    <Image
                       alt="App screenshot"
                       src="/entender_para_atender.jpg"
                       width={2432}
@@ -194,35 +194,35 @@ export default function Example() {
           {/* Logo cloud */}
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-              <img
+              <Image
                 alt="Transistor"
                 src="/partners/1.svg"
                 width={158}
                 height={48}
                 className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 max-h-24 w-full object-contain lg:col-span-1"
               />
-              <img
+              <Image
                 alt="Reform"
                 src="/partners/2.svg"
                 width={158}
                 height={48}
                 className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 max-h-24 w-full object-contain lg:col-span-1"
               />
-              <img
+              <Image
                 alt="Tuple"
                 src="/partners/3.svg"
                 width={158}
                 height={48}
                 className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 max-h-24 w-full object-contain lg:col-span-1"
               />
-              <img
+              <Image
                 alt="SavvyCal"
                 src="/partners/4.svg"
                 width={158}
                 height={48}
                 className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 max-h-24 w-full object-contain sm:col-start-2 lg:col-span-1"
               />
-              <img
+              <Image
                 alt="Statamic"
                 src="/partners/5.svg"
                 width={158}
@@ -316,10 +316,11 @@ export default function Example() {
           {/* Testimonial section */}
           <div className="mx-auto mt-32 max-w-7xl sm:mt-56 sm:px-6 lg:px-8">
             <div className="relative overflow-hidden bg-gray-900 px-6 py-20 shadow-xl sm:rounded-3xl sm:px-10 sm:py-24 md:px-12 lg:px-20">
-              <img
+              <Image
                 alt=""
                 src="/entender_para_atender.jpg"
                 className="absolute inset-0 h-full w-full object-cover brightness-150 saturate-0"
+                fill={true}
               />
               <div className="absolute inset-0 bg-gray-900/90 mix-blend-multiply" />
               <div
@@ -347,7 +348,7 @@ export default function Example() {
                 />
               </div>
               <div className="relative mx-auto max-w-2xl lg:mx-0">
-                {/* <img
+                {/* <Image
                   alt=""
                   src="/logo/logo_entender_para_atender.svg"
                   className="h-12 w-auto"
@@ -514,7 +515,7 @@ export default function Example() {
                   href="#"
                   className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                 >
-                  Quero participar
+                  Quero Contratar
                 </a>
                 {/* <a href="#" className="text-sm/6 font-semibold text-gray-900">
                   Saiba mais <span aria-hidden="true">→</span>

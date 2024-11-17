@@ -1,11 +1,6 @@
 import Link from "next/link";
-import Logo from "../logo";
-import * as S from "./style";
-import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
-import { titleByPathname } from "./data";
-import { useEffect, useState, useRef } from "react";
-import { useScroll, useTransform, motion, useAnimation } from "framer-motion";
+import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { cn } from "@/util/cn";
@@ -15,7 +10,7 @@ const navigation = [
   { name: "Galeria", href: "/gallery" },
   { name: "Treinamentos", href: "/course" },
   {
-    name: "Palestra Entender para Atender",
+    name: "Programa Entender para Atender",
     href: "/project/entender-para-atender",
   },
 ];
