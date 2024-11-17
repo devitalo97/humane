@@ -1,9 +1,9 @@
 "use client";
 import {
   ArrowPathIcon,
-  CloudArrowUpIcon,
   FingerPrintIcon,
-  LockClosedIcon,
+  PresentationChartLineIcon,
+  QueueListIcon,
 } from "@heroicons/react/24/outline";
 import Header from "@/components/ui/head";
 import Image from "next/image";
@@ -13,19 +13,19 @@ const features = [
     name: "Melhora na Comunicação Interna",
     description:
       "Compreender o perfil comportamental de cada colaborador cria um ambiente onde a comunicação é mais clara, objetiva e empática.",
-    icon: CloudArrowUpIcon, // Escolha o ícone apropriado ou substitua conforme necessidade.
+    icon: ArrowPathIcon, // Escolha o ícone apropriado ou substitua conforme necessidade.
   },
   {
     name: "Aumento da Produtividade",
     description:
       "Times que se conhecem melhor são mais colaborativos e ágeis na resolução de problemas, otimizando processos e entregas.",
-    icon: LockClosedIcon,
+    icon: PresentationChartLineIcon,
   },
   {
     name: "Liderança Personalizada",
     description:
       "Líderes aprendem a adaptar seu estilo de gestão, extraindo o melhor de cada membro da equipe, respeitando as individualidades.",
-    icon: ArrowPathIcon,
+    icon: QueueListIcon,
   },
   {
     name: "Ambiente Mais Saudável",
@@ -193,55 +193,43 @@ export default function Example() {
 
           {/* Logo cloud */}
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
-              <Image
-                alt="Transistor"
-                src="/partners/1.svg"
-                width={158}
-                height={48}
-                className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 max-h-24 w-full object-contain lg:col-span-1"
-              />
-              <Image
-                alt="Reform"
-                src="/partners/2.svg"
-                width={158}
-                height={48}
-                className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 max-h-24 w-full object-contain lg:col-span-1"
-              />
-              <Image
-                alt="Tuple"
-                src="/partners/3.svg"
-                width={158}
-                height={48}
-                className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 max-h-24 w-full object-contain lg:col-span-1"
-              />
-              <Image
-                alt="SavvyCal"
-                src="/partners/4.svg"
-                width={158}
-                height={48}
-                className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 max-h-24 w-full object-contain sm:col-start-2 lg:col-span-1"
-              />
-              <Image
-                alt="Statamic"
-                src="/partners/5.svg"
-                width={158}
-                height={48}
-                className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 col-start-2 max-h-24 w-full object-contain sm:col-start-auto lg:col-span-1"
-              />
-            </div>
-            {/* <div className="mt-16 flex justify-center">
+            <div className="mb-16 flex justify-center">
               <p className="relative rounded-full px-4 py-1.5 text-sm/6 text-gray-600 ring-1 ring-inset ring-gray-900/10 hover:ring-gray-900/20">
-                <span className="hidden md:inline">
-                  Transistor saves up to $40,000 per year, per employee by
-                  working with us.
-                </span>
                 <a href="#" className="font-semibold text-blue-600">
-                  <span aria-hidden="true" className="absolute inset-0" /> Read
-                  our case study <span aria-hidden="true">&rarr;</span>
-                </a>
+                  <span aria-hidden="true" className="absolute inset-0" />{" "}
+                  Confiança e Excelência
+                </a>{" "}
+                <span className="hidden md:inline">
+                  Confira algumas das organizações que confiaram nos nossos
+                  serviços
+                </span>
               </p>
-            </div> */}
+            </div>
+            <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 items-center">
+              {[
+                { src: "/partners/figma/1.svg", alt: "Transistor" },
+                { src: "/partners/figma/2.svg", alt: "Reform" },
+                { src: "/partners/figma/3.svg", alt: "Tuple" },
+                { src: "/partners/figma/4.svg", alt: "SavvyCal" },
+                { src: "/partners/figma/5.svg", alt: "Statamic" },
+                { src: "/partners/figma/6.svg", alt: "Statamic" },
+                { src: "/partners/figma/7.svg", alt: "Statamic" },
+              ].map((image, index) => (
+                <div
+                  key={index}
+                  className="grayscale hover:grayscale-0 mix-blend-multiply relative w-full h-28 bg-white flex justify-center items-center"
+                >
+                  <Image
+                    alt={image.alt}
+                    src={image.src}
+                    layout="intrinsic"
+                    width={150}
+                    height={150}
+                    className="max-h-full max-w-full object-contain"
+                  />
+                </div>
+              ))}
+            </div>
           </div>
 
           {/* Video section */}
