@@ -207,13 +207,21 @@ export default function Example() {
             </div>
             <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 items-center">
               {[
-                { src: "/partners/figma/1.svg", alt: "Transistor" },
-                { src: "/partners/figma/2.svg", alt: "Reform" },
-                { src: "/partners/figma/3.svg", alt: "Tuple" },
-                { src: "/partners/figma/4.svg", alt: "SavvyCal" },
-                { src: "/partners/figma/5.svg", alt: "Statamic" },
-                { src: "/partners/figma/6.svg", alt: "Statamic" },
-                { src: "/partners/figma/7.svg", alt: "Statamic" },
+                { src: "/partners/1.svg", alt: "1.svg" },
+                { src: "/partners/2.svg", alt: "2.svg" },
+                { src: "/partners/3.svg", alt: "3.svg" },
+                { src: "/partners/4.svg", alt: "4.svg" },
+                { src: "/partners/5.svg", alt: "5.svg" },
+                { src: "/partners/6.svg", alt: "6.svg" },
+                { src: "/partners/7.svg", alt: "7.svg" },
+                { src: "/partners/8.svg", alt: "8.svg" },
+                { src: "/partners/9.svg", alt: "9.svg" },
+                { src: "/partners/10.svg", alt: "10.svg" },
+                { src: "/partners/11.svg", alt: "11.svg" },
+                { src: "/partners/12.svg", alt: "12.svg" },
+                { src: "/partners/13.svg", alt: "13.svg" },
+                { src: "/partners/14.svg", alt: "14.svg" },
+                { src: "/partners/15.svg", alt: "15.svg" },
               ].map((image, index) => (
                 <div
                   key={index}
