@@ -18,6 +18,7 @@ export const Wrapper = styled.div`
     gap: 1em;
     position: sticky;
     top: 5em;
+    padding-bottom: 5em;
 
 `
 export const ImageWrapper = styled.div`
@@ -46,10 +47,10 @@ export const Line = styled.div<ILine>`
     display: flex;
     align-items: baseline;
     gap: .5em;
-    ${({width}) => width && css`
+    ${({ width }) => width && css`
         width: ${width};
     `}
-    ${({padding}) => padding && css`
+    ${({ padding }) => padding && css`
         padding: ${padding};
     `}
 `
@@ -63,14 +64,14 @@ export type IText = {
 export const Text = styled.p<IText>`
     text-align: center;
     color: var(--white-color);
-    ${({highlight}) => highlight && css`
+    ${({ highlight }) => highlight && css`
         color: var(--highlight-color);
     `}
-    ${({dark}) => dark && css`
+    ${({ dark }) => dark && css`
         color: var(--dark-color);
     `}
 
-    ${({bw}) => bw && css`
+    ${({ bw }) => bw && css`
         overflow-wrap: break-word;
     `}
 `
