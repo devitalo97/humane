@@ -7,6 +7,7 @@ import {
 } from "@heroicons/react/24/outline";
 import Header from "@/components/ui/head";
 import Image from "next/image";
+import { EntenderParaAtenderForm } from "@/components/ui/form/project/entender-para-atender";
 
 const features = [
   {
@@ -151,7 +152,7 @@ export default function Example() {
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6">
                     <a
-                      href="#"
+                      href="#contact-form-section"
                       className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                     >
                       Quero Contratar
@@ -508,7 +509,7 @@ export default function Example() {
               </p>
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
-                  href="#"
+                  href="#contact-form-section"
                   className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                 >
                   Quero Contratar
@@ -529,6 +530,14 @@ export default function Example() {
                 }}
                 className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30"
               />
+            </div>
+          </div>
+
+          {/* Contact Form Section */}
+          <div className="py-24 sm:py-32">
+            <div id="contact-form-section" />
+            <div className="mx-auto max-w-7xl px-6 lg:px-8">
+              <EntenderParaAtenderForm />
             </div>
           </div>
         </main>

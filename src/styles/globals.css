@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  --dark-color: #0C132E;
-  --highlight-color: #F3BC33;
-  --white-color: #FFF;
+  --dark-color: #0c132e;
+  --highlight-color: #f3bc33;
+  --white-color: #fff;
   --header-height: 4.5em;
   --section-height: calc(100vh - var(--header-height));
 }
@@ -14,6 +14,7 @@ html {
   background: var(--dark-color);
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
+  @apply scroll-smooth;
 }
 
 html ::-webkit-scrollbar {
