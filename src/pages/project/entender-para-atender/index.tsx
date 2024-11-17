@@ -1,17 +1,12 @@
 "use client";
-import { useState } from "react";
-import { Dialog, DialogPanel } from "@headlessui/react";
 import {
   ArrowPathIcon,
-  Bars3Icon,
   CloudArrowUpIcon,
   FingerPrintIcon,
   LockClosedIcon,
-  XMarkIcon,
 } from "@heroicons/react/24/outline";
-import { CheckIcon } from "@heroicons/react/20/solid";
-import { cn } from "@/util/cn";
 import Header from "@/components/ui/head";
+import Image from "next/image";
 
 const features = [
   {
@@ -122,32 +117,6 @@ const faqs = [
   },
 ];
 
-const footerNavigation = {
-  solutions: [
-    { name: "Hosting", href: "#" },
-    { name: "Data services", href: "#" },
-    { name: "Uptime monitoring", href: "#" },
-    { name: "Enterprise services", href: "#" },
-    { name: "Analytics", href: "#" },
-  ],
-  support: [
-    { name: "Submit ticket", href: "#" },
-    { name: "Documentation", href: "#" },
-    { name: "Guides", href: "#" },
-  ],
-  company: [
-    { name: "About", href: "#" },
-    { name: "Blog", href: "#" },
-    { name: "Jobs", href: "#" },
-    { name: "Press", href: "#" },
-  ],
-  legal: [
-    { name: "Terms of service", href: "#" },
-    { name: "Privacy policy", href: "#" },
-    { name: "License", href: "#" },
-  ],
-};
-
 export default function Example() {
   return (
     <>
@@ -183,16 +152,16 @@ export default function Example() {
                   <div className="mt-10 flex items-center justify-center gap-x-6">
                     <a
                       href="#"
-                      className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                      className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                     >
                       Quero participar
                     </a>
-                    <a
+                    {/* <a
                       href="#"
                       className="text-sm/6 font-semibold text-gray-900"
                     >
                       Saiba mais <span aria-hidden="true">→</span>
-                    </a>
+                    </a> */}
                   </div>
                 </div>
                 <div className="mt-16 flow-root sm:mt-24">
@@ -227,58 +196,90 @@ export default function Example() {
             <div className="mx-auto grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-12 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:grid-cols-5">
               <img
                 alt="Transistor"
-                src="https://tailwindui.com/plus/img/logos/158x48/transistor-logo-gray-900.svg"
+                src="/partners/1.svg"
                 width={158}
                 height={48}
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 max-h-24 w-full object-contain lg:col-span-1"
               />
               <img
                 alt="Reform"
-                src="https://tailwindui.com/plus/img/logos/158x48/reform-logo-gray-900.svg"
+                src="/partners/2.svg"
                 width={158}
                 height={48}
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 max-h-24 w-full object-contain lg:col-span-1"
               />
               <img
                 alt="Tuple"
-                src="https://tailwindui.com/plus/img/logos/158x48/tuple-logo-gray-900.svg"
+                src="/partners/3.svg"
                 width={158}
                 height={48}
-                className="col-span-2 max-h-12 w-full object-contain lg:col-span-1"
+                className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 max-h-24 w-full object-contain lg:col-span-1"
               />
               <img
                 alt="SavvyCal"
-                src="https://tailwindui.com/plus/img/logos/158x48/savvycal-logo-gray-900.svg"
+                src="/partners/4.svg"
                 width={158}
                 height={48}
-                className="col-span-2 max-h-12 w-full object-contain sm:col-start-2 lg:col-span-1"
+                className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 max-h-24 w-full object-contain sm:col-start-2 lg:col-span-1"
               />
               <img
                 alt="Statamic"
-                src="https://tailwindui.com/plus/img/logos/158x48/statamic-logo-gray-900.svg"
+                src="/partners/5.svg"
                 width={158}
                 height={48}
-                className="col-span-2 col-start-2 max-h-12 w-full object-contain sm:col-start-auto lg:col-span-1"
+                className="grayscale hover:grayscale-0 mix-blend-multiply col-span-2 col-start-2 max-h-24 w-full object-contain sm:col-start-auto lg:col-span-1"
               />
             </div>
-            <div className="mt-16 flex justify-center">
+            {/* <div className="mt-16 flex justify-center">
               <p className="relative rounded-full px-4 py-1.5 text-sm/6 text-gray-600 ring-1 ring-inset ring-gray-900/10 hover:ring-gray-900/20">
                 <span className="hidden md:inline">
                   Transistor saves up to $40,000 per year, per employee by
                   working with us.
                 </span>
-                <a href="#" className="font-semibold text-indigo-600">
+                <a href="#" className="font-semibold text-blue-600">
                   <span aria-hidden="true" className="absolute inset-0" /> Read
                   our case study <span aria-hidden="true">&rarr;</span>
                 </a>
               </p>
+            </div> */}
+          </div>
+
+          {/* Video section */}
+          <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
+            <div className="mx-auto max-w-7xl">
+              <div className="mx-auto max-w-2xl lg:text-center">
+                <h2 className="text-base font-semibold text-blue-600">
+                  Assista e Inspire-se
+                </h2>
+                <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                  Um novo olhar para o futuro
+                </p>
+                <p className="mt-6 text-lg text-gray-600">
+                  Descubra como nossas iniciativas podem transformar sua equipe
+                  e criar conexões reais e duradouras.
+                </p>
+              </div>
+              <div className="mt-16 flex justify-center">
+                {/* Ajuste para responsividade */}
+                <div className="w-full max-w-4xl">
+                  <div className="relative" style={{ paddingTop: "56.25%" }}>
+                    <iframe
+                      className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
+                      src="https://www.youtube.com/embed/nedzTjTjUK4"
+                      title="Vídeo de apresentação"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowFullScreen
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
           {/* Feature section */}
           <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
             <div className="mx-auto max-w-2xl lg:text-center">
-              <h2 className="text-base/7 font-semibold text-indigo-600">
+              <h2 className="text-base/7 font-semibold text-blue-600">
                 Experiência Transformadora
               </h2>
               <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
@@ -295,7 +296,7 @@ export default function Example() {
                 {features.map((feature) => (
                   <div key={feature.name} className="relative pl-16">
                     <dt className="text-base/7 font-semibold text-gray-900">
-                      <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600">
+                      <div className="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-blue-600">
                         <feature.icon
                           aria-hidden="true"
                           className="h-6 w-6 text-white"
@@ -354,9 +355,9 @@ export default function Example() {
                 <figure>
                   <blockquote className="mt-6 text-lg font-semibold text-white sm:text-xl/8">
                     <p>
-                      “Maravilhoso!!!quantos paradigmas que pode ser quebrado em
-                      um treinamento, curso deste nível. (Ex: tanto que estou
-                      dando meu depoimento) assim vai abrindo um leque de
+                      “Maravilhoso!!! Quantos paradigmas que pode ser quebrado
+                      em um treinamento, curso deste nível. (Ex: tanto que estou
+                      dando meu depoimento) [...] Assim vai abrindo um leque de
                       possibilidades para melhorar em todas as áreas da vida
                       principalmente no quesito que sou capaz de avançar mais e
                       mais pois dito isto vamos montado o quebra cabeça da
@@ -376,7 +377,7 @@ export default function Example() {
           {/* <div className="py-24 sm:pt-48">
             <div className="mx-auto max-w-7xl px-6 lg:px-8">
               <div className="mx-auto max-w-2xl lg:text-center">
-                <h2 className="text-base/7 font-semibold text-indigo-600">
+                <h2 className="text-base/7 font-semibold text-blue-600">
                   Pricing
                 </h2>
                 <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl lg:text-balance">
@@ -407,7 +408,7 @@ export default function Example() {
                           id={tier.id}
                           className={cn(
                             tier.mostPopular
-                              ? "text-indigo-600"
+                              ? "text-blue-600"
                               : "text-gray-900",
                             "text-lg/8 font-semibold"
                           )}
@@ -415,7 +416,7 @@ export default function Example() {
                           {tier.name}
                         </h3>
                         {tier.mostPopular ? (
-                          <p className="rounded-full bg-indigo-600/10 px-2.5 py-1 text-xs/5 font-semibold text-indigo-600">
+                          <p className="rounded-full bg-blue-600/10 px-2.5 py-1 text-xs/5 font-semibold text-blue-600">
                             Most popular
                           </p>
                         ) : null}
@@ -439,7 +440,7 @@ export default function Example() {
                           <li key={feature} className="flex gap-x-3">
                             <CheckIcon
                               aria-hidden="true"
-                              className="h-6 w-5 flex-none text-indigo-600"
+                              className="h-6 w-5 flex-none text-blue-600"
                             />
                             {feature}
                           </li>
@@ -451,9 +452,9 @@ export default function Example() {
                       aria-describedby={tier.id}
                       className={cn(
                         tier.mostPopular
-                          ? "bg-indigo-600 text-white shadow-sm hover:bg-indigo-500"
-                          : "text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300",
-                        "mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                          ? "bg-blue-600 text-white shadow-sm hover:bg-blue-500"
+                          : "text-blue-600 ring-1 ring-inset ring-blue-200 hover:ring-blue-300",
+                        "mt-8 block rounded-md px-3 py-2 text-center text-sm/6 font-semibold focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                       )}
                     >
                       Buy plan
@@ -511,13 +512,13 @@ export default function Example() {
               <div className="mt-10 flex items-center justify-center gap-x-6">
                 <a
                   href="#"
-                  className="rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                  className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
                 >
                   Quero participar
                 </a>
-                <a href="#" className="text-sm/6 font-semibold text-gray-900">
+                {/* <a href="#" className="text-sm/6 font-semibold text-gray-900">
                   Saiba mais <span aria-hidden="true">→</span>
-                </a>
+                </a> */}
               </div>
             </div>
             <div
@@ -534,93 +535,6 @@ export default function Example() {
             </div>
           </div>
         </main>
-
-        {/* Footer */}
-        {/* <footer className="mx-auto mt-32 max-w-7xl px-6 lg:px-8">
-          <div className="border-t border-gray-900/10 py-16 sm:py-24 lg:py-32">
-            <div className="xl:grid xl:grid-cols-3 xl:gap-8">
-              <img
-                alt="Company name"
-                src="https://tailwindui.com/plus/img/logos/mark.svg?color=indigo&shade=600"
-                className="h-9"
-              />
-              <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-                <div className="md:grid md:grid-cols-2 md:gap-8">
-                  <div>
-                    <h3 className="text-sm/6 font-semibold text-gray-900">
-                      Solutions
-                    </h3>
-                    <ul role="list" className="mt-6 space-y-4">
-                      {footerNavigation.solutions.map((item) => (
-                        <li key={item.name}>
-                          <a
-                            href={item.href}
-                            className="text-sm/6 text-gray-600 hover:text-gray-900"
-                          >
-                            {item.name}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="mt-10 md:mt-0">
-                    <h3 className="text-sm/6 font-semibold text-gray-900">
-                      Support
-                    </h3>
-                    <ul role="list" className="mt-6 space-y-4">
-                      {footerNavigation.support.map((item) => (
-                        <li key={item.name}>
-                          <a
-                            href={item.href}
-                            className="text-sm/6 text-gray-600 hover:text-gray-900"
-                          >
-                            {item.name}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-                <div className="md:grid md:grid-cols-2 md:gap-8">
-                  <div>
-                    <h3 className="text-sm/6 font-semibold text-gray-900">
-                      Company
-                    </h3>
-                    <ul role="list" className="mt-6 space-y-4">
-                      {footerNavigation.company.map((item) => (
-                        <li key={item.name}>
-                          <a
-                            href={item.href}
-                            className="text-sm/6 text-gray-600 hover:text-gray-900"
-                          >
-                            {item.name}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="mt-10 md:mt-0">
-                    <h3 className="text-sm/6 font-semibold text-gray-900">
-                      Legal
-                    </h3>
-                    <ul role="list" className="mt-6 space-y-4">
-                      {footerNavigation.legal.map((item) => (
-                        <li key={item.name}>
-                          <a
-                            href={item.href}
-                            className="text-sm/6 text-gray-600 hover:text-gray-900"
-                          >
-                            {item.name}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </footer> */}
       </div>
     </>
   );

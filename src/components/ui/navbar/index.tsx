@@ -36,7 +36,7 @@ export default function Navbar() {
       };
     } else if (["/project"].some((endpoint) => pathname.startsWith(endpoint))) {
       return {
-        logo: "/logo/logo_entender_para_atender_2.svg",
+        logo: "/logo/logo_entender_para_atender.svg",
         fontColor: "text-gray-900",
       };
     } else {
@@ -80,9 +80,9 @@ export default function Navbar() {
           ))}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className={cn("text-sm/6 font-semibold", fontColor)}>
+          {/* <a href="#" className={cn("text-sm/6 font-semibold", fontColor)}>
             Log in <span aria-hidden="true">&rarr;</span>
-          </a>
+          </a> */}
         </div>
       </nav>
       <Dialog
