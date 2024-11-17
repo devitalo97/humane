@@ -39,7 +39,11 @@ export function EntenderParaAtenderForm() {
           Preencha o formulário abaixo, e retornaremos o mais rápido possível.
         </p>
       </div>
-      <form onSubmit={handleSubmit} className="mx-auto mt-16 max-w-xl sm:mt-20">
+      <form
+        onSubmit={handleSubmit}
+        className="mx-auto mt-16 max-w-xl sm:mt-20"
+        autoComplete="off"
+      >
         <div className="mt-10 grid grid-cols-1 gap-x-6 gap-y-8 sm:grid-cols-6">
           <div className="sm:col-span-3">
             <label
@@ -70,25 +74,12 @@ export function EntenderParaAtenderForm() {
               Celular
             </label>
             <div className="relative mt-2 rounded-md shadow-sm">
-              {/* <div className="absolute inset-y-0 left-0 flex items-center">
-                    <label htmlFor="country" className="sr-only">
-                      Country
-                    </label>
-                    <select
-                      id="country"
-                      name="country"
-                      autoComplete="country"
-                      className="h-full rounded-md border-0 bg-transparent py-0 pl-3  text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm"
-                    >
-                      <option selected={true}>BR</option>
-                    </select>
-                  </div> */}
               <input
                 type="tel"
                 id="phone"
                 {...register("phone")}
                 className="block w-full rounded-md border-0 py-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
-                placeholder="(27) 99458-9874"
+                placeholder="+55 (27) 99458-9874"
                 value={watch("phone")}
                 onChange={(e) => setValue("phone", maskPhone(e.target.value))}
               />
