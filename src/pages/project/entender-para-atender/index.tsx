@@ -143,12 +143,19 @@ export default function Example() {
             </div>
             <div className="py-24 sm:py-32 lg:pb-40">
               <div className="mx-auto max-w-7xl px-6 lg:px-8">
-                <div className="mx-auto max-w-2xl text-center">
-                  <h1 className="text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                    Transforme sua equipe com Entender para Atender
+                <div className="mx-auto text-center flex flex-col items-center">
+                  <h1 className="max-w-2xl text-balance text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                    Transforme sua equipe com o programa Entender para Atender
                   </h1>
-                  <p className="mx-auto mt-6 max-w-xl text-pretty text-lg/8 text-gray-600">
-                    Proporcione um ambiente mais alinhado, eficiente e humano.
+                  <p className="mx-auto mt-6 max-w-3xl text-pretty text-lg/8 text-gray-600">
+                    Transformar pessoas é o caminho para transformar
+                    organizações de qualquer segmento, sejam empresas privadas
+                    ou secretarias governamentais de toda a hierarquia de uma
+                    prefeitura. O Entender para Atender evoluiu para um programa
+                    completo, com palestra e workshop, oferecendo ferramentas
+                    para desenvolver pessoas e alcançar resultados sustentáveis.
+                    Confira abaixo os vídeos que apresentam um pouco mais sobre
+                    o Programa.
                   </p>
                   <div className="mt-10 flex items-center justify-center gap-x-6">
                     <a
@@ -246,29 +253,105 @@ export default function Example() {
             <div className="mx-auto max-w-7xl">
               <div className="mx-auto max-w-2xl lg:text-center">
                 <h2 className="text-base font-semibold text-blue-600">
-                  Assista e Inspire-se
+                  Assita e Inspire-se
                 </h2>
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                  Um novo olhar para o futuro
+                  Liderança Humanizada: Conecte, Engaje e Gere Resultados
                 </p>
-                <p className="mt-6 text-lg text-gray-600">
-                  Descubra como nossas iniciativas podem transformar sua equipe
-                  e criar conexões reais e duradouras.
+                <p className="mt-6 text-pretty text-lg/8 text-gray-600">
+                  Aprenda a aplicar práticas de autoconhecimento e empatia para
+                  otimizar a performance de sua equipe e alcançar resultados
+                  estratégicos através do nosso Workshop ou Palestra.
                 </p>
               </div>
-              <div className="mt-16 flex justify-center">
+              <div className="mt-16 gap-12 flex flex-col sm:flex-row justify-center">
                 {/* Ajuste para responsividade */}
-                <div className="w-full max-w-4xl">
-                  <div className="relative" style={{ paddingTop: "56.25%" }}>
-                    <iframe
-                      className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
-                      src="https://www.youtube.com/embed/nedzTjTjUK4"
-                      title="Vídeo de apresentação"
-                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                      allowFullScreen
-                    ></iframe>
+                <div className="w-full flex flex-col">
+                  <p className="text-base font-semibold">Palestra</p>
+                  <div className="mt-6 w-full max-w-4xl">
+                    <div className="relative" style={{ paddingTop: "56.25%" }}>
+                      <iframe
+                        className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
+                        src="https://www.youtube.com/embed/nedzTjTjUK4"
+                        title="Vídeo de apresentação"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
                   </div>
                 </div>
+                <div className="w-full flex flex-col">
+                  <p className="text-base font-semibold">Workshop</p>
+                  <div className="mt-6 w-full max-w-4xl">
+                    <div className="relative" style={{ paddingTop: "56.25%" }}>
+                      <iframe
+                        className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
+                        src="https://www.youtube.com/embed/nedzTjTjUK4"
+                        title="Vídeo de apresentação"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                      ></iframe>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="mx-auto max-w-4xl mt-16 space-y-8 text-gray-600">
+                <p>
+                  O workshop do programa <strong>Entender para Atender</strong>{" "}
+                  oferece uma experiência transformadora com duração de 10
+                  horas, podendo ser realizado em uma imersão única ou dividido
+                  em 2 ou 3 módulos consecutivos, garantindo flexibilidade para
+                  atender às necessidades da sua organização.
+                </p>
+                <p>
+                  Todos os participantes receberão um relatório completo e
+                  individual sobre seu perfil comportamental, fornecendo
+                  insights poderosos para melhorar sua performance. Além disso,
+                  cada participante ganhará um exemplar do livro{" "}
+                  <em>O Poder da Autorresponsabilidade</em>, que será trabalhado
+                  como parte do conteúdo do workshop.
+                </p>
+                <p className="font-semibold">
+                  O conteúdo programático está dividido em três módulos
+                  estratégicos:
+                </p>
+                <ul className="list-disc list-inside space-y-4">
+                  <li>
+                    <strong>Módulo 1:</strong> Descubra como o autoconhecimento
+                    e o entendimento do seu perfil comportamental podem
+                    transformar sua abordagem em vendas, atendimento, liderança
+                    e comunicação.
+                  </li>
+                  <li>
+                    <strong>Módulo 2:</strong> Aplique a análise SWOT de forma
+                    prática e estratégica para potencializar seu desempenho,
+                    fortalecendo relações humanas e alinhando comportamentos às
+                    demandas do mercado.
+                  </li>
+                  <li>
+                    <strong>Módulo 3:</strong> Desenvolva o poder da
+                    autorresponsabilidade e incorpore as 6 leis práticas que
+                    promovem ambientes mais colaborativos, produtivos e
+                    humanizados.
+                  </li>
+                </ul>
+                <p>
+                  No contexto atual, onde inovação e humanização são essenciais,
+                  o <strong>Entender para Atender</strong> oferece a chave para
+                  se comunicar de forma eficaz, promovendo uma verdadeira
+                  transformação nas equipes. Ao entender e aplicar os perfis
+                  comportamentais, sua organização será capaz de construir
+                  relações mais humanas, melhorar o atendimento e liderar com
+                  empatia.
+                </p>
+              </div>
+              <div className="mt-16 flex items-center justify-center gap-x-6">
+                <a
+                  href="#contact-form-section"
+                  className="rounded-md bg-blue-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-600"
+                >
+                  Quero Contratar
+                </a>
               </div>
             </div>
           </div>
