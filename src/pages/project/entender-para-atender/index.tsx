@@ -238,7 +238,6 @@ export default function Example() {
                   <Image
                     alt={image.alt}
                     src={image.src}
-                    layout="intrinsic"
                     width={150}
                     height={150}
                     className="max-h-full max-w-full object-contain"
@@ -252,50 +251,45 @@ export default function Example() {
           <div className="mx-auto mt-32 max-w-7xl px-6 sm:mt-56 lg:px-8">
             <div className="mx-auto max-w-7xl">
               <div className="mx-auto max-w-2xl lg:text-center">
-                <h2 className="text-base font-semibold text-blue-600">
+                <h2 className="text-base/7 font-semibold text-blue-600">
                   Assita e Inspire-se
                 </h2>
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                  Liderança Humanizada: Conecte, Engaje e Gere Resultados
+                  Um novo olhar para o Futuro
+                </p>
+                <p className="mt-6 text-pretty text-lg/8 text-gray-600">
+                  Descubra como nossas iniciativas podem transformar sua equipe
+                  e criar conexões reais e duradouras.
+                </p>
+              </div>
+              <div className="mt-16 mx-auto w-full max-w-4xl">
+                <div
+                  className="relative w-full"
+                  style={{ paddingTop: "56.25%" }}
+                >
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
+                    src="https://www.youtube.com/embed/nedzTjTjUK4"
+                    title="Vídeo de apresentação"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+              <div className="mt-16 mx-auto max-w-4xl lg:text-start">
+                <h2 className="text-base/7 font-semibold text-blue-600">
+                  Aprenda e Pratique
+                </h2>
+                <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                  Workshop
                 </p>
                 <p className="mt-6 text-pretty text-lg/8 text-gray-600">
                   Aprenda a aplicar práticas de autoconhecimento e empatia para
                   otimizar a performance de sua equipe e alcançar resultados
-                  estratégicos através do nosso Workshop ou Palestra.
+                  estratégicos através do nosso Workshop
                 </p>
               </div>
-              <div className="mt-16 gap-12 flex flex-col sm:flex-row justify-center">
-                {/* Ajuste para responsividade */}
-                <div className="w-full flex flex-col">
-                  <p className="text-base font-semibold">Palestra</p>
-                  <div className="mt-6 w-full max-w-4xl">
-                    <div className="relative" style={{ paddingTop: "56.25%" }}>
-                      <iframe
-                        className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
-                        src="https://www.youtube.com/embed/nedzTjTjUK4"
-                        title="Vídeo de apresentação"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-                <div className="w-full flex flex-col">
-                  <p className="text-base font-semibold">Workshop</p>
-                  <div className="mt-6 w-full max-w-4xl">
-                    <div className="relative" style={{ paddingTop: "56.25%" }}>
-                      <iframe
-                        className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
-                        src="https://www.youtube.com/embed/nedzTjTjUK4"
-                        title="Vídeo de apresentação"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="mx-auto max-w-4xl mt-16 space-y-8 text-gray-600">
+              <div className="mt-16 mx-auto max-w-4xl space-y-8 text-gray-600 text-start">
                 <p>
                   O workshop do programa <strong>Entender para Atender</strong>{" "}
                   oferece uma experiência transformadora com duração de 10
@@ -344,6 +338,20 @@ export default function Example() {
                   relações mais humanas, melhorar o atendimento e liderar com
                   empatia.
                 </p>
+              </div>
+              <div className="mt-16 mx-auto w-full max-w-4xl">
+                <div
+                  className="relative w-full"
+                  style={{ paddingTop: "56.25%" }}
+                >
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
+                    src="https://www.youtube.com/embed/nedzTjTjUK4"
+                    title="Vídeo de apresentação"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
               </div>
               <div className="mt-16 flex items-center justify-center gap-x-6">
                 <a
