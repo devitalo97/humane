@@ -348,7 +348,7 @@ export default function Example() {
                 <p className="mt-6 text-pretty text-lg/8 text-gray-600">
                   Aprenda a aplicar práticas de autoconhecimento e empatia para
                   otimizar a performance de sua equipe e alcançar resultados
-                  estratégicos através do nosso Workshop
+                  estratégicos através do nosso Workshop.
                 </p>
               </div>
               <div className="mt-4 mx-auto max-w-4xl space-y-8 text-gray-600 text-start">
