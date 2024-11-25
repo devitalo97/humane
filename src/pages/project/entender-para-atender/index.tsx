@@ -281,6 +281,68 @@ export default function Example() {
                   Aprenda e Pratique
                 </h2>
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                  Paletra
+                </p>
+              </div>
+              <div className="mt-4 mx-auto max-w-4xl space-y-8 text-gray-600 text-start">
+                <p>
+                  A palestra <strong>Entender para Atender</strong> vai além da
+                  motivação convencional: ela é uma jornada de consciência e
+                  transformação pessoal e profissional. Mais do que inspirar, o
+                  conteúdo oferece uma base sólida para que cada participante
+                  compreenda o porquê de suas ações, comportamentos e resultados
+                  no ambiente de trabalho e na vida.
+                </p>
+                <p className="font-semibold">Principais diferenciais:</p>
+                <ul className="list-disc list-inside space-y-4">
+                  <li>
+                    <strong>1. Consciência do Ser:</strong> O ponto central da
+                    palestra é trazer clareza sobre como cada perfil
+                    comportamental molda a forma de se comunicar, atender e
+                    liderar. Essa compreensão vai além da teoria e desperta uma
+                    consciência profunda sobre a importância de melhorar
+                    continuamente.
+                  </li>
+                  <li>
+                    <strong>2. De Motivação à Automotivação:</strong> Ao
+                    entender o porquê de mudar, a motivação deixa de ser externa
+                    e passa a ser interna, gerando automotivação. É essa
+                    transformação que leva os participantes a agir com propósito
+                    e constância.
+                  </li>
+                  <li>
+                    <strong>3. Resultados Sustentáveis:</strong> A palestra não
+                    é sobre discursos temporários, mas sobre gerar mudanças
+                    reais e sustentáveis por meio do autoconhecimento e da
+                    aplicação prática dos aprendizados.
+                  </li>
+                </ul>
+                <p className="font-semibold">O Impacto:</p>
+                <p>
+                  Quando entendemos nossos comportamentos, alinhamos forças e
+                  identificamos oportunidades de crescimento, conseguimos não
+                  apenas nos conectar melhor com os outros, mas também criar um
+                  ambiente mais colaborativo, produtivo e humanizado. Isso se
+                  traduz em{" "}
+                  <strong>
+                    {" "}
+                    atendimentos mais eficazes, lideranças mais conscientes e
+                    equipes mais engajadas.
+                  </strong>
+                </p>
+                <p>
+                  <strong>Entender para Atender</strong> é, antes de tudo, um
+                  convite à evolução — uma palestra que transforma o olhar sobre
+                  nós mesmos e sobre os desafios, gerando uma mudança de dentro
+                  para fora, com resultados que permanecem.
+                </p>
+              </div>
+
+              <div className="mt-16 mx-auto max-w-4xl lg:text-start">
+                <h2 className="text-base/7 font-semibold text-blue-600">
+                  Aprenda e Pratique
+                </h2>
+                <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                   Workshop
                 </p>
                 <p className="mt-6 text-pretty text-lg/8 text-gray-600">
@@ -289,7 +351,7 @@ export default function Example() {
                   estratégicos através do nosso Workshop
                 </p>
               </div>
-              <div className="mt-16 mx-auto max-w-4xl space-y-8 text-gray-600 text-start">
+              <div className="mt-4 mx-auto max-w-4xl space-y-8 text-gray-600 text-start">
                 <p>
                   O workshop do programa <strong>Entender para Atender</strong>{" "}
                   oferece uma experiência transformadora com duração de 10
@@ -346,7 +408,7 @@ export default function Example() {
                 >
                   <iframe
                     className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
-                    src="https://www.youtube.com/embed/nedzTjTjUK4"
+                    src="https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FVideo%20Workshop.mp4?alt=media&token=97c650a8-19ea-439f-903e-b793db56f9d0"
                     title="Vídeo de apresentação"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
