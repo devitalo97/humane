@@ -281,10 +281,10 @@ export default function Example() {
                   Aprenda e Pratique
                 </h2>
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-                  Paletra
+                  Palestra
                 </p>
               </div>
-              <div className="mt-4 mx-auto max-w-4xl space-y-8 text-gray-600 text-start">
+              <div className="mt-8 mx-auto max-w-4xl space-y-8 text-gray-600 text-start">
                 <p>
                   A palestra <strong>Entender para Atender</strong> vai além da
                   motivação convencional: ela é uma jornada de consciência e
@@ -351,7 +351,21 @@ export default function Example() {
                   estratégicos através do nosso Workshop.
                 </p>
               </div>
-              <div className="mt-4 mx-auto max-w-4xl space-y-8 text-gray-600 text-start">
+              <div className="mt-16 mx-auto w-full max-w-4xl">
+                <div
+                  className="relative w-full"
+                  style={{ paddingTop: "56.25%" }}
+                >
+                  <iframe
+                    className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
+                    src="https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FVideo%20Workshop.mp4?alt=media&token=97c650a8-19ea-439f-903e-b793db56f9d0"
+                    title="Vídeo de apresentação"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                  ></iframe>
+                </div>
+              </div>
+              <div className="mt-16 mx-auto max-w-4xl space-y-8 text-gray-600 text-start">
                 <p>
                   O workshop do programa <strong>Entender para Atender</strong>{" "}
                   oferece uma experiência transformadora com duração de 10
@@ -400,20 +414,6 @@ export default function Example() {
                   relações mais humanas, melhorar o atendimento e liderar com
                   empatia.
                 </p>
-              </div>
-              <div className="mt-16 mx-auto w-full max-w-4xl">
-                <div
-                  className="relative w-full"
-                  style={{ paddingTop: "56.25%" }}
-                >
-                  <iframe
-                    className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
-                    src="https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FVideo%20Workshop.mp4?alt=media&token=97c650a8-19ea-439f-903e-b793db56f9d0"
-                    title="Vídeo de apresentação"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                  ></iframe>
-                </div>
               </div>
               <div className="mt-16 flex items-center justify-center gap-x-6">
                 <a
