@@ -85,14 +85,14 @@ const tiers = [
 const faqs = [
   {
     id: 1,
-    question: "Como essa palestra pode beneficiar a minha empresa ou equipe?",
+    question: "Como o programa pode beneficiar a minha empresa ou equipe?",
     answer:
-      "Ela melhora a comunicação e o trabalho em equipe, promovendo um ambiente mais produtivo e ético, com colaboradores mais engajados.",
+      "Ele melhora a comunicação e o trabalho em equipe, promovendo um ambiente mais produtivo e ético, com colaboradores mais engajados.",
   },
   {
     id: 2,
     question:
-      "A palestra pode ser personalizada para as necessidades específicas da minha organização?",
+      "O programa pode ser personalizado para as necessidades específicas da minha organização?",
     answer:
       "Sim! Podemos ajustar o conteúdo para se alinhar à cultura e aos desafios da sua equipe.",
   },
@@ -105,14 +105,14 @@ const faqs = [
   {
     id: 4,
     question:
-      "Qual o diferencial dessa palestra em comparação com outras abordagens de desenvolvimento?",
+      "Qual o diferencial desse programa em comparação com outras abordagens de desenvolvimento?",
     answer:
       "A união de perfis comportamentais com ferramentas práticas e temas motivadores, gerando mudanças reais e duradouras.",
   },
   {
     id: 5,
     question:
-      "Quais resultados práticos posso esperar para a minha equipe após a palestra?",
+      "Quais resultados práticos posso esperar para a minha equipe após o progama?",
     answer:
       "Melhoria na comunicação, redução de conflitos, aumento da produtividade e um ambiente mais ético e colaborativo.",
   },
