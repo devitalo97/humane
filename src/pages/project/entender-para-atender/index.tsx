@@ -252,7 +252,7 @@ export default function Example() {
             <div className="mx-auto max-w-7xl">
               <div className="mx-auto max-w-2xl lg:text-center">
                 <h2 className="text-base/7 font-semibold text-blue-600">
-                  Assita e Inspire-se
+                  Assista e Inspire-se
                 </h2>
                 <p className="mt-2 text-4xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
                   Um novo olhar para o Futuro
