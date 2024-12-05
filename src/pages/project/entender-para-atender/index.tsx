@@ -271,7 +271,7 @@ export default function Example() {
                     className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
                     src="https://www.youtube.com/embed/nedzTjTjUK4"
                     title="Vídeo de apresentação"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
                 </div>
@@ -360,7 +360,7 @@ export default function Example() {
                     className="absolute top-0 left-0 w-full h-full rounded-lg shadow-md"
                     src="https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FVideo%20Workshop.mp4?alt=media&token=97c650a8-19ea-439f-903e-b793db56f9d0"
                     title="Vídeo de apresentação"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                   ></iframe>
                 </div>
