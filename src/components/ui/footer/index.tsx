@@ -1,8 +1,9 @@
 import { Inter } from "next/font/google";
 import Image from "next/image";
-import linkedin from "@/assets/svgs/linkedin.svg";
-import instagram from "@/assets/svgs/instagram.svg";
-import facebook from "@/assets/svgs/facebook.svg";
+import LinkedinIcon from "@/assets/svgs/linkedin.svg";
+import InstagramIcon from "@/assets/svgs/instagram.svg";
+import FacebookIcon from "@/assets/svgs/facebook.svg";
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -93,22 +94,21 @@ export default function Footer() {
               <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
                   <h3 className="text-sm/6 font-semibold text-gray-900">
-                    Solutions
+                    Redes Sociais
                   </h3>
                   <ul role="list" className="mt-6 space-y-4">
-                    {footerNavigation.solutions.map((item) => (
-                      <li key={item.name}>
-                        <a
-                          href={item.href}
-                          className="text-sm/6 text-gray-600 hover:text-gray-900"
-                        >
-                          {item.name}
-                        </a>
-                      </li>
-                    ))}
+                    <Link href="https://www.linkedin.com/in/luiz-ricardo-pereira-de-souza-62634575/" target="_blank" className="flex gap-2 items-center">
+                      <LinkedinIcon className="h-8 w-8"/>
+                      <p className="text-sm/6 text-gray-600 hover:text-gray-900">LinkedIn</p>
+                    </Link>
+                    <Link href="https://www.instagram.com/luizricardo.humane?igsh=MTRzcmpiNHMybDRpMg==" target="_blank" className="flex gap-2 items-center">
+                      <InstagramIcon className="h-8 w-8"/>
+                      <p className="text-sm/6 text-gray-600 hover:text-gray-900">Instagram</p>
+                    </Link>
                   </ul>
+
                 </div>
-                <div className="mt-10 md:mt-0">
+                {/* <div className="mt-10 md:mt-0">
                   <h3 className="text-sm/6 font-semibold text-gray-900">
                     Support
                   </h3>
@@ -124,9 +124,9 @@ export default function Footer() {
                       </li>
                     ))}
                   </ul>
-                </div>
+                </div> */}
               </div>
-              <div className="md:grid md:grid-cols-2 md:gap-8">
+              {/* <div className="md:grid md:grid-cols-2 md:gap-8">
                 <div>
                   <h3 className="text-sm/6 font-semibold text-gray-900">
                     Company
@@ -161,7 +161,7 @@ export default function Footer() {
                     ))}
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
