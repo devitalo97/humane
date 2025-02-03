@@ -713,7 +713,7 @@ export const testimonials: { [key: string]: Testimonials[] } =
         },
         {
             type: "Workshop",
-            title: 'Depoimento Aroldo Rampinelli',
+            title: 'Presidente CDL Aroldo Rampinelli',
             date: "2024",
             location: "Aracruz",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWorkshop%20Entender%20para%20Atender%20Novembro%2024%20%20Aracruz%20Depoimento%20Aroldo%20Rampinelli.mp4?alt=media&token=73d6bbc8-cb13-4359-8566-d06529f8c454",
