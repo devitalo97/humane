@@ -699,6 +699,13 @@ export const testimonials: { [key: string]: Testimonials[] } =
     "Projeto Entender para Antender": [
         {
             type: "Palestra",
+            title: 'Secretário de Educação Udison Brito',
+            date: "2025",
+            location: "Pinheiros",
+            url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FLan%C3%A7amento%20do%20ano%20Letivo%20do%20Munic%C3%ADpio%20de%20Pinheiros_ES.%20Depoimento%20Secret%C3%A1rio%20de%20Educa%C3%A7%C3%A3o%20Udison%20Brito.mp4?alt=media&token=e0507f46-20c0-4c65-8669-e9baa8d82ff0",
+        },
+        {
+            type: "Palestra",
             title: 'Superintendência Regional de Educação',
             date: "2025",
             location: "Nova Venécia",
