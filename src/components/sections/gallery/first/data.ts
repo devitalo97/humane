@@ -231,6 +231,23 @@ import stoneDay4 from "@/assets/gallery/Convenção Stone Day Novembro 2024/STON
 import stoneDay5 from "@/assets/gallery/Convenção Stone Day Novembro 2024/STONE - Franquias-151.jpg" 
 import stoneDay6 from "@/assets/gallery/Convenção Stone Day Novembro 2024/STONE - Franquias2-19.jpg"
 
+
+
+
+import anoLetivoPinheiros1 from "@/assets/gallery/Lançamento do ano Letivo do Município de Pinheiros/WhatsApp Image 2025-02-05 at 18.12.53.jpeg" 
+import anoLetivoPinheiros2 from "@/assets/gallery/Lançamento do ano Letivo do Município de Pinheiros/WhatsApp Image 2025-02-05 at 18.13.17.jpeg" 
+import anoLetivoPinheiros3 from "@/assets/gallery/Lançamento do ano Letivo do Município de Pinheiros/WhatsApp Image 2025-02-05 at 18.14.07 (1).jpeg" 
+import anoLetivoPinheiros4 from "@/assets/gallery/Lançamento do ano Letivo do Município de Pinheiros/WhatsApp Image 2025-02-05 at 18.14.07 (2).jpeg" 
+import anoLetivoPinheiros5 from "@/assets/gallery/Lançamento do ano Letivo do Município de Pinheiros/WhatsApp Image 2025-02-05 at 18.14.07.jpeg" 
+import anoLetivoPinheiros6 from "@/assets/gallery/Lançamento do ano Letivo do Município de Pinheiros/WhatsApp Image 2025-02-05 at 18.14.08 (1).jpeg" 
+import anoLetivoPinheiros7 from "@/assets/gallery/Lançamento do ano Letivo do Município de Pinheiros/WhatsApp Image 2025-02-05 at 18.14.08 (2).jpeg" 
+import anoLetivoPinheiros8 from "@/assets/gallery/Lançamento do ano Letivo do Município de Pinheiros/WhatsApp Image 2025-02-05 at 18.14.08.jpeg" 
+import anoLetivoPinheiros9 from "@/assets/gallery/Lançamento do ano Letivo do Município de Pinheiros/WhatsApp Image 2025-02-05 at 18.14.09 (1).jpeg" 
+import anoLetivoPinheiros10 from "@/assets/gallery/Lançamento do ano Letivo do Município de Pinheiros/WhatsApp Image 2025-02-05 at 18.14.09 (2).jpeg" 
+import anoLetivoPinheiros11 from "@/assets/gallery/Lançamento do ano Letivo do Município de Pinheiros/WhatsApp Image 2025-02-05 at 18.14.09.jpeg" 
+import anoLetivoPinheiros12 from "@/assets/gallery/Lançamento do ano Letivo do Município de Pinheiros/WhatsApp Image 2025-02-05 at 18.15.18.jpeg"
+
+
 // "Abertura da Semana Sipat - Sanear Colatina - Setembro-23"
 // "Palestra Servidores Públicos de Vila Valério"
 // "Treinamento Vendas e Atendimento Ótica Novamatic - Junho-23"
@@ -255,11 +272,34 @@ export type Testimonials = {
 }
 
 export const gallery: Album[] = [
+
+    {
+        type: "Palestra",
+        title: 'Entender para Atender para Educadores',
+        date: "2025",
+        location: "Pinheiros (ES)",
+        video: false,
+        url: anoLetivoPinheiros1,
+        photos: [
+            anoLetivoPinheiros1,
+            anoLetivoPinheiros2,
+            anoLetivoPinheiros3,
+            anoLetivoPinheiros4,
+            anoLetivoPinheiros5,
+            anoLetivoPinheiros6,
+            anoLetivoPinheiros7,
+            anoLetivoPinheiros8,
+            anoLetivoPinheiros9,
+            anoLetivoPinheiros10,
+            anoLetivoPinheiros11,
+            anoLetivoPinheiros12,
+        ]
+    },
     {
         type: "Workshop",
         title: 'Convenção Stone Day',
         date: "2024",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: false,
         url: stoneDay1,
         photos: [
@@ -276,7 +316,7 @@ export const gallery: Album[] = [
         type: "Workshop",
         title: 'Palestra Entender para Atender - CDL',
         date: "2024",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: true,
         url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FVideo%20RF%20DAY.mp4?alt=media&token=dd801055-a9b1-4390-ab71-7e923af8f0d5",
     },
@@ -284,7 +324,7 @@ export const gallery: Album[] = [
         type: "Workshop",
         title: 'RF Day',
         date: "2024",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: false,
         url: rfday0,
         photos: [
@@ -304,7 +344,7 @@ export const gallery: Album[] = [
         type: "Projeto",
         title: 'Palestra Entender para Atender - CDL',
         date: "2024",
-        location: "Aracruz",
+        location: "Aracruz (ES)",
         video: true,
         url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FVideo%20CDL%20ARACRUZ.mp4?alt=media&token=1af06d89-3259-4684-b315-0e0bca49ed60",
     },
@@ -312,7 +352,7 @@ export const gallery: Album[] = [
         type: "Projeto",
         title: 'Palestra Entender para Atender - CDL',
         date: "2024",
-        location: "Aracruz",
+        location: "Aracruz (ES)",
         video: false,
         url: cdlAracruz0,
         photos: [
@@ -337,7 +377,7 @@ export const gallery: Album[] = [
         type: "Capacitação",
         title: 'Capacitação em vendas',
         date: "2024",
-        location: "Vila Valério",
+        location: "Vila Valério (ES)",
         video: false,
         url: capacitacaoVendaVilaValerio1,
         photos: [
@@ -354,7 +394,7 @@ export const gallery: Album[] = [
         type: "Treinamento",
         title: 'Projeto Entender para Atender',
         date: "2024",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: false,
         url: prjEntenderParaAtenderNv1,
         photos: [
@@ -375,7 +415,7 @@ export const gallery: Album[] = [
         type: "Palestra",
         title: 'Palestra Campanha Colá Colá - CDL',
         date: "2024",
-        location: "Colatina",
+        location: "Colatina (ES)",
         video: true,
         url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FPALESTRA%20-%20COLA-COL%C3%81.mp4?alt=media&token=4fdfddb1-ce88-4d4c-93f4-339ffc05bb14",
     },
@@ -383,7 +423,7 @@ export const gallery: Album[] = [
         type: "Palestra",
         title: 'Palestra Entender para Atender - CDL',
         date: "2024",
-        location: "Boa Esperança",
+        location: "Boa Esperança (ES)",
         video: true,
         url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FVideo%20CDL%20BE.mp4?alt=media&token=ee8a512f-13e8-4e65-8d61-4eee5f7569a4",
     },
@@ -391,7 +431,7 @@ export const gallery: Album[] = [
         type: "Palestra",
         title: 'Palestra Entender para Atender - CDL',
         date: "2024",
-        location: "Boa Esperança",
+        location: "Boa Esperança (ES)",
         video: false,
         url: entenderParaAtender1,
         photos: [
@@ -407,7 +447,7 @@ export const gallery: Album[] = [
         type: "Convenção",
         title: 'Convenção Farmácia do Trabalhador Capixaba',
         date: "2024",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: true,
         url: 'https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FVideo%20Entender%20para%20Atender.mp4?alt=media&token=b9b1b09d-5eef-4140-bd57-cb39d14373b5',
     },
@@ -415,7 +455,7 @@ export const gallery: Album[] = [
         type: "Convenção",
         title: 'Convenção Farmácia do Trabalhador Capixaba',
         date: "2024",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: false,
         url: trabalhador1,
         photos: [
@@ -434,7 +474,7 @@ export const gallery: Album[] = [
         type: "Treinamento",
         title: 'Programa de Desenvolvimento em Vendas e Atendimento',
         date: "2024",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: true,
         url: 'https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FREEL_HUMANE.mp4?alt=media&token=efccc57a-95ed-4df9-8f07-090efbb23b0b',
     },
@@ -442,7 +482,7 @@ export const gallery: Album[] = [
         type: "Treinamento",
         title: 'Programa de Desenvolvimento em Vendas e Atendimento',
         date: "2024",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: true,
         url: 'https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDEP_ISRAEL.mp4?alt=media&token=ff5f96a5-c0f0-4dcb-860d-17fc38cf2f22',
     },
@@ -450,7 +490,7 @@ export const gallery: Album[] = [
         type: "Treinamento",
         title: 'Programa de Desenvolvimento em Vendas e Atendimento',
         date: "2024",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: false,
         url: cdl1,
         photos: [
@@ -468,7 +508,7 @@ export const gallery: Album[] = [
         type: "Workshop",
         title: 'Luz e Força Santa Maria',
         date: "2023",
-        location: "Colatina",
+        location: "Colatina (ES)",
         video: true,
         url: 'https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FModelo%20Workshop.mp4?alt=media&token=866b8d87-e6da-465a-9e00-cadcb98277a6',
     },
@@ -476,7 +516,7 @@ export const gallery: Album[] = [
         type: "Workshop",
         title: 'Luz e Força Santa Maria',
         date: "2023",
-        location: "Colatina",
+        location: "Colatina (ES)",
         video: false,
         url: santa1,
         photos: [
@@ -496,7 +536,7 @@ export const gallery: Album[] = [
         type: "Treinamento",
         title: 'Shopping Moda Brasil',
         date: "2023",
-        location: "Colatina",
+        location: "Colatina (ES)",
         video: false,
         url: shopping1,
         photos: [
@@ -556,7 +596,7 @@ export const gallery: Album[] = [
         type: "Treinamento",
         title: 'Shopping Moda Brasil',
         date: "2023",
-        location: "Colatina",
+        location: "Colatina (ES)",
         video: true,
         url: 'https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2Fmoda_brasil.mp4?alt=media&token=ced384c3-9f60-42b2-bb45-e78919af3ed7',
     },
@@ -564,7 +604,7 @@ export const gallery: Album[] = [
         type: "Treinamento",
         title: 'Equipe Apae',
         date: "2023",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: false,
         url: apae1,
         photos: [
@@ -584,7 +624,7 @@ export const gallery: Album[] = [
         type: "Treinamento",
         title: 'Equipe Apae',
         date: "2023",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: true,
         url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2Fapae.mp4?alt=media&token=55442a08-3d7a-46de-baeb-6bf1b17cfdf8",
     },
@@ -594,7 +634,7 @@ export const gallery: Album[] = [
         type: "Treinamento",
         url: jovem1,
         date: "2023",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: false,
         photos: [
             jovem1,
@@ -625,7 +665,7 @@ export const gallery: Album[] = [
         title: 'Jovem Aprendizes CIEE',
         type: "Treinamento",
         date: "2023",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: true,
         url: 'https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2Fjoven_aprendiz.mp4?alt=media&token=5d823298-89e1-43fd-a11e-2e7d9d62fe64',
     },
@@ -634,7 +674,7 @@ export const gallery: Album[] = [
         type: "Palestra",
         url: escola_agricola1,
         date: "2023",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: false,
         photos: [
             escola_agricola1,
@@ -670,7 +710,7 @@ export const gallery: Album[] = [
         title: 'Escola Família Agrícola',
         type: "Palestra",
         date: "2023",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: true,
         url: 'https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2Ffamilia_agricola.mp4?alt=media&token=1ca17831-1400-49cf-8a64-3b1d5a49a8fa',
     },
@@ -679,7 +719,7 @@ export const gallery: Album[] = [
         title: 'Jornada Acadêmica',
         url: jornada1,
         date: "2023",
-        location: "Nova Venécia",
+        location: "Nova Venécia (ES)",
         video: false,
         photos: [
             jornada1,
@@ -701,77 +741,77 @@ export const testimonials: { [key: string]: Testimonials[] } =
             type: "Palestra",
             title: 'Secretário de Educação Udison Brito',
             date: "2025",
-            location: "Pinheiros",
+            location: "Pinheiros (ES)",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FLan%C3%A7amento%20do%20ano%20Letivo%20do%20Munic%C3%ADpio%20de%20Pinheiros_ES.%20Depoimento%20Secret%C3%A1rio%20de%20Educa%C3%A7%C3%A3o%20Udison%20Brito.mp4?alt=media&token=e0507f46-20c0-4c65-8669-e9baa8d82ff0",
         },
         {
             type: "Palestra",
             title: 'Superintendência Regional de Educação',
             date: "2025",
-            location: "Nova Venécia",
+            location: "Nova Venécia (ES)",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FPalestra%20Entender%20para%20Atender%20Evento%20realizado%20pela%20Superintend%C3%AAncia%20Regional%20de%20Educa%C3%A7%C3%A3o.mp4?alt=media&token=e6ae73f7-3886-4f55-9fd1-013246fbe04e",
         },
         {
             type: "Palestra",
             title: 'CDL e SENAC',
             date: "2024",
-            location: "Aracruz",
+            location: "Aracruz (ES)",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FPaletra%20realizada%20em%20Aracruz%20-%20CDL%20e%20SENAC.mp4?alt=media&token=e9bcc309-4cd5-4ce9-b7ff-b246407233b5",
         },
         {
             type: "Workshop",
             title: 'Presidente CDL Aroldo Rampinelli',
             date: "2024",
-            location: "Aracruz",
+            location: "Aracruz (ES)",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWorkshop%20Entender%20para%20Atender%20Novembro%2024%20%20Aracruz%20Depoimento%20Aroldo%20Rampinelli.mp4?alt=media&token=73d6bbc8-cb13-4359-8566-d06529f8c454",
         },
         {
             type: "Treinamento",
             title: 'Depoimento Evellyn',
             date: "2024",
-            location: "Vila Valério",
+            location: "Vila Valério (ES)",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWhatsApp%20Video%202024-10-11%20at%2017.10.55.mp4?alt=media&token=4b753a9a-632a-4a54-9253-377147c25453",
         },
         {
             type: "Treinamento",
             title: 'Depoimento Regiane',
             date: "2024",
-            location: "Vila Valério",
+            location: "Vila Valério (ES)",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWhatsApp%20Video%202024-10-11%20at%2017.14.05.mp4?alt=media&token=40369cf9-b68e-410f-b5e8-0278b9f67120",
         },
         {
             type: "Treinamento",
             title: 'Capacitação em vendas - CDL',
             date: "2024",
-            location: "Vila Valério",
+            location: "Vila Valério (ES)",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWhatsApp%20Video%202024-10-11%20at%2017.10.46.mp4?alt=media&token=302da5d1-ad94-4102-9f4e-013b9e96096b",
         },
         {
             type: "Palestra",
             title: 'Depoimento Beatriz',
             date: "2024",
-            location: "Colatina",
+            location: "Colatina (ES)",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDepoimento%20Beatriz.mp4?alt=media&token=48fa1802-98d9-40e5-b89b-f96287272589",
         },
         {
             type: "Treinamento",
             title: 'Depoimento Dimas',
             date: "2024",
-            location: "Colatina",
+            location: "Colatina (ES)",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDepoimento%20Dimas.mp4?alt=media&token=cb195a1e-1514-4d27-b310-14ddd598da52",
         },
         {
             type: "Treinamento",
             title: 'Depoimento Lucinete',
             date: "2024",
-            location: "Colatina",
+            location: "Colatina (ES)",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDepoimento%20Lucinete.mp4?alt=media&token=cf2016c8-404a-4c15-9f91-580c386a65ee",
         },
         {
             type: "Treinamento",
             title: 'Depoimento Claudia',
             date: "2024",
-            location: "Colatina",
+            location: "Colatina (ES)",
             url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FDepoimento%20Claudia.mp4?alt=media&token=fe2dd773-2442-4d14-b584-3f25900ebacd",
 
         },
