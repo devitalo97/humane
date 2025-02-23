@@ -72,7 +72,11 @@ export default function FirstSection() {
                     </p>
                   </S.HeroTextContent>
                   <S.HeroImageContent>
-                    <Image src={item.thumb} alt="" />
+                    <img
+                      src={item.thumb}
+                      alt=""
+                      style={{ objectFit: "contain" }}
+                    />
                   </S.HeroImageContent>
                 </S.Hero>
               ))}

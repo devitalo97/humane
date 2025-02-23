@@ -231,7 +231,8 @@ export default function Example() {
                 { src: "/partners/14.svg", alt: "14.svg" },
                 { src: "/partners/15.svg", alt: "15.svg" },
                 { src: "/partners/16.svg", alt: "16.svg" },
-                { src: "/partners/17.jpeg", alt: "17.jpeg" },
+                { src: "/partners/17.svg", alt: "17.svg" },
+                { src: "/partners/18.svg", alt: "18.svg" },
               ].map((image, index) => (
                 <div
                   key={index}

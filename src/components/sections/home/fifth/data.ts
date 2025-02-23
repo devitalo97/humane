@@ -9,35 +9,29 @@ import { StaticImageData } from "next/image"
 // import illustration_behavior2 from "@/assets/svgs/humane-svg/Group 3.svg"
 // import illustration_behavior3 from "@/assets/svgs/humane-svg/Group 4.svg"
 
-
-import illustration_behavior from "@/assets/svgs/humane-svg/group_0.svg"
-import illustration_behavior1 from "@/assets/svgs/humane-svg/group_3.svg"
-import illustration_behavior2 from "@/assets/svgs/humane-svg/group_2.svg"
-import illustration_behavior3 from "@/assets/svgs/humane-svg/group_1.svg"
-
 export type IsOpen = "Dominante" | 'Influente' | 'Estável' | 'Conforme'
 
 export type Text = {
     text: IsOpen
-    thumb: StaticImageData
+    url: string
 }
 
 export const texts: Text[] = [
     {
         text: 'Dominante',
-        thumb: illustration_behavior
+        url: "/assets/group_0.svg"
     },
     {
         text: 'Influente',
-        thumb: illustration_behavior1
+        url: "/assets/group_3.svg"
     },
     {
         text: 'Estável',
-        thumb: illustration_behavior2
+        url: "/assets/group_2.svg"
     },
     {
         text: 'Conforme',
-        thumb: illustration_behavior3
+        url: "/assets/group_1.svg"
     },
 ]
 
