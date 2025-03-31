@@ -742,6 +742,22 @@ export const gallery: Album[] = [
 ];
 
 export const testimonials: { [key: string]: Testimonials[] } = {
+  "StartUp Day": [
+    {
+      type: "Workshop",
+      title: "StartUp Day - Sebrae",
+      date: "2025",
+      location: "Nova Venéica (ES)",
+      url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FstartUp%20-%20entrevistas.mp4?alt=media&token=ccf9232d-c497-49b6-81b1-3edd6efc1e8b",
+    },
+    {
+      type: "Workshop",
+      title: "StartUp Day - Sebrae",
+      date: "2025",
+      location: "Nova Venéica (ES)",
+      url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2Fifes-humane.mp4?alt=media&token=834736ab-ac7b-465b-bb1d-77ef7b293e2c",
+    },
+  ],
   "Projeto Entender para Antender": [
     {
       type: "Workshop",
