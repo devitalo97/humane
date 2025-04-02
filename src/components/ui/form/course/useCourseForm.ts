@@ -3,18 +3,50 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { useState } from "react";
 
+const userSchema = z.object({
+  name: z
+    .string()
+    .min(3, { message: "O nome deve ter pelo menos 3 caracteres." })
+    .max(100, { message: "O nome deve ter no máximo 100 caracteres." }),
+
+  phone: z
+    .string()
+    .min(8, { message: "O telefone deve ter pelo menos 8 dígitos." })
+    .regex(/^\+?\d{8,15}$/, { message: "Formato de telefone inválido." }),
+
+  email: z
+    .string()
+    .email({ message: "E-mail inválido." })
+    .max(100, { message: "O e-mail deve ter no máximo 100 caracteres." }),
+});
+
 const schema = z.object({
-  users: z.array(
-    z.object({
-      name: z.string().min(5),
-      phone: z.string().min(5),
-      email: z.string().email(),
+  users: z
+    .array(userSchema)
+    .min(1, { message: "É necessário ao menos um usuário." }),
+
+  enterprise_name: z
+    .string()
+    .max(100, {
+      message: "O nome da empresa deve ter no máximo 100 caracteres.",
     })
-  ),
-  enterprise_name: z.string().optional(),
-  enterprise_document: z.string().optional(),
-  payment_method: z.string().min(1),
-  payment_type: z.string().min(1),
+    .optional(),
+
+  enterprise_document: z
+    .string()
+    .regex(/^\d{11,14}$/, {
+      message:
+        "O documento da empresa deve conter entre 11 e 14 dígitos numéricos.",
+    })
+    .optional(),
+
+  payment_method: z
+    .string()
+    .min(1, { message: "O método de pagamento é obrigatório." }),
+
+  payment_type: z
+    .string()
+    .min(1, { message: "O tipo de pagamento é obrigatório." }),
 });
 
 type Schema = z.infer<typeof schema>;
