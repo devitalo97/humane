@@ -34,7 +34,7 @@ const schema = z.object({
 
   enterprise_document: z
     .string()
-    .regex(/^\d{11,14}$/, {
+    .regex(/^\d{11,18}$/, {
       message:
         "O documento da empresa deve conter entre 11 e 14 dígitos numéricos.",
     })
