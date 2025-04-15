@@ -36,6 +36,181 @@ export default function FirstSection() {
             {
               title: (
                 <div className="relative w-full rounded">
+                  Boa esperança - Projeto Entender para Atender.
+                </div>
+              ),
+              content: (
+                <>
+                  <div
+                    className="bg-white py-8 sm:py-16"
+                    id="success-boa-esperanca"
+                  >
+                    <div className="mx-auto">
+                      <div className="mx-auto grid grid-cols-1 items-start gap-x-8 gap-y-16 sm:gap-y-24 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+                        <div className="lg:pr-4">
+                          <div className="relative overflow-hidden rounded-3xl bg-white px-6 pb-9 pt-16 shadow-2xl sm:px-12 lg:px-8 lg:pb-8 xl:px-10 xl:pb-10">
+                            <div className="border-b border-gray-900/10 pb-12">
+                              <BoaEsperancaCourseForm
+                                project_name="Boa esperança - Projeto Entender para Atender."
+                                htmlIdToScroll="success-boa-esperanca"
+                              />
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div className="text-base leading-7 text-gray-700 lg:max-w-lg">
+                            <p className="text-base font-semibold leading-7 text-blue-600">
+                              Vendas e Atendimento
+                            </p>
+                            <h1 className="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+                              Projeto Entender para Atender.
+                            </h1>
+                            <div className="max-w-xl">
+                              <p className="mt-6">
+                                Primeiro Módulo – Dia 02 de Junho, 18:30 às 22
+                              </p>
+                              <p className="font-semibold">
+                                Tema: Transforme seu Atendimento e Vendas com
+                                Autoconhecimento
+                              </p>
+                              <div className="mt-8">
+                                <p>
+                                  O primeiro passo para um atendimento
+                                  excepcional e vendas eficazes é o
+                                  autoconhecimento. Neste encontro, você:
+                                </p>
+                                <ul className="list-disc pl-5 mt-4">
+                                  <li>
+                                    Descobrirá seu Perfil Comportamental e como
+                                    ele impacta sua abordagem profissional.
+                                  </li>
+                                  <li>
+                                    Receberá um relatório individual detalhado,
+                                    que revelará suas principais características
+                                    e oportunidades de desenvolvimento.
+                                  </li>
+                                  <li>
+                                    Aprenderá como utilizar suas forças naturais
+                                    para construir conexões mais significativas
+                                    com os clientes.
+                                  </li>
+                                </ul>
+                                <p className="mt-4">
+                                  Este será o ponto de partida para alinhar suas
+                                  habilidades às exigências do mercado,
+                                  aumentando sua eficiência e potencializando
+                                  seus resultados.
+                                </p>
+                              </div>
+
+                              <p className="mt-6">
+                                Segundo Módulo - Dia 03 de Junho, 18:30 às 22:00
+                              </p>
+                              <p className="font-semibold">
+                                Tema: Potencializando Vendas e Atendimento com a
+                                Análise SWOT
+                              </p>
+                              <div className="mt-8">
+                                <p>
+                                  Neste segundo encontro, você aprenderá a
+                                  aplicar a Análise SWOT ao seu perfil
+                                  comportamental, identificando:
+                                </p>
+                                <ul className="list-disc pl-5 mt-4">
+                                  <li>
+                                    <strong>Forças:</strong> Identifique seus
+                                    pontos fortes e como eles podem ser
+                                    utilizados para maximizar resultados.
+                                  </li>
+                                  <li>
+                                    <strong>Fraquezas:</strong> Reconheça áreas
+                                    a serem desenvolvidas com base no seu
+                                    comportamento.
+                                  </li>
+                                  <li>
+                                    <strong>Oportunidades:</strong> Descubra
+                                    como aproveitar suas características para
+                                    gerar novos negócios.
+                                  </li>
+                                  <li>
+                                    <strong>Ameaças:</strong> Avalie como
+                                    enfrentar desafios externos, como a
+                                    concorrência, a partir do seu perfil
+                                    comportamental.
+                                  </li>
+                                </ul>
+                                <p className="mt-4">
+                                  Com essa estratégia, você estará mais
+                                  preparado para agir com assertividade,
+                                  potencializando seu desempenho e criando
+                                  diferenciais competitivos.
+                                </p>
+                              </div>
+
+                              <p className="mt-6">
+                                Terceiro Módulo Dia 04 de Junho, 18:30 às 22:00
+                              </p>
+                              <p className="font-semibold">
+                                Tema: A Aplicação Prática da
+                                Autorresponsabilidade
+                              </p>
+                              <div className="mt-8">
+                                <p>
+                                  No último encontro, você irá mergulhar em um
+                                  dos pilares mais importantes para o
+                                  crescimento profissional: a
+                                  autorresponsabilidade. A partir das 6 Leis do
+                                  livro &quot;O Poder da
+                                  Autorresponsabilidade&quot;, você aprenderá a:
+                                </p>
+                                <ul className="list-disc pl-5 mt-4">
+                                  <li>
+                                    Reduzir conflitos e melhorar a comunicação
+                                    com clientes e equipe.
+                                  </li>
+                                  <li>
+                                    Desenvolver uma mentalidade focada em
+                                    soluções, e não em problemas.
+                                  </li>
+                                  <li>
+                                    Criar um ambiente colaborativo e produtivo.
+                                  </li>
+                                  <li>
+                                    Assumir o controle do seu sucesso
+                                    profissional.
+                                  </li>
+                                </ul>
+                                <p className="mt-4">
+                                  A aplicação dessas leis no dia a dia fará de
+                                  você um profissional mais eficaz, um líder
+                                  mais inspirador e um especialista em
+                                  atendimento e vendas.
+                                </p>
+                              </div>
+
+                              <p className="mt-4">
+                                Todos os participantes receberão material
+                                didático e um relatório individualizado,
+                                contendo informações sobre suas características
+                                naturais com base na Análise de Perfil
+                                Comportamental.
+                              </p>
+                              <p className="mt-4">
+                                Venha viver essa experiência e transformar sua
+                                maneira de atender, vender e liderar!
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </>
+              ),
+            },
+            {
+              title: (
+                <div className="relative w-full rounded">
                   Pinheiros - Projeto Entender para Atender.
                 </div>
               ),
@@ -148,8 +323,7 @@ export default function FirstSection() {
                               </div>
 
                               <p className="mt-6">
-                                Terceiro Módulo Dia 14 de Outubro, 18:30 às
-                                22:00
+                                Terceiro Módulo Dia 14 de Maio, 18:30 às 22:00
                               </p>
                               <p className="font-semibold">
                                 Tema: A Aplicação Prática da
