@@ -760,6 +760,48 @@ export const testimonials: { [key: string]: Testimonials[] } = {
   ],
   "Projeto Entender para Antender": [
     {
+      type: "Palestra",
+      title: "Formação Equipe Técnica - SEME",
+      date: "2025",
+      location: "Pinheiros (ES)",
+      url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FFORMA%C3%87%C3%83O%20EQUIPE%20TECNICA%20DA%20SEME%20DE%20PINHEIROS_ES%20MAIO_25.mp4?alt=media&token=00c5705b-7dfb-4161-9c12-5316137bd16f",
+    },
+    {
+      type: "Workshop",
+      title: "Vendas, Atendimento e Liderança - CDL",
+      date: "2025",
+      location: "Pinheiros (ES)",
+      url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWORKSHOP%20VENDAS%2C%20ATENDIMENTO%20E%20LIDERAN%C3%87A%20CDL%20DE%20PINHEIROS_ES%20MAIO_25.mp4?alt=media&token=6d9da395-c970-4706-8285-a04dff4eeb60",
+    },
+    {
+      type: "Workshop",
+      title: "Secretária de Saúde",
+      date: "2025",
+      location: "Pinheiros (ES)",
+      url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FPALESTRA%20PARA%20SERVIDORES%20DA%20SECRETARIA%20DE%20SA%C3%9ADE%20DE%20PINHEIROS%20ES%20MAIO_25.mp4?alt=media&token=0acd6002-ba15-4bf4-a952-a8a9641a8800",
+    },
+    {
+      type: "Workshop",
+      title: "Secretária de Saúde",
+      date: "2025",
+      location: "Pinheiros (ES)",
+      url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWORKSHOP%20SECRETARIA%20DE%20SA%C3%9ADE%20DE%20PINHEIROS%20ES%20-%20MAIO_25.mp4?alt=media&token=0e190380-099b-4dd0-9256-9f0e2db40171",
+    },
+    {
+      type: "Workshop",
+      title: "Secretária de Saúde",
+      date: "2025",
+      location: "Pinheiros (ES)",
+      url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWORKSHOP%20SECRETARIA%20DE%20SA%C3%9ADE%20DE%20PINHEIROS.mp4?alt=media&token=16ecf26e-0d63-43cd-8207-35f0da04d6e1",
+    },
+    {
+      type: "Workshop",
+      title: "Secretária de Saúde",
+      date: "2025",
+      location: "Pinheiros (ES)",
+      url: "https://firebasestorage.googleapis.com/v0/b/car-wash-acdb0.appspot.com/o/humane%2FWORKSHOP%20SECRETARIA%20DE%20SA%C3%9ADE%20DE%20PINHEIROS%20ES%20-%20MAIO_25%20(1).mp4?alt=media&token=ede23726-7c5a-4aad-8a63-0cb2921bb449",
+    },
+    {
       type: "Workshop",
       title: "Secretário de Educação Udison Brito",
       date: "2025",
